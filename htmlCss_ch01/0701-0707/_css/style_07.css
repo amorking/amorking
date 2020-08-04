@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}
+
+.box-01, .box-02, .box-03, .box-04, .box-05{
+    float: left;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.box-01{
+    position: relative;
+    background-color: #ccc;
+}
+
+.box-02{
+    background-color: #bbb;
+}
+
+.box-03{
+    background-color: #eee;
+}
+
+.box-04{
+    position: absolute;
+    top:500px;
+    left: 500px;
+    background-color: #000;
+}
+
+.box-05{
+    background-color: #ccc;
+}
+
+.box-01>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+

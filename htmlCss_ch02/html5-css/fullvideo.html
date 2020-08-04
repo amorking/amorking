@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동영상으로 홈페이지 대문 만들기</title>
+    <style>
+
+        body {
+            margin: 0;
+            text-align: center;
+        }
+
+        #container {
+            height: 100vh;
+            display: flex;
+            flex-flow: wrap column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="movie/flame.mp4" muted autoplay loop poster="images/flame.jpg" id="bg"></video>
+    <!-- poster 속성: 영상이 정상적으로 재생되지 않을 때 보여줄 이미지 -->
+    <div id="container">
+        <h2>당신의 꿈을 응원합니다.</h2>
+        <h1><a href="http://koreavc.or.kr">한국직업전문학교</a></h1>
+    </div>
+</body>
+
+</html>

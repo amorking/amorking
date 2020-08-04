@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS선택자 - 후손</title>
+    <style>
+        #reserve ul{
+            color: green;
+            /* border: 1px dotted red; */
+        }
+
+        #reserve>ul{
+            color: coral;
+            border: 1px dotted blue;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="reserve">
+        <header>
+            <h1>예약 방법 및 요금</h1>
+        </header>
+        <p>행복 펜션에 예약하려면?</p>
+        <ul>
+            <li>예약 방법</li>
+            <ul>
+                <li>직접 통화</li>
+                <li>문자 남기기</li>
+            </ul>
+            <li>요금</li>
+            <ul>
+                <li>1인: 40,000원</li>
+                <li>1인: 60,000원</li>
+                <li>1인: 80,000원</li>
+                <li>1인: 100,000원</li>
+            </ul>
+        </ul>
+    </section>
+</body>
+
+</html>

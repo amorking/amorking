@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform - rotate</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            border: 1px solid #ff0000;
+            margin: 50px;
+            float: left;
+            /* 좌측으로 요소들을 띄워서 정렬 */
+        }
+
+        .skewX{
+            transform: skewX(30deg);
+            /* X축으로 30도(degree) 비틀기 */
+        }
+
+        .skewY{
+            transform: skewY(-40deg);
+            /* X축으로 30도(degree) 비틀기 */
+        }
+
+        .skew{
+            transform: skew(-40deg, -15deg);
+            /* X축으로 30도(degree) 비틀기 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        <div class="skewX">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+
+    <div class="origin">
+        <div class="skewY">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+
+    <div class="origin">
+        <div class="skew">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+</body>
+
+</html>

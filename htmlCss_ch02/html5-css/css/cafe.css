@@ -1,0 +1,258 @@
+/* css reset*/
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 2.5;
+}
+
+li {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* mobile */
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background: url(../../html5/_images/header.jpg) no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 50px;
+    background: #000;
+}
+
+#main-nav {
+    list-style: none;
+    text-align: center;
+}
+
+#main-nav>li {
+    display: inline;
+}
+
+#main-nav>li>a {
+    line-height: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 15px 5% 10px 5%;
+}
+
+section:nth-child(odd) {
+    background: #eee;
+}
+
+.page-title {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 30px 50px;
+}
+
+.content {
+    margin: 80px auto 10px auto;
+    width: 90%;
+    padding: 20px;
+}
+
+.content ol{
+    margin-top: 20px;
+}
+
+.photo {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background: #000;
+}
+
+footer>p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* 태블릿 768px 이상 */
+@media screen and (min-width: 768px){
+    header{
+        height: 400px;
+    }
+
+    #intro, #map{
+        width: 50%;
+        float: left;
+    }
+
+    #choice{
+        clear: both;
+    }
+}
+
+/* PC 960px 이상 */
+@media screen and (min-width: 960px){
+    #container{
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+
+    header{
+        height: 500px;
+    }
+
+    #intro, #map, #choice{
+        clear: both;
+        position: relative;
+        width: 100%;
+        height: 420px;
+        padding: 15px 2% 10px 5%;
+    }
+
+    #choice{
+        height: 600px;
+    }
+
+    .content{
+        margin: 80px auto 10px;
+        width: 90%;
+    }
+
+    .photo{
+        width: 40%;
+        display: block;
+    }
+
+    .photo>img{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .text{
+        width: 40%;
+    }
+
+    #intro .photo, #map .photo{
+        float:left;
+    }
+
+    #intro .text, #map .text{
+        float: right;
+    }
+
+    #choice .photo{
+        float: right;
+    }
+
+    #choice .text{
+        float: left;
+    }
+}

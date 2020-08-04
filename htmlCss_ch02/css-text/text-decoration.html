@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration 연습</title>
+    <style>
+        p{
+            line-height: 2rem;
+        }
+
+        span.edit{
+            text-decoration: line-through; /* 취소선 */
+        }
+
+        a{
+            text-decoration: none; /* 밑줄 없애기 */
+            color: black;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h2>HTML5</h2>
+        <p>
+            다양한 기기로 인터넷에 접속할 수 있는 요즘.... <br>
+            <span class="edit">HTML4</span> HTML5를 공부해야 할 때입니다.
+        </p>
+        <p>
+            <a href="http://html.spec.whatwg.org" target_blank>
+                HTML5 기준규약 살펴보기
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>

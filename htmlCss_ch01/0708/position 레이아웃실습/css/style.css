@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}
+
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.cont{
+    width: 100%;
+}
+
+.wrap{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    display: flex;
+    flex-flow: wrap row;
+}
+
+/* @ .box-left-contents @ */
+.box-left-contents{
+    position: relative;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    background: url(../img/visual.jpeg) no-repeat;
+    background-size: cover;
+    background-position: 30% 0;
+}
+
+.box-left-contents .content{
+    z-index: 1;
+    width: 42%;
+    height: 42%;
+    align-self: flex-end;
+    color: #fff;
+    margin: 0 100px 100px 0;
+    position: relative;
+}
+
+.box-left-contents .content h1{
+    margin-top: 30px;
+}
+
+.box-left-contents .content a.btn-to{
+    margin-top: 30px;
+    color: #000;
+    background-color: #fff;
+    padding: 0 60px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 48px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.box-left-contents .bg-img{
+    position: absolute;
+    width: 100%;
+    opacity: 0.2;
+}
+
+/* @ .box-right-contents @ */
+.box-right-contents{
+    width: 50%;
+    height: 100%;
+}
+
+.box-right-contents>div:nth-child(n){
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    position: relative;
+    height: calc(100%/3);
+}
+
+.box-right-contents>.content:first-child>.shadow{
+    display: none;
+}
+
+.box-right-contents .content-img{
+    height: 100%;
+    margin-right: 30px;
+}
+
+.box-right-contents .content-img img{
+    height: 100%;
+}
+
+.box-right-contents .desc-wrap{
+    width: 30%;
+}
+
+.box-right-contents .desc-wrap p.title{
+    font-size: 1.2rem;
+    color: blue;
+}
+
+.box-right-contents .desc-wrap p.desc{
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}

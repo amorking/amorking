@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}
+
+
+/* @ header @ */
+#gnb {
+    height: 125px;
+    display: flex;
+    align-items: center;
+}
+
+#gnb>.logo {
+    margin-left: 4.6%;
+}
+
+#gnb>ul {
+    display: flex;
+    margin-left: 25.2%;
+    width: 100%;
+}
+
+#gnb>ul>li {
+    margin-left: 5.5%;
+}
+
+#gnb>ul>li:hover{
+    border-bottom: solid 1px #000;
+}
+
+
+/* @ visual @ */
+#visual>.slide{
+    width: 100%;
+    overflow: hidden;
+}
+
+#visual>.slide>ul{
+    display: flex;
+    width: 300%;
+}
+
+#visual>.slide>ul>li{ 
+    width: 33.34%;
+    padding-top: 14%;
+    position: relative;
+}
+
+#visual>.slide>ul.slideWrap>li:nth-child(1){
+    background: url(../img/visual.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#visual>.slide>ul.slideWrap>li:nth-child(2){
+    background: url(../img/visual2.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#visual>.slide>ul.slideWrap>li:nth-child(3){
+    background: url(../img/visual3.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#visual>.slide>ul>li>img.visual-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* @ content @ */
+#content {
+    display: flex;
+    width: 100%;
+}
+
+.content-left {
+    width: 50%;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-left-inner {
+    width: 60%;
+}
+
+.content-left .desc-01 {
+    font-weight: bold;
+}
+
+.content-left .title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.content-left .desc-02 {
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.content-left .btn-more {
+    margin-top: 50px;
+    background-color: #00ac4f;
+    color: #fff;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    padding-left: 32px;
+}
+
+.content-left .btn-more>span {
+    line-height: 60px;
+    margin-right: 30px;
+}
+
+.content-right {
+    width: 50%;
+    padding-top: 50%;
+    background: url(../img/img1.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-right>p {
+    position: absolute;
+    right: 12%;
+    bottom: 12%;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.6;
+}

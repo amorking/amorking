@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow 속성 알아보기</title>
+    <style>
+        h3#title{
+            width: 800px;
+            margin: 30px auto;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 800px;
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-around;
+        }
+
+        #container div {
+            width: 300px;
+            height: 150px;
+            margin-bottom: 100px;
+            border: 1px solid #000;
+            word-break: keep-all;
+        }
+
+        .case1 {
+            overflow: visible;
+            background-color: #FFDFD8;
+        }
+
+        .case2 {
+            overflow: hidden;
+            background-color: #E9FFD8;
+        }
+
+        .case3 {
+            overflow: scroll;
+            background-color: #F4D8FF;
+        }
+
+        .case4 {
+            overflow: auto;
+            background-color: #D8F9FF;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="title">overflow: 부모요소보다 자식요소의 내용이 더 크거나 많을 때 어떻게 보일지를 선택하는 속성</h3>
+    <div id="container">
+        <div class="case1">
+            <h3>overflow - visible</h3>
+            <p>
+                1. visible: 특정 요소가 박스를 넘어가도 그대로 보여준다. (기본값)<br>
+                2. hidden: 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않도록 숨긴다.<br>
+                3. scroll: 항상 스크롤바를 표시한다.<br>
+                4. auto: 내용이 넘치면 스크롤바를 표시한다.
+            </p>
+        </div>
+        <!-- /#case1 -->
+        <div class="case2">
+            <h3>overflow - hidden</h3>
+            <p>
+                1. visible: 특정 요소가 박스를 넘어가도 그대로 보여준다. (기본값)<br>
+                2. hidden: 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않도록 숨긴다.<br>
+                3. scroll: 항상 스크롤바를 표시한다.<br>
+                4. auto: 내용이 넘치면 스크롤바를 표시한다.
+            </p>
+        </div>
+        <!-- /#case2 -->
+        <div class="case3">
+            <h3>overflow - scroll</h3>
+            <p>
+                1. visible: 특정 요소가 박스를 넘어가도 그대로 보여준다. (기본값)<br>
+                2. hidden: 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않도록 숨긴다.<br>
+                3. scroll: 항상 스크롤바를 표시한다.<br>
+                4. auto: 내용이 넘치면 스크롤바를 표시한다.
+            </p>
+        </div>
+        <!-- /#case3 -->
+        <div class="case4">
+            <h3>overflow - auto</h3>
+            <p>
+                1. visible: 특정 요소가 박스를 넘어가도 그대로 보여준다. (기본값)<br>
+                2. hidden: 부모 요소의 범위를 넘어가는 자식 요소의 부분은 보이지 않도록 숨긴다.<br>
+                3. scroll: 항상 스크롤바를 표시한다.<br>
+                4. auto: 내용이 넘치면 스크롤바를 표시한다.
+            </p>
+        </div>
+        <!-- /#case4 -->
+    </div>
+    <!-- /#container -->
+</body>
+
+</html>

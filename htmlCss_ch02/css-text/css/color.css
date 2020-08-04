@@ -1,0 +1,22 @@
+#container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(0, 134, 0);
+}
+
+h2{
+    color: blue;
+}
+
+img{
+    float:right;
+    margin-right: 10px;
+}
+
+.ali{
+    color: red;
+    font-weight: bold;
+}

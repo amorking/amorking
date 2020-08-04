@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}
+
+#cont {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    height: 740px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contents .content:nth-child(n) {
+    margin-right: 10%;
+}
+
+.contents .content:last-child {
+    margin-right: 0;
+}
+
+.content {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    width: 16%;
+}
+
+.content>img {
+    width: 100%;
+}
+
+h3.sub-title {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.desc {
+    margin-top: .25rem;
+    font-size: .8rem;
+    color: #949494;
+}

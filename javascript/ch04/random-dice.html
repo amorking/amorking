@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 예제</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        button{
+            border: 1px solid #bbb;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Math 객체 사용하기</h2>
+    <button onclick="dice()">주사위 던지기</button>
+    <hr>
+    <p id="result"></p>
+    <script>
+        //주사위 만들기
+        function dice() {
+            var dice = Math.floor(Math.random() * 6) + 1; //0~5 랜덤 + 1
+            document.querySelector("#result").innerHTML = dice;
+        }
+    </script>
+</body>
+
+</html>

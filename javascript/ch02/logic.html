@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리 연산자</title>
+    <script>
+        var n1 = 7; //변수 n1생성과 동시에 7로 초기화
+        var n2 = 4; //변수 n2생성과 동시에 4로 초기화
+        var result = 0; //변수 result생성과 동시에 0으로 초기화
+
+        result = (n1 > n2) && (n2 == 5); //논리곱 연산자 &&: AND(그리고) 두개의 결과값이 모두 참일 때 result의 값이 true
+        document.write("결과 : " + result + "<br>");
+
+        result = (n1 > n2) || (n2 == 5); //논리합 연산자 ||: OR(또는) 결과값 중 하나가 참이면 result의 값이 true 
+        document.write("결과 : " + result + "<br>");
+
+        result = !(n1 > n2); //논리부정 연산자 (!): NOT 부정 n1이 n2보다 크다를 부정 > n1이 n2보다 크지 않다
+        document.write("결과 : " + result + "<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

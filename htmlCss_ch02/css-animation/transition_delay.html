@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition - delay</title>
+    <style>
+        #wrapper {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-around;
+            align-items: center;
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+
+        #wrapper:hover .box {
+            transform: rotate(720deg);
+            /* #wrapper에 마우스를 올렸을 때 .box를 720도(degree)회전
+             720도를 돌면 다시 원점이기 때문에 transition이 적용되지 않았을 때는
+             변화가 없는 것처럼 보인다. */
+
+             /* margin-left를 활용해서 구르는 것처럼 보일 수 있다. */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            background-color: #eee;
+            transition: all 1s;
+            /* 모든 CSS 속성의 애니메이션 진행시간을 설정 */
+        }
+
+        .box p {
+            text-align: center;
+            line-height: 100px;
+            margin: 0;
+            font-size: 0.75rem;
+        }
+
+        #no-delay {
+            border: 1px solid orange;
+        }
+
+        #delay {
+            transition-delay: 1s;
+            /* CSS 애니메이션을 지연시킨다. */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="no-delay" class="box">
+            <p>no-delay</p>
+        </div>
+        <!-- /#no-delay -->
+
+        <div id="delay" class="box">
+            <p>delay</p>
+        </div>
+        <!-- /#delay -->
+    </div>
+    <!-- /#wrapper -->
+</body>
+
+</html>

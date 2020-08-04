@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+img {
+    border: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    background-attachment: fixed; /* 배경이미지 고정 */
+}
+
+.logo {
+    width: 150px;
+    margin: 20px 0 0 20px;
+}
+
+.wrap {
+    width: 380px;
+    height: 510px;
+    margin: 100px auto 0 auto;
+}
+
+.msg {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+input {
+    background-color: transparent;
+    width: 380px;
+    height: 47px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+input:hover {
+    border-bottom: 2px solid #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.wrap>p {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+    margin-top: 25px;
+}
+
+.wrap button {
+    width: 380px;
+    height: 47px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.wrap button.btn-login {
+    background-color: yellow;
+}
+
+.wrap form.wrap-btn :nth-child(3) {
+    margin-top: 0;
+}
+
+span.txt-or {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+span.txt-or::before,
+span.txt-or::after {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+span.txt-or::before {
+    display: inline-block;
+    width: calc(50% - 20px);
+    height: 1px;
+    margin: 8px 0;
+    vertical-align: top;
+    float: left;
+    content: '';
+}
+
+span.txt-or::after {
+    display: inline-block;
+    width: calc(50% - 20px);
+    height: 1px;
+    margin: 8px 0;
+    vertical-align: top;
+    float: right;
+    content: '';
+}
+
+.info-user {
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+
+.list-user {
+    float: right;
+}
+
+.list-user li {
+    float: left;
+}
+
+.list-user li::before {
+    content: '';
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 4px 10px;
+    background-color: #e5e5e5;
+}
+
+.list-user li:first-child::before {
+    display: none;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slideWrap{
+    width: 300%;
+    height: 100%;
+}
+
+.slide>.slideWrap>li{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.slide>.slideWrap>li:nth-child(1){
+    background: url(../img/wallpaper_01.jpg) no-repeat;
+}
+
+.slide>.slideWrap>li:nth-child(2){
+    background: url(../img/wallpaper_02.jpg) no-repeat;
+}
+
+.slide>.slideWrap>li:nth-child(3){
+    background: url(../img/wallpaper_03.jpg) no-repeat;
+}

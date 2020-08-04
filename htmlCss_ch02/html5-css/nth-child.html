@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스 nth-child</title>
+    <style>
+        div :nth-child(2){
+            color: blue;
+        }
+        /* 부모의 n번째 자식인 요소 */
+
+        div p:nth-of-type(3){
+            color: red;
+        }
+        /* 부모 안에 p라는 태그의 n번째 형제인 요소 */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>웹과 멀티미디어</h1>
+        <p class="text1">웹에서 지원되는 비디오/오디오 파일에는 여러 종류가 있다.</p>
+        <p class="text2">HTML엣서는 플러그인 프로그램 없이 웹 브라우저 자체에서 멀티미디어를 재생할 수 있다.</p>
+        <h1>웹과 멀티미디어</h1>
+        <p class="text2">HTML엣서는 플러그인 프로그램 없이 웹 브라우저 자체에서 멀티미디어를 재생할 수 있다.</p>
+    </div>
+</body>
+
+</html>

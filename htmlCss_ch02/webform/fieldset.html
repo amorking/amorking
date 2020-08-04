@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset 태그 사용하기</title>
+    <link rel="stylesheet" href="css/info.css">
+</head>
+
+<body>
+    <form method="post" action="info.jsp">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                    <!-- 어떤 정보를 받는지 for와 id를 사용해 매칭시킨다. -->
+                </li>
+                <li>
+                    <label for="mail">메일 주소</label>
+                    <input type="text" id="mail">
+                    <!-- 어떤 정보를 받는지 for와 id를 사용해 매칭시킨다. -->
+                </li>
+            </ul>
+        </fieldset>
+        <!-- / fieldset 01 -->
+
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디</label>
+                    <input type="text" id="id">
+                    <!-- 어떤 정보를 받는지 for와 id를 사용해 매칭시킨다. -->
+                </li>
+                <li>
+                    <label for="pwd">패스워드</label>
+                    <input type="password" id="pwd">
+                    <!-- 어떤 정보를 받는지 for와 id를 사용해 매칭시킨다. -->
+                </li>
+            </ul>
+        </fieldset>
+        <!-- / fieldset 02 -->
+
+        <input type="submit" value="가입하기">
+
+    </form>
+    <!-- / form -->
+
+</body>
+
+</html>

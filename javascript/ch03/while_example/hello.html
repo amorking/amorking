@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 예제</title>
+</head>
+
+<body>
+
+    <script>
+        //hello를 10번 출력
+        var i = 1;  //주로 반복변수로 사용되는 i변수 선언
+
+        while (i <= 10) { //변수 i의 값이 10보다 작거나 같다면 반복
+            document.write("hello <br>"); //출력
+            i += 1; //변수 i의 값이 1씩 증가할 수 있게 i = i + 1
+        } //i가 1씩 증가해서 10을 초과하면 break
+
+        //1부터 10까지 출력
+        var i = 1; //i의 값을 1로 초기화
+
+        while (i <= 10) {
+            document.write(i + "<br>");
+            //i += 1; //2씩 증가하게 되면 홀수 출력
+            i++; //i가 1씩 증가, 1씩 감소는 i--
+        }
+
+        //1부터 10까지 더하기
+        var n = 1; //n변수 선언, 1로 초기화
+        var sum = 0; //sum변수 선언, 0으로 초기화, 합계를 구할 변수
+
+        while (n <= 10) { //변수 n의 값이 10보다 작거나 같다면 반복
+            sum += n; //sum = sum + n
+            console.log("n = " + n + ",sum = " + sum); // 가장 처음 n = 1, sum = 0을 출력
+            n += 1; //변수 n의 값을 1씩 증가시킨다.
+        }//n이 10을 초과할 때까지 반복
+        console.log("1부터 10까지의 합: " + sum);
+
+        var avg = sum / (n - 1);
+        console.log("평균: " + avg);
+    </script>
+</body>
+
+</html>

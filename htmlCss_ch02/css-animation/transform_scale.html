@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform - scale</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            border: 1px solid #ff0000;
+            margin: 50px;
+            float: left;
+            /* 좌측으로 요소들을 띄워서 정렬 */
+        }
+
+        .moveX:hover {
+            transform: scaleX(1.2);
+            /* .moveX에 마우스를 올렸을 때 X축으로 1.2배 키우기 */
+        }
+
+        .moveY:hover {
+            transform: scaleY(1.5);
+            /* .moveY에 마우스를 올렸을 때 Y축으로 1.5배 키우기 */
+        }
+
+        .moveXY:hover{
+            transform: scale(0.8);
+            /* .movXY에 마우스를 올렸을 때 원본비율 유지하며 사이즈를 0.8배로 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        <div class="moveX">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+
+    <div class="origin">
+        <div class="moveY">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+
+    <div class="origin">
+        <div class="moveXY">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+</body>
+
+</html>

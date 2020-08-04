@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롤링 갤러리 만들기</title>
+    <style>
+        h1#title {
+            width: 800px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #galleryWrap {
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: wrap column;
+            align-items: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">이미지 넘기기</h1>
+    <div id="galleryWrap">
+        <p>
+            <a href="#prev" onclick="prevGallery()">
+                <img src="images/left_btn.png" alt="왼쪽<">
+            </a>
+            <!-- 클릭하면 prevGallery함수 실행
+            문서 내부에서 이동할 목적이기 때문에 href = #name -->
+            <img src="images/img1.jpg" alt="갤러리 그림" id="gallery">
+
+            <a href="#next" onclick="nextGallery()">
+                <img src="images/right_btn.png" alt=">오른쪽">
+            </a>
+            <!-- 클릭하면 nextGallery함수 실행
+            문서 내부에서 이동할 목적이기 때문에 href = #name -->
+        </p>
+    </div>
+    <!-- /#galleryWrap -->
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

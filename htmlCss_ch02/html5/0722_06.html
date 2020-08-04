@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트페이지 링크걸기 - 이미지맵</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <map name="eventMap">
+        <area shape="circle" coords="230 292 40" href="http://www.easyspublish.co.kr/20_Menu/BookView/127/PUB" alt="저자 직강으로 이동">
+        <area shape="rect" coords="475 2884 703 3013" href="http://cafe.naver.com/tjeouncode" alt="더 조은코드 카페로 이동" target="_blank">
+    </map>
+    <p>
+        <img src="http://giyong2.dothome.co.kr/images/nodejs.jpg" alt="nodejs 상세페이지" usemap="#eventMap">
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+div{
+    margin: 15px;
+}
+
+#box1{
+    width: 400px;
+    height: 100px;
+    background: orange;
+}
+
+#box2{
+    width: 50%; /* 부모의 50% 차지 */
+    height: 100px;
+    background: skyblue;
+}

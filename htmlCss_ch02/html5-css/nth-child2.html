@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스 nth-child 2</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        /* border-collapse: table태그 요소들의 테두리 속성을 collapse로 변경 */
+
+        table {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        table :nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        /* n은 0부터 시작 */
+
+        #container{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>건강에 좋은 건강 식품</h1>
+        <table>
+            <tr>
+                <td>content1</td>
+            </tr>
+            <tr>
+                <td>content2</td>
+            </tr>
+            <tr>
+                <td>content3</td>
+            </tr>
+            <tr>
+                <td>content4</td>
+            </tr>
+            <tr>
+                <td>content5</td>
+            </tr>
+            <tr>
+                <td>content6</td>
+            </tr>
+            <tr>
+                <td>content7</td>
+            </tr>
+            <tr>
+                <td>content8</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

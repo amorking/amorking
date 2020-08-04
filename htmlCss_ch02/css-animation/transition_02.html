@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition - 02</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            line-height: 100px;
+        }
+
+        .tr {
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+            transition-property: transform, width, height, background-color;
+            transition-duration: .5s, 5s;
+            /* transition: all 2s; 이런식으로 전체 속성에 시간을 적용할 수도 있다. */
+            /* transition이 적용되는 시간을 조절할 수 있다.
+            transition-property로 CSS 속성을 지정하고, transition-duration으로 시간을 지정
+            duration은 property와 개수가 맞지 않을 땐 번갈아(alternately) 적용된다. 
+            즉 이 예제는 transform .5s, width 5s, height .5s, background-color 5s */
+
+        }
+
+        .tr:hover {
+            transform: rotate(180deg);
+            background-color: red;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tr">
+        <h1>!</h1>
+    </div>
+    <!-- /.tr -->
+</body>
+
+</html>

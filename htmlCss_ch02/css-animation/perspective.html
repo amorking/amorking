@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform - rotate</title>
+    <style>
+        #no-pers,
+        #pers {
+            width: 150px;
+            height: 180px;
+            border: 1px solid red;
+            margin: 30px;
+            float: left;
+        }
+
+        .rotateX:hover img {
+            transform: rotateX(30deg);
+            /* 이미지 X축을 기준으로 30도(degree) 회전 */
+            /* 회전은 되지만 원근이 느껴지지 않아 사이즈가 작아지는 걸로 오해할 수 있다. */
+        }
+
+        #pers {
+            perspective: 300px;
+            /* perspective: 원근감적용, 관찰자 시점을 설정 값이 작을수록 Z축으로 가까워진다. 즉 원근이 더 강하게 표현된다. */
+        }
+
+        .rotateY:hover img {
+            transform: rotateY(30deg);
+            /* 이미지 Y축을 기준으로 30도(degree) 회전 */
+            /* 회전은 되지만 원근이 느껴지지 않아 사이즈가 작아지는 걸로 오해할 수 있다. */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>원본이미지</h3>
+    <div id="origin">
+        <img src="../html5/_images/sunset.jpg" alt="sunset">
+    </div>
+
+    <div id="no-pers">
+        <div class="rotateX">
+            <img src="../html5/_images/sunset.jpg" alt="sunset">
+        </div>
+    </div>
+    <!-- /#no-pers -->
+
+    <div id="pers">
+        <div class="rotateX">
+            <img src="../html5/_images/sunset.jpg" alt="sunset">
+        </div>
+    </div>
+    <!-- /#pers -->
+
+    <div id="no-pers">
+        <div class="rotateY">
+            <img src="../html5/_images/sunset.jpg" alt="sunset">
+        </div>
+    </div>
+    <!-- /#no-pers -->
+
+    <div id="pers">
+        <div class="rotateY">
+            <img src="../html5/_images/sunset.jpg" alt="sunset">
+        </div>
+    </div>
+    <!-- /#pers -->
+</body>
+
+</html>

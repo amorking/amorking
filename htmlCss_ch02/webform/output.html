@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산 결과 보기</title>
+    <style>
+        h1 {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>두 수의 합</h1>
+    <form action="" oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+        <!-- output name="result"의 값을 표시할 수식 -->
+
+        <input type="number" name="num1" value="0">
+        <!-- name을 각각 부여해서 값을 구분 -->
+        +<input type="number" name="num2" value="0">
+        = <output name="result"></output>
+        <!-- 결과값을 보이는 태그 name에 result를 부여 -->
+    </form>
+
+    <h1>두 수의 차</h1>
+    <form action="" oninput="result.value = parseInt(num1.value) - parseInt(num2.value)">
+        <!-- output name="result"의 값을 표시할 수식 -->
+
+        <input type="number" name="num1" value="0">
+        <!-- name을 각각 부여해서 값을 구분 -->
+        -<input type="number" name="num2" value="0">
+        = <output name="result"></output>
+        <!-- 결과값을 보이는 태그 name에 result를 부여 -->
+    </form>
+</body>
+
+</html>

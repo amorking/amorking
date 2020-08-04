@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform - rotate</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            border: 1px solid #ff0000;
+            margin: 50px;
+            float: left;
+            /* 좌측으로 요소들을 띄워서 정렬 */
+        }
+
+        .rotate1{
+            transform: rotate(20deg);
+            /* 이미지의 중앙을 중심으로 20deg 회전 */
+        }
+
+        .rotate2{
+            transform: rotate(-40deg);
+            /* 이미지의 중앙을 중심으로 -40deg 회전 */
+        }
+
+        /* X축 Y축을 기준으로 회전시킬 수도 있음 */
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        <div class="rotate1">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+
+    <div class="origin">
+        <div class="rotate2">
+            <img src="../html5/_images/bus.jpg" alt="bus">
+        </div>
+    </div>
+    <!-- /.origin -->
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 창</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>회원 가입</h2>
+        <form action="#" method="post" id="register">
+            <ul>
+                <li>
+                    <label for="user-id" class="field">아이디</label>
+                    <input type="text" id="user-id" placeholder="4~15 자리의 영문과 숫자 사용" required>
+                </li>
+                <li>
+                    <label for="user-pw1" class="field">비밀번호</label>
+                    <input type="password" id="user-pw1" placeholder="8자리 이상" required>
+                </li>
+                <li>
+                    <label for="user-pw2" class="field">비밀번호 확인</label>
+                    <input type="password" id="user-pw2" placeholder="동일하게 입력하세요" required>
+                </li>
+                <li>
+                    <label for="email" class="field">이메일</label>
+                    <input type="email" id="email" required>
+                </li>
+                <li>
+                    <label class="field">메일링 수신</label>
+                    <label class="receive"><input type="radio" value="yes" name="mailling" checked>예</label>
+                    <label class="receive"><input type="radio" value="no" name="mailling">아니오</label>
+                </li>
+            </ul>
+            <ul id="buttons">
+                <li><button type="submit">가입하기</button></li>
+                <li><button type="reset">취소</button></li>
+            </ul>
+        </form>
+    </div>
+    <!-- /#container -->
+    <script src="js/register.js"></script>
+</body>
+
+</html>

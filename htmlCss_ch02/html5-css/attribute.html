@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            display: inline-block;
+            /* 가로, 세로 등 크기를 줄 땐 텍스트와 블럭 속성을 함께 가진 inline-block을 사용 */
+            margin: 20px;
+            width: 120px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+        }
+
+        a[href] {
+            background-color: yellow;
+        }
+        /* a라는 태그 중 href라는 속성을 가진 요소에만 CSS 속성을 부여 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a>메인 메뉴:</a></li>
+        <li><a href="#">메뉴 1</a></li>
+        <li><a href="#">메뉴 2</a></li>
+        <li><a href="#">메뉴 3</a></li>
+        <li><a href="#">메뉴 4</a></li>
+    </ul>
+</body>
+
+</html>

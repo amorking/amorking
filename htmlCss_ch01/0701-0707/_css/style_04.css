@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}
+
+body{
+    background: url(../_source/_img/bgSquare.png);
+}
+
+.wrap{
+    background: url(../_source/_img/flower.png)no-repeat;
+    background-position: right bottom;
+    margin: 60px auto;
+    width: 600px;
+    height: 800px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.title{
+    margin: 80px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.img-01{
+    width: 50%;
+}
+
+.img-02{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.desc-wrap{
+    width: 80%;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.desc-wrap>:nth-child(n){
+    margin-bottom: 50px;
+}
+
+.desc-wrap :last-child{
+    margin-bottom: 0;
+}
+
+.sub-title{
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.desc{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    word-break: break-all;
+}

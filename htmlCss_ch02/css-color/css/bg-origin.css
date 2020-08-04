@@ -1,0 +1,32 @@
+div {
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border: 20px solid #eee;
+}
+
+#cont {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#bg1 {
+    background: url('../../html5/_images/bg3.jpg') no-repeat;
+    background-origin: border-box;
+    /* 배경이미지의 배치 기준을 보더에 맞춘다. */
+}
+
+#bg2 {
+    background: url('../../html5/_images/bg3.jpg') no-repeat;
+    background-origin: content-box;
+    /* 배경이미지의 배치 기준을 컨텐츠 영역에 맞춘다. */
+}
+
+#bg3 {
+    background: url('../../html5/_images/bg3.jpg') no-repeat;
+    background-origin: padding-box;
+    /* 배경이미지의 배치 기준을 패딩 영역에 맞춘다. */
+}

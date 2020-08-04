@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자 3</title>
+    <style>
+        .navi {
+            width: 960px;
+            height: 60px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .navi ul {
+            list-style-type: none;
+        }
+
+        .navi ul li {
+            display: inline-block;
+            width: 150px;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .navi a:link {
+            display: block;
+            text-align: center;
+            width: 150px;
+            height: 60px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* link요소에 CSS 적용 */
+
+        .navi a:hover,
+        .navi a:focus {
+            background-color: #222;
+            color: white;
+        }
+
+        /* hover: .navi의 a에 마우스가 올려져 있을 때 배경색상 변경
+            focus: TAB키를 사용하여 포커싱 됐을 때 CSS 적용 */
+
+        .navi a:active,
+        .navi a:visited {
+            background: red;
+        }
+
+        /* active: 눌릴 때
+        visited: 방문한 링크 */
+    </style>
+</head>
+
+<body>
+    <nav class="navi">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

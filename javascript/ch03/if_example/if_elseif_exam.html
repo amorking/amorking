@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if~ else if~ else문 예제</title>
+    <script>
+        //놀이 공원 입장료 계산 프로그램
+        var age = prompt("나이를 입력하세요"); //나이 age 변수 선언 prompt로 입력 받기
+        var charge = 0; //입장료 charge 변수 선언과 동시에 값을 0으로 초기화
+
+        if (age < 8) { //만약 age가 8보다 작다면
+            document.write("취학전 아동입니다. <br>"); //출력
+            charge = 1000; //charge의 값을 1000으로 변경
+        } else if (age < 14) { //만약 if의 조건과 맞지 않고 age가 14보다 작다면
+            document.write("초등학생입니다. <br>"); //출력
+            charge = "2000"; //charge의 값을 2000으로 변경
+        } else if (age < 20) { //만약 else if의 조건과 맞지 않고 age가 14보다 작다면
+            document.write("중, 고등학생입니다. <br>"); //출력
+            charge = "2500"; //charge의 값을 2500으로 변경
+        } else { //if의 조건도 맞지 않고 else if의 조건도 맞지 않다면
+            document.write("일반인입니다. <br>"); //출력
+            charge = 3000; //charge의 값을 3000으로 변경
+        }
+
+        document.write("입장료는" + charge + "원 입니다."); //출력
+
+        //if~ else if문에는 break가 생략되어 있다.
+        //조건이 충족되면 해당 구간에서 빠져나와 다음 단계를 실행한다.
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

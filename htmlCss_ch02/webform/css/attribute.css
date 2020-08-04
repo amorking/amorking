@@ -1,0 +1,55 @@
+form{
+    width: 500px;
+    margin: 0 auto;
+}
+
+fieldset{
+    margin-bottom: 10px;
+}
+
+ul{
+    width: 400px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li>label{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+li>input, li>select{
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 30px;
+}
+
+fieldset#register>ul>li{
+    margin-bottom: 10px;
+}
+
+fieldset#register>ul>li:last-child{
+    margin-bottom: 0;
+}
+
+fieldset#order>ul>li{
+    margin-bottom: 10px;
+}
+
+fieldset#order>ul>li:last-child{
+    margin-bottom: 0;
+}
+
+input{
+    border: none;
+    width: 100%;
+    height: 60px;
+}
+
+.btn-wrap input:nth-child(1){
+    background: #46AADF;
+    margin-bottom: 10px;
+}

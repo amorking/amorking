@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 50px;
+            /* animation-name: rotate;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: 4; */
+            animation: rotate 2s infinite, background 1.5s infinite; /* 한 줄로 작성 */
+        }
+
+        @keyframes rotate{
+            from{
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+            }
+            to{
+                transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+            }
+        }
+
+        @keyframes background{
+            from{
+                background: blue;
+            }
+            50%{
+                background:green
+            }
+            to{
+                background: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div class="box">
+
+        </div>
+    </div>
+    <!-- /#cont -->
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition - 01</title>
+    <style>
+        .tr {
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+            transition-property: width, height, background;
+            transition-duration: 2s, 1s, 3s;
+            /* transition이 적용되는 시간을 조절할 수 있다.
+            transition-property로 CSS 속성을 지정하고, transition-duration으로 시간을 지정
+            즉 이 예제는 가로는 2초동안, 세로는 1초동안, background는 3초동안 transition이 적용된다.*/
+        }
+
+        .tr:hover {
+            background: red;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tr">
+    </div>
+    <!-- /.tr -->
+</body>
+
+</html>

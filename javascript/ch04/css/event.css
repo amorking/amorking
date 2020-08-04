@@ -1,0 +1,18 @@
+#item{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    padding: 15px 20px;
+}
+
+.over{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.text{
+    width: 400px;
+    display: none;
+    line-height: 2em;
+}

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head lang="ko">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>테이블 실습</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<table border="1">
+		<tr>
+			<td rowspan="2">엄마는 외계인</td>
+			<td>아빠는 딸바봉</td>
+			<td colspan="2">뉴욕 치즈 케이크</td>
+		</tr>
+		<tr>
+			<td>슈팅스타</td>
+			<td>뉴욕 치즈 케이크</td>
+			<td>뉴욕 치즈 케이크</td>
+		</tr>
+	</table>
+
+	<h1>2행 2열 표 만들기</h1>
+	<table border="1" width="500px">
+		<tr>
+			<td>asdf</td>
+			<td>fdsa</td>
+		</tr>
+		<tr>
+			<td>qwer</td>
+			<td>reqw</td>
+		</tr>
+	</table>
+	<h1>4행 4열 표 만들기</h1>
+	<table border="1" width="400px">
+		<tr>
+			<td>asdf</td>
+			<td>fdsa</td>
+			<td>fdsa</td>
+			<td>fdsa</td>
+		</tr>
+		<tr>
+			<td rowspan="3">qwer</td>
+			<td>reqw</td>
+			<td>reqw</td>
+			<td>reqw</td>
+		</tr>
+		<tr>
+			<td>reqw</td>
+			<td>reqw</td>
+			<td>reqw</td>
+		</tr>
+		<tr>
+			<td>reqw</td>
+			<td>reqw</td>
+			<td>reqw</td>
+		</tr>
+	</table>
+
+	<hr />
+
+	<table border="1" width="500px" height="500px">
+		<caption>태블릿 PC와 스마트폰 판매현황</caption>
+		<colgroup>
+			<col width="20%" />
+			<col width="40%" />
+			<col width="40%" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th>구분</th>
+				<th>상품등록</th>
+				<th>상품종류</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1월</td>
+				<td>태블릿PC</td>
+				<td>스마트폰</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<form action="join.php">
+		<fieldset>
+			<legend>회원가입</legend>
+			<p>
+				아이디 :
+				<input type="text" size="15" maxlength="8" />
+			</p>
+			<p>
+				비밀번호 :
+				<input type="text" size="15" maxlength="8" />
+			</p>
+			<p>
+				메일수신거부:
+				<input type="radio" value="y" name="recieve" />예
+				<input type="radio" value="n" name="recieve" />아니오
+			</p>
+			<p>
+				관심분야:
+				<input type="checkbox" value="html" />HTML
+				<input type="checkbox" value="css" />CSS
+				<input type="checkbox" value="javascript" />Javascript </p>
+			<p>
+				<input type="submit" value="전송" />
+				<input type="reset" value="취소" />
+				<input type="button" value="확인" />
+				<input type="image" src="#" alt="검색" />
+			</p>
+			<p>
+				파일올리기 :
+				<input type="file" />
+			</p>
+			<p>
+				<input type="hidden" />
+			</p>
+			<textarea name="reply" id="" cols="30" rows="3"></textarea>
+			<select name="value" id="">
+				<optgroup label="관악구">
+					<option value="gwank-bcd">봉천동</option>
+					<option>신림동</option>
+					<option>남현동</option>
+				</optgroup>
+				<optgroup label="동대문구">
+					<option>봉천동</option>
+					<option>신림동</option>
+					<option>남현동</option>
+				</optgroup>
+			</select>
+
+		</fieldset>
+	</form>
+</body>
+
+</html>

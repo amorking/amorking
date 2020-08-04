@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meter 태그 사용하기</title>
+    <style>
+        ul{
+            margin: 0 auto;
+            width: 400px;
+            height: 200px;
+            list-style: none;
+            border: 3px solid #ccc;
+            display: flex;
+            flex-flow: wrap column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        meter{
+            height: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <label for="">점유율 0.8</label>
+            <meter value="0.8"></meter>
+            <!-- 전체 크기 1을 기준으로 0.8만큼 차지합니다. -->
+        </li>
+
+        <li>
+            <label for="">사용량 64%</label>
+            <meter min="0" max="100" value="64"></meter>
+            <!-- 전체 크기 100을 기준으로 64만큼 차지합니다. -->
+        </li>
+
+        <li>
+            <label for="">트래픽 초과</label>
+            <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+            <!-- 전체 크기 1024~10240을 기준으로 높다고 설정한 8192보다 현재 값 9216이 큰 경우 -->
+        </li>
+    </ul>
+</body>
+
+</html>

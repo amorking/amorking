@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저 윈도우 제어</title>
+</head>
+
+<body>
+    <script>
+        //window()객체 - 브라우저
+        var newWindow = window.open("http://www.naver.com", "네이버", "width=500, height=600"); //newWindow 변수 선언 & 초기화
+
+        //위치 조정
+        newWindow.moveTo(50, 50); //X좌표, Y좌표
+        for (var i = 0; i < 20; i++) { //변수생성; 조건; 증가
+            newWindow.moveBy(1, 1); //X축, Y축으로 증가되는 양
+        }
+        //i값이 20이 될 때까지 for문 안에 있는 moveBy를 실행
+
+        //사이즈 조정
+        newWindow.resizeTo(500, 600); //width, height
+        for (var i = 0; i < 200; i++) { //변수생성; 조건; 증가
+            newWindow.resizeBy(-1, -1); //X축, Y축으로 증가되는 양 (음수)
+        }
+        //i값이 200이 될 때까지 for문 안에 있는 resizeBy를 실행
+    </script>
+</body>
+
+</html>

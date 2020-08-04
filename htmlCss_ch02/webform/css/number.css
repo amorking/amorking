@@ -1,0 +1,46 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset{
+    width: 300px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 10px;
+}
+
+label{
+    font-size: 14px;
+    display: inline-block;
+    width: 140px;
+}
+
+input[type="range"]{
+    width: 200px;
+    height: 18px;
+}
+
+.status{
+    width: 200px;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.status-value{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}

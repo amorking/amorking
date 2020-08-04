@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 주문서 작성하기</title>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+    <div id="cont">
+        <h1>상품 주문서</h1>
+        <form action="">
+            <fieldset>
+                <legend>개인정보</legend>
+                <ul>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" placeholder="여백 없이 입력">
+                    </li>
+                    <li>
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel" placeholder="연락 가능한 전화번호">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>배송지정보</legend>
+                <ul>
+                    <li>
+                        <label for="address">주소</label>
+                        <input type="text" id="address" required>
+                        <!-- required 를 추가하면 필수 입력 항목이 된다.
+                        미입력 후 넘어가면 입력을 요구하는 힌트 팝업이 나타난다. -->
+                    </li>
+                    <li>
+                        <label for="phone">전화번호</label>
+                        <input type="tel" id="phone" required>
+                    </li>
+                    <li>
+                        <label for="memo" id="memo">메모</label>
+                        <textarea name="" id="memo" cols="40" rows="3"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset id="order">
+                <legend>주문정보</legend>
+                <ul>
+                    <li>
+                            <label><input type="checkbox">사과</label>
+                            <label><input type="number" value="1" min="1" max="30" step="1">개</label>
+                            <label><input type="checkbox">생수</label>
+                            <label><input type="number" value="1" min="1" max="30" step="1">개</label>
+                            <label><input type="checkbox">라면</label>
+                            <label><input type="number" value="1" min="1" max="30" step="1">개</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div id="centered">
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시작성">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

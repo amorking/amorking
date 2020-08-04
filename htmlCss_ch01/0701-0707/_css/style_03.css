@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SDKukdetopokki-Lt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background-color: #ddd;
+}
+
+#wrap {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+#wrap :last-child{
+    margin-right: 0;
+}
+
+.contents-01 {
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #bbb;
+    margin-right: 60px;
+}
+
+.img-01 {
+    margin: 0 auto;
+    width: 380px;
+    height: 300px;
+    background: url(../_source/_img/piaget1.png) no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.img-02 {
+    margin: 0 auto;
+    width: 380px;
+    height: 300px;
+    background: url(../_source/_img/piaget2.png) no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #0081F3;
+    margin: 20px 0 20px 0;
+    font-family: 'SDKukdetopokki-Lt';
+}
+
+.desc {
+    text-align: center;
+    color: #bbb;
+    font-style: italic;
+    font-family: 'Yellowtail', cursive;
+}

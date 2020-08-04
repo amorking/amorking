@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        div#wrap {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            position: relative;
+            clear: both;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background: green;
+            float: left;
+        }
+
+        .box2 {
+            position: relative;
+            left: -50px;
+            top: 30px;
+            width: 200px;
+            height: 100px;
+            background: orange;
+            float: left;
+        }
+
+        div.box {
+            position: absolute;
+            background: blue;
+            width: 50px;
+            height: 50px;
+        }
+
+        #pos1 {
+            top: 0;
+            left: 0;
+        }
+
+        #pos2 {
+            top: 0;
+            right: 0;
+        }
+
+        #pos3 {
+            bottom: 100px;
+            right: 100px;
+        }
+
+        #pos4 {
+            bottom: 0;
+            left: 0;
+        }
+
+        #pos5 {
+            bottom: 0;
+            right: 0;
+        }
+
+        div#fix {
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            top: 5px;
+            right: 5px;
+            background: #ff00ff;
+        }
+
+        div#contents {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>position: relative</h1>
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+    </div>
+
+    <div id="wrap">
+        <div class="box" id="pos1"></div>
+        <div class="box" id="pos2"></div>
+        <div class="box" id="pos3"></div>
+        <div class="box" id="pos4"></div>
+        <div class="box" id="pos5"></div>
+    </div>
+
+    <div id="fix"></div>
+    <div id="contents">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima animi tenetur laborum possimus
+            in, dolorum earum, dolore quaerat aspernatur vitae error eius excepturi vero natus ea, recusandae
+            asperiores aperiam?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quisquam velit saepe harum
+            repellat! Repellat, distinctio tempore quidem reprehenderit perferendis laboriosam nam praesentium sit
+            in quam, animi excepturi eius aliquam.
+        </p>
+    </div>
+</body>
+
+</html>

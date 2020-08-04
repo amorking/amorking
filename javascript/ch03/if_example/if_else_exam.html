@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if~else문 예제</title>
+    <script>
+        //시험 점수가 60점 이상이라면 "합격", 아니라면 "불합격"을 표시
+        //입력 받아 처리하기
+
+        var score = prompt("점수를 입력하세요."); //score라는 변수를 생성 prompt로 점수를 입력 받고 score에 저장
+
+        if(score >= 60){ //score의 값이 60보다 크거나 같다면
+            document.write("합격입니다. <br>"); //출력
+        } else{ //if의 조건에 맞지 않다면
+            document.write("불합격입니다. <br>"); //출력
+        }
+        document.write("점수는" + score + "점 입니다."); //그냥 출력
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

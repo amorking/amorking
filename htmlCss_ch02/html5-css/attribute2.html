@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자 2</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+
+        ul li{
+            margin: 15px;
+        }
+
+        ul li a{
+            text-decoration: none;
+        }
+
+        a[target="_blank"]{
+            padding-right: 20px;
+            /* background image를 우측에 붙였고 a의 오른쪽 공간을 더 주어서 떨어뜨려줌 */
+            background: url('../html5/_images/newwindow.png') no-repeat center right;
+            /* background image를 중앙 우즉에 맞춤 */
+        }
+        /* a라는 태그 중 target="_blank"라는 속성을 가진 요소에 CSS 적용 */
+    </style>
+</head>
+
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML 튜토리얼</a></li>
+        <li><a href="http://www.w3c.org/TR/Selectors">CSS Selector Level 3</a></li>
+        <li><a href="http://www.w3c.org/TR/css3-mediaqueries">미디어 쿼리</a></li>
+    </ul>
+</body>
+
+</html>

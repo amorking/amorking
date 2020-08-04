@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing 속성</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+
+        .box1 {
+            box-sizing: content-box;
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid blue;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 30px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div class="box1">box-sizing: content-box</div>
+        <div class="box2">box-sizing: border-box</div>
+        <div class="box3">box-sizing: border-box</div>
+    </div>
+    <!-- /#cont -->
+</body>
+
+</html>

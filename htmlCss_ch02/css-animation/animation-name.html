@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes change-bg {
+
+            /* change-bg라는 keyframes를 생성 */
+            from {
+                /* 기본값 */
+                background-color: green;
+                border: 1px solid black;
+            }
+
+            50% {
+                /* 애니메이션 중간 지점은 %로 적용 */
+                background-color: lightpink;
+            }
+
+            to {
+                /* 변경될 값 */
+                background-color: blue;
+                border: 3px dotted red;
+                border-radius: 30%;
+            }
+        }
+
+        div#cont {
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background-color: green;
+        }
+
+        .box1 {
+            background-color: green;
+            border: 1px solid black;
+            /* animation-name: shape;
+            animation-duration: 2s; */
+            animation: shape 2s infinite; /* name, duration을 함께 적용, infinite: 애니메이션 무한반복 */
+        }
+
+        .box2 {
+            background-color: orange;
+            border: 1px solid black;
+            animation: rotate 5s 2; /* name, duration을 함께 적용, 2회 반복*/
+            animation-delay: 2s; /* 애니메이션이 적용된 다음줄에 입력해야 적용가능. */
+        }
+
+        @keyframes shape {
+            from {
+                /* 굳이 시작값을 적지 않아도 적용은 된다. */
+            }
+
+            to {
+                border-radius: 50%;
+            }
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform:rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+</body>
+
+</html>

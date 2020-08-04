@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label 태그 사용하기</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h3>수강분야(다수 선택 가능)</h3>
+        <ul>
+            <li><label><input type="checkbox" value="grm">문법</label></li>
+            <li><label><input type="checkbox" value="wr">작문</label></li>
+            <li><label><input type="checkbox" value="rd">독해</label></li>
+        </ul>
+
+        <h3>수강과목(1과목 선택 가능)</h3>
+        <ul>
+            <li><label><input type="radio" name="subject">영어회화</label></li>
+            <li><label><input type="radio" name="subject">중국어회화</label></li>
+            <li><label><input type="radio" name="subject">일어회화</label></li>
+        </ul>
+    </form>
+</body>
+
+</html>

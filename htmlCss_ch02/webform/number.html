@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스택 폼 만들기</title>
+    <link rel="stylesheet" href="css/number.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>등록정보</legend>
+        <ul>
+            <li>
+                <label for="member">참여 인원<small>(최대 10명)</small></label>
+                <input type="number" id="member" value="1" min="0" max="10" step="1">
+                <!-- type이 number일 땐 마우스 오버 됐을 때 스핀 단추가 나타난다 -->
+            </li>
+            <li>
+                <label for="stuffs">지원 물품<small>(1인당 5개)</small></label>
+                <input type="number" id="stuffs" value="0" min="0" max="50" step="5">
+            </li>
+            <li>
+                <label for="status">희망 단계<small>(하, 중, 상)</smal></label>
+                <div class="status">
+                    <input type="range" id="stuffs" value="1" min="1" max="3">
+                    <!-- 범위를 핸들로 조정할 수 있는 스테이터스바가 나타난다 -->
+                    <div class="status-value">
+                        <div>하</div>
+                        <div>중</div>
+                        <div>상</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </fieldset>
+</body>
+
+</html>

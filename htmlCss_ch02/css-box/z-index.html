@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: solid 1px black;
+        }
+
+        #b1{
+            left: 50px;
+            top: 50px;
+            background-color: red;
+            z-index: 3;
+        }
+
+        #b2{
+            left: 100px;
+            top: 70px;
+            background-color: yellow;
+            z-index: 1;
+
+        }
+
+        #b3{
+            left: 70px;
+            top: 110px;
+            background-color: #ff00ff;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="b1" class="box">1</div>
+        <div id="b2" class="box">2</div>
+        <div id="b3" class="box">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수를 만들고 사용하기</title>
+</head>
+
+<body>
+    <button onclick="sayHello('장그래')">확인</button>
+    <p id="greet"></p>
+
+    <script>
+        function sayHello(name) { //명시적 함수 - function 함수이름()으로 정의
+            document.getElementById("greet").innerHTML = name; //문서에 id가 greet인 요소 안에 name을 삽입
+        }
+    </script>
+</body>
+
+</html>

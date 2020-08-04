@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #bbb;
+}
+
+img {
+    border: 0;
+}
+
+body{
+    background: url(../_source/_img/bgSquare.png);
+}
+
+.box-01{
+    width: 600px;
+    height: 800px;
+    margin: 100px auto;
+    border-radius: 50px;
+    box-shadow: 6px 6px 12px #000;
+    background: url(../_source/_img/flower.png) no-repeat;
+    background-position: right bottom;
+    background-color: #fff;
+}
+
+.box-01>h1{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box-01>img{
+    display: block;
+    margin: 50px auto;
+}
+
+.box-01>.text-01{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.box>.text-01>p{
+    font-size: 12px;
+}

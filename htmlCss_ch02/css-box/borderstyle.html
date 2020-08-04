@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border style 알아보기</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .box1 {
+            border-style: double;
+            border-width: 10px 20px; /* 테두리 두께를 각각 다르게 적용 */
+        }
+
+        .box2 {
+            border-style: dotted;
+            border-width: 5px;
+        }
+
+        #bg{
+            background: url(../html5/_images/pic2.jpg) no-repeat;
+            background-size: contain; /* 이미지 고정비율 높이에 맞게 */
+        }
+
+        .round{
+            border-radius: 20px;
+            background: url(../html5/_images/pic1.jpg) no-repeat;
+            background-size: cover; /* 이미지 고정비율 가로에 맞게 */
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="round" id="bg"></div>
+    <div class="round"></div>
+</body>
+
+</html>

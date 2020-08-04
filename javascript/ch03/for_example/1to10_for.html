@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for문 사용</title>
+</head>
+
+<body>
+    <script>
+        //1부터 10까지 출력
+        for (var n = 1; n <= 10; n++) { //for문 변수 n생성 1로 초기화, 조건: n <= 10, n 1씩 증가
+            document.write(n + "<br>");
+        }
+
+        //1부터 10까지의 합
+        console.log("1부터 10까지 누적합계");
+
+        var sum = 0; //변수 sum 생성과 동시에 0으로 초기화
+        for (var i = 1; i <= 10; i++){ //for문 변수 i생성 1로 초기화, 조건: i <= 10, i 1씩 증가
+            sum += i; //sum = sum + i
+            console.log("i = " + i + ", sum = " + sum);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition - delay</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        #wrapper div{
+            width: 200px;
+            height: 50px;
+            margin: 0 20px;
+            background-color: blue;
+            color: white;
+        }
+
+        #wrapper:hover div{
+            height: 400px;
+        }
+
+        .ease{
+            transition: all 2s ease;
+        }
+
+        .linear{
+            transition: all 2s linear;
+        }
+
+        .ease-in{
+            transition: all 2s ease-in;
+        }
+
+        .ease-out{
+            transition: all 2s ease-out;
+        }
+
+        .ease-in-out{
+            transition: all 2s ease-in-out;
+        }
+
+        /* transition속성은 easing에 따라 애니메이션이 달라진다.
+        점차 빠르게, 빠르다가 점차 느리게 등 조절할 수 있다.
+        기본값은 ease이며 cubic-bezier( 0.25, 0.1, 0.25, 1 )와 같다. */
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+    </div>
+    <!-- /#wrapper -->
+</body>
+
+</html>

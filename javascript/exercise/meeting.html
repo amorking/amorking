@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개팅 모집</title>
+    <script>
+        //성별이 여성이면서, 20대(20~29)인 사람 모집 프로그램
+        var gender = prompt("성별이 무엇입니까?"); //prompt에 입력된 값을 gender에 저장
+        alert(gender);
+
+        var age = prompt("나이는 몇 세입니까?"); //prompt에 입력된 값을 age에 저장
+        alert(age);
+
+        var result = (gender == "여성") && (age >= 20) && (age < 30);
+        // gender가 여성이면서 && age가 20보다 크거나 같고 && age가 30보다 작으면 result의 값은 true
+        if (result == true) { //만약 result가 true라면
+            document.write("모집 대상입니다."); //출력
+        } else { //result가 true가 아니라면
+            document.write("모집 대상이 아닙니다."); //출력
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

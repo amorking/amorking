@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-count</title>
+    <style>
+        div#cont {
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1{
+            padding-left: 20px;
+            height: 60px;
+            /* animation-name: moving; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 3; */ /* 애니메이션 반복횟수 */
+            /* animation-direction: alternate; */ /* alternate: 애니메이션을 반대로 돌렸다가 다시 정상적으로 재생 */
+            animation: moving 3s normal infinite; /* 한 줄로 정리 */
+        }
+
+        @keyframes moving{
+            from{
+                width: 200px;
+                background-color: yellow;
+                transform: scale(0.5) rotate(15deg);
+                opacity: 0.2;
+            }
+            to{
+                width: 400px;
+                background-color: orange;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        /* 쮸오와아아 샤아아앙 하고 나타남 */
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div class="box1">
+            <h3>CSS3 Animation</h3>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 속성 해제</title>
+    <style>
+        div{
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .box1{
+            background: yellow;
+            float: left;
+        }
+
+        .box2{
+            background: lightgreen;
+            float: left;
+        }
+
+        .box3{
+            background: pink; /* float을 지정하지 않아서 float된 요소들과 함께 어울리지 않음 */
+        }
+
+        .box4{
+            color: #fff;
+            background: skyblue;
+            clear: both; /* float을 이어 받지 않고 새롭게 배치 */
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</body>
+</html>

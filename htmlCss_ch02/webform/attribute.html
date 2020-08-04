@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신청서 만들기</title>
+    <link rel="stylesheet" href="css/attribute.css">
+</head>
+
+<body>
+    <form action="">
+        <fieldset id="subject">
+            <legend>수강 과목</legend>
+            <ul>
+                <li>
+                    <label for="sub">영어회화(초급)</label>
+                    <input type="text" id="sub" value="오전 9:00~11:00" readonly>
+                </li>
+            </ul>
+        </fieldset>
+        <!-- / #subject -->
+
+        <fieldset id="register">
+            <legend>신청자</legend>
+            <ul>
+                <li>
+                    <label for="uname">이름</label>
+                    <input type="text" id="uname" required>
+                </li>
+                <li>
+                    <label for="uid">학번</label>
+                    <input type="text" id="uid" placeholder="하이픈 없이 입력" required>
+                    <!-- placeholder 내용 박재, required 필수 입력항목으로 지정 -->
+                </li>
+                <li>
+                    <label for="class">학과</label>
+                    <select name="" id="class">
+                        <optgroup label="공과대학">
+                            <option value="arch">건축공학과</option>
+                            <option value="mechanic">기계공학과</option>
+                            <option value="elec">전기전자공학과</option>
+                            <option value="computer">컴퓨터공학과</option>
+                            <!-- selected 기본 선택값 -->
+                            <option value="chemical">화학공학과</option>
+                        </optgroup>
+                        <!-- select의 드롭다운에서 옵션들의 그룹 -->
+
+                        <optgroup label="인문대학">
+                            <option value="manage" selected>경영학과</option>
+                            <option value="law">법학과</option>
+                            <option value="politic">정치학과</option>
+                            <option value="pilo">철학과</option>
+                        </optgroup>
+                    </select>
+                    <!-- select 드롭다운 메뉴 옵션으로 항목 추가 가능 -->
+                </li>
+            </ul>
+        </fieldset>
+        <!-- / #register -->
+
+        <fieldset id="order">
+            <legend>교재주문</legend>
+            <ul>
+                <li>
+                    <label for="book">교재</label>
+                    <input type="number" id="book" value="1" min="1" max="10" step="1">
+                </li>
+                <li>
+                    <label for="wsheet">워크시트</label>
+                    <input type="number" id="wsheet" value="1" min="1" max="10" step="1">
+                </li>
+                <li>
+                    <label for="community">단체주문</label>
+                    <input type="number" id="community" value="10" min="10" max="100" step="10">
+                </li>
+            </ul>
+        </fieldset>
+        <!-- / #order -->
+
+        <div class="btn-wrap">
+            <input type="submit" value="신청하기">
+            <input type="reset" value="다시쓰기">
+        </div>
+        <!-- / .btn-wrap -->
+    </form>
+    <!-- / form -->
+</body>
+
+</html>

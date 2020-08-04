@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀수 짝수 판별</title>
+    <script>
+        var num = prompt("숫자를 입력하세요."); //num 변수 선언 prompt로 받은 값을 num에 저장
+        var result = (num % 2 == 0) ? "짝수입니다." : "홀수입니다."; //result 변수 생성 (num % 2 == 0)명제가 맞다면 ? "짝수입니다." 출력: 아니라면 "홀수입니다." 출력
+        /* if(num % 2 == 0){ //num을 2로 나누었을 때 나머지가 0이라면
+            document.write("짝수입니다. <br>"); //짝수 출력
+        }else{ //if조건과 맞지 않다면
+            document.write("홀수입니다. <br>"); //홀수 출력
+        }*/
+        // document.write("입력된 수는" + num + "입니다."); //출력
+        document.write(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

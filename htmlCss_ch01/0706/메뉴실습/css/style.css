@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/*    Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+/* float 때문에 높이를 알 수 없게 됐을 때 부모에 초기화를 적용 */
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* 메뉴실습 */
+ul.menu {
+    margin: 0 auto;
+    height: 30px;
+    float: right;
+}
+
+.menu li {
+    height: 30px;
+    margin-right: 20px;
+    float: left;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li:hover a {
+    color: #000;
+    transition: all 0.5s;
+}
+
+.menu li div {
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+
+.menu li:hover div {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+
+/* 공지사항 */
+.notice-title {
+    width: 400px;
+    height: 35px;
+    border-bottom: 1px solid gray;
+}
+
+.notice-title a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    border-bottom: 3px solid #ffd000;
+}
+
+.notice {
+    width: 400px;
+}
+
+.notice li {
+    height: 35px;
+    font-size: 0.75rem;
+    line-height: 2.187rem;
+    border-bottom: 1px solid gray;
+}
+
+.notice li a {
+    display: inline-block;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice>li>span {
+    float: right;
+}

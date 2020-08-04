@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 정의와 호출</title>
+</head>
+
+<body>
+    <h1>계산결과</h1>
+    <p id="result"></p>
+    <script>
+        var num1 = parseInt(prompt("첫 번째 수 입력 : "));
+        /* parseInt: 문자를 정수로 바꿔주는 함수,
+        그냥 prompt만으로 값을 받아오면 문자형식이라 원하는 결과를 얻을 수 없다. */
+        var num2 = parseInt(prompt("두 번째 수 입력 : "));
+        var result = add(num1, num2); // add의 매개변수 x, y에 각각 num1, num2을 대입
+
+        //alert("합계는" + result + "입니다.");
+        document.querySelector("#result").innerHTML = result; // result라는 id를 가진 요소 안에 result를 삽입
+
+        function add(x, y) {
+            return x + y;
+        }
+    </script>
+</body>
+
+</html>

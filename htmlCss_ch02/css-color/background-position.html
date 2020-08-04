@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 이미지 위치 조절</title>
+    <style>
+        div {
+            width: 400px;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+
+        div.wrap{
+            width: 100%;
+            height: 1080px;
+            display: flex;
+        }
+
+        div.bg1 {
+            background: url(images/bg4.jpg) no-repeat left top;
+            /* 반복 유무, 포지션 x축 y축 순서 */
+            background-size: 60% 40%;
+            /* 박스 크기에 대해 퍼센트로 배경을 넣는다 */
+        }
+
+        div.bg2 {
+            background: url(images/bg4.jpg) no-repeat right top;
+            background-size: 60% 40%;
+            /* 박스 크기에 대해 퍼센트로 배경을 넣는다 */
+        }
+
+        div.bg3 {
+            background: url(images/bg4.jpg) no-repeat left center;
+            background-size: 60% 40%;
+            /* 박스 크기에 대해 퍼센트로 배경을 넣는다 */
+        }
+
+        div.bg4 {
+            background: url(images/bg4.jpg) no-repeat right center;
+            background-size: 60% 40%;
+            /* 박스 크기에 대해 퍼센트로 배경을 넣는다 */
+        }
+
+        div.bg5 {
+            background: url(images/bg4.jpg) no-repeat left bottom;
+            background-size: 60% 40%;
+            /* 박스 크기에 대해 퍼센트로 배경을 넣는다 */
+        }
+
+        div.bg6 {
+            background: url(images/bg4.jpg) no-repeat right bottom;
+            background-size: 60% 40%;
+            /* 박스 크기에 대해 퍼센트로 배경을 넣는다 */
+        }
+
+        div.bg7 {
+            background: url(images/bg4.jpg) no-repeat center center;
+            background-size: 60% 40%;
+            /* 박스 크기에 대해 퍼센트로 배경을 넣는다 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+        <div class="bg4"></div>
+        <div class="bg5"></div>
+        <div class="bg6"></div>
+        <div class="bg7"></div>
+    </div>
+</body>
+
+</html>

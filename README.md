@@ -1,7 +1,5 @@
 ### 👋 Hi there 👋
 
-# 수업한 코드 
-
 <!--
 **amorking/amorking** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -16,6 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
 
 
 # Atom 에디터 단축키 (Windows 기준)

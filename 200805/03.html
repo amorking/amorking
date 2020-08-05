@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emmet 연습2</title>
+    <style>
+        #wrap {
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        header{
+            height: 100px;
+            background-color: #ddd;
+        }
+        /* semantic태그(의미론)는 div와 같다. 즉 width: 100% */
+
+        footer{
+            height: 100px;
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- #wrap>header+#content>.left+.right^footer|c -->
+    <div id="wrap">
+        <header>상단</header>
+        <div id="content">
+            <div class="left">왼쪽</div>
+            <!-- /.left -->
+            <div class="right">오른쪽</div>
+            <!-- /.right -->
+        </div>
+        <!-- /#content -->
+        <footer>하단</footer>
+    </div>
+    <!-- /#wrap -->
+</body>
+
+</html>

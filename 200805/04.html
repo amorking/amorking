@@ -26,7 +26,7 @@
         }
 
         header {
-            height: 100px;
+            padding: 20px 0;
             background: #ddd;
         }
 
@@ -38,26 +38,43 @@
             float: right;
         }
 
-        nav ul{
+        nav ul {
             list-style: none;
             margin-top: 5px;
         }
 
-        nav ul li{
+        nav ul li {
             display: inline-block;
             font-size: 20px;
             padding: 0 20px;
         }
 
-        nav ul li:hover a{
+        nav ul li:hover a {
             color: red;
             cursor: pointer;
         }
 
-        #content {}
+        #content {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        aside {
+            width: 40%;
+            height: 300px;
+            background: yellow;
+            float: left;
+        }
+
+        section {
+            width: 60%;
+            height: 300px;
+            background: skyblue;
+            float: right;
+        }
 
         footer {
-            height: 100px;
+            padding: 20px 0;
             background: #ddd;
         }
     </style>
@@ -84,7 +101,7 @@
         </header>
         <!-- /header -->
 
-        <div id="content">
+        <div id="content" class="clear">
             <aside>왼쪽영역</aside>
             <section>본문영역</section>
         </div>

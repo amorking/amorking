@@ -61,7 +61,7 @@ body {
 
 #sec02 ul#trans-list li {
   /* list-style-image: url('../img/bulit_green.gif'); */
-  background: url('../img/bulit_green.gif') no-repeat left 6px;
+  background: url('../img/bulit_green.gif') no-repeat left 6px; /* 반복, X축, Y축 */
   padding: 0 0 0 24px;
 }
 

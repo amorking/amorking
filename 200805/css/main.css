@@ -1,0 +1,70 @@
+body {
+  background: #eee;
+}
+
+#container {
+  margin: 0 auto;
+  width: 750px;
+  padding: 15px 20px 40px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+/* gnb */
+#nav ul {
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+
+#nav li {
+  padding: 0 20px;
+  text-align: center;
+  display: inline-block;
+  border-right: 1px solid #ddd;
+}
+
+#nav li:last-child {
+  border: none;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* content */
+.content h1.title {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.line {
+  background: #f6fdf7;
+  border: 1px solid #c3d7c5;
+  padding: 20px 50px;
+  margin: 0 24px;
+}
+
+.content ul:first-of-type { /* first-of-type: 같은 유형의 첫 번째 */
+  list-style: none;
+}
+
+.content ul:first-of-type li{
+  line-height: 1.8;
+}
+
+#sec02 ul#trans-list{
+  list-style: none;
+  padding-left: 25px;
+}
+
+#sec02 ul#trans-list li {
+  /* list-style-image: url('../img/bulit_green.gif'); */
+  background: url('../img/bulit_green.gif') no-repeat left 6px;
+  padding: 0 0 0 24px;
+}
+
+.content p.line {
+  text-indent: -1.2rem; /* 들여쓰기를 음수값으로 사용해서 내어쓰기 적용 */
+}

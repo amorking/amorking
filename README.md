@@ -1,4 +1,6 @@
-## Hi there 👋
+### 👋 Hi there 👋
+
+# 수업한 코드 
 
 <!--
 **amorking/amorking** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

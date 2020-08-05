@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>레이아웃2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {}
+
+        .clear::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .inner {
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px 0;
+            background: skyblue;
+        }
+
+        header {
+            height: 100px;
+            background: #ddd;
+        }
+
+        .title {
+            float: left;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul{
+            list-style: none;
+            margin-top: 5px;
+        }
+
+        nav ul li{
+            display: inline-block;
+            font-size: 20px;
+            padding: 0 20px;
+        }
+
+        nav ul li:hover a{
+            color: red;
+            cursor: pointer;
+        }
+
+        #content {}
+
+        footer {
+            height: 100px;
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner clear">
+                <h1 class="title">로고</h1>
+                <!-- 사이트의 가장 큰 제목이기 때문에 h1태그를 사용해도 된다.
+                의미에 맞게 유연하게 사용한다. -->
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">menu01</a></li>
+                        <li><a href="#">menu02</a></li>
+                        <li><a href="#">menu03</a></li>
+                    </ul>
+                </nav>
+                <!-- /.gnb -->
+            </div>
+            <!-- /.inner .clear::after -->
+
+        </header>
+        <!-- /header -->
+
+        <div id="content">
+            <aside>왼쪽영역</aside>
+            <section>본문영역</section>
+        </div>
+        <!-- /#content -->
+
+        <footer>
+            <p class="inner">Copyright.</p>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- /#wrap -->
+</body>
+
+</html>

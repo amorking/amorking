@@ -49,14 +49,14 @@ header {
 }
 
 .header_top>a {
+    /* > .header_top 바로 하위에 있는 a태그만 선택 */
     color: #fff;
     text-decoration: none;
     float: right;
     margin: 8px 50px 0 0;
 }
-/* > .header_top 바로 하위에 있는 a태그만 선택 */
 
-.header_top:hover a{
+.header_top:hover a {
     color: skyblue;
 }
 
@@ -67,14 +67,65 @@ header {
     overflow: hidden;
 }
 
+
+
 .inner {
     width: 1000px;
     margin: 0 auto;
 }
 
-.inner .logo{
-    display: inline-block;
+.logo {
+    float: left;
+    padding-top: 7px;
 }
+
+.search {
+    float: left;
+}
+
+.search input[type="search"] {
+    width: 400px;
+    padding: 5px;
+    margin: 17px 0 0 20px;
+    font-size: 1.25rem;
+    border: 2px solid #3488d9;
+}
+
+.search button[type="submit"] {
+    height: 37px;
+    width: 124px;
+    font-size: .8rem;
+    background: #3488d9;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    vertical-align: bottom;
+    /* 인라인 요소라서 버튼과 정렬하기 위해서 vertical-align을 사용 */
+    /* 인라인 요소는 텍스트 속성으로 정렬하거나 transform을 사용하는 게
+    정신 건강에 이롭다. */
+}
+
+.service {
+    float: right;
+}
+
+.service ul {
+    /* 메뉴의 경우 ul, ul li, ul li a가 거의 세트로 쓰인다. */
+    list-style: none;
+    margin-top: 24px;
+}
+
+.service ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.service ul li a {
+    color: #3488d9;
+    text-decoration: none;
+}
+
+
 
 #content {}
 

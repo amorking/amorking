@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* wrap */
+#wrap {}
+
+
+/* header */
+header {
+    background: #fcfcfc;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* header_top */
+.header_top {
+    width: 100%;
+    background: #2d1152;
+    height: 40px;
+}
+
+.header_top ul {
+    float: left;
+    margin: 11px 0 0 50px;
+    font-size: .75rem;
+    /* font-size 같은 경우 대부분 자식들에게 상속되기
+    때문에 부모에게 사용할 때도 있다. */
+}
+
+.header_top ul li {
+    display: inline-block;
+    padding: 0 7px;
+}
+
+.header_top ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_top>a {
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    margin: 8px 50px 0 0;
+}
+/* > .header_top 바로 하위에 있는 a태그만 선택 */
+
+.header_top:hover a{
+    color: skyblue;
+}
+
+
+/* header_btm */
+.header_btm {
+    height: 70px;
+    overflow: hidden;
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.inner .logo{
+    display: inline-block;
+}
+
+#content {}
+
+footer {}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 레벨</title>
+    <style>
+        span{
+            width: 300px;
+            height: 200px;
+            background: yellow;
+            border: 1px solid red;
+            /* 인라인 요소는 텍스트라서 폰트 사이즈로 조절한다.
+            직접적으로 width, height를 지정해도 적용되지 않는다. */
+            margin: 0;
+            /* margin의 값이 0이어도 띄어쓰기처럼 공간이 생긴다.
+            mark-up에서 여러개의 span을 한 줄에 적는다면 정확히 붙지만
+            줄바꿈이 일어나면 띄어쓰기로 인식하게 된다. */
+            padding: 10px;
+            /* padding은 적용되지만 텍스트끼리만
+            구분이 되고 패딩은 서로 겹칠 수 있다.
+            display: inline-block으로 블락요소의 속성을 주게 되면
+            서로의 공간을 침범하지 않는다. */
+        }
+
+        h2, p{
+            border: 5px solid #ddd;
+        }
+
+        a{
+            display: inline-block;
+            background: blue;
+            color: #fff;
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            transition: all .5s;
+        }
+
+        a:hover{
+            background: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>인라인 블록</h2>
+    <span>About</span>
+    <span>Best</span>
+    <span>Color</span>
+    <span>Design</span>
+    <!-- 인라인 요소는 텍스트다.
+    자신의 라인에 다른 요소가 오는 것을 허락한다. -->
+    <p>test</p>
+
+    <a href="#">버튼</a>
+</body>
+
+</html>

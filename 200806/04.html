@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>03교시</title>
+    <link rel="stylesheet" href="css/04.css">
+</head>
+
+<body>
+    <div id="wrap" class="claer">
+        <header>
+            <h2 id="title">HTML5</h2>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">feedback</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <!-- nav -->
+
+        </header>
+        <!-- /header -->
+
+        <div id="content" class="clear">
+            <section id="section">
+                <h4>About Html5</h4>
+                <div class="txt clear">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quaerat illum alias reiciendis minima, rem dolore, ex, magnam dicta voluptas debitis nemo ea cumque illo explicabo consequatur labore nesciunt et.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quaerat illum alias reiciendis minima, rem dolore, ex, magnam dicta voluptas debitis nemo ea cumque illo explicabo consequatur labore nesciunt et.
+                    </p>
+                </div>
+                <!-- /.txt -->
+                <img src="http://placehold.it/1000x400" alt="컨텐츠">
+                <!-- 더미 이미지 -->
+
+            </section>
+            <!-- /section -->
+
+            <aside id="aside">
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">FEEDBACK</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- /.aside-menu -->
+
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">FEEDBACK</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- /.aside-menu -->
+
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">FEEDBACK</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- /.aside-menu -->
+
+            </aside>
+            <!-- /aside -->
+
+        </div>
+        <!-- /#content.clear -->
+
+        <footer>
+            <p>Copyright.</p>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /#wrap -->
+    <script>
+        var aside = document.getElementById('aside');
+        var sectionHeight = document.getElementById('section').offsetHeight;
+
+        aside.style.height = sectionHeight + "px";
+    </script>
+</body>
+
+</html>

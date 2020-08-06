@@ -56,7 +56,7 @@ header {
     margin: 8px 50px 0 0;
 }
 
-.header_top:hover a {
+.header_top a:hover {
     color: skyblue;
 }
 
@@ -127,6 +127,83 @@ header {
 
 
 
-#content {}
+#content {
+    width: 1000px;
+    margin: 20px auto;
+}
 
-footer {}
+#content nav {
+    float: left;
+    width: 155px;
+}
+
+#content nav ul {
+    list-style: none;
+}
+
+#content nav ul li {
+    line-height: 2.4;
+}
+
+#content section {
+    float: left;
+    width: 615px;
+}
+
+#content section>div {
+    width: 590px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+#content section>div.box01{
+    height: 300px;
+}
+#content section>div.box02{
+    height: 150px;
+
+}
+#content section>div.box03{
+    height: 120px;
+}
+
+#content section>div.box03{
+    height: 120px;
+}
+
+#content section ul{
+    width: 592px;
+    /* 위의 590px짜리 div에는 border가 있어서 크기를 맞춰준다. */
+    height: 33px;
+    margin-bottom: 5px;
+    text-align: center;
+    background:#500095;
+    color: #fff;
+}
+
+#content section ul li{
+    display: inline-block;
+    padding: 0 14px;
+    line-height: 33px;
+}
+
+#content aside {
+    float: right;
+    width: 230px;
+}
+
+
+#content aside div {
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: #500095;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    /* font관련 속성은 자식에게 상속되기 때문에
+    부모에 적용해도 문제 없다. */
+}

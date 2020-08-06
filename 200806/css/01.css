@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#imgbox {
+    background: url('../img/apple-bg.jpg') no-repeat center / cover;
+    /* 포지션 값 하나 작성 시 X,Y축 동일하게
+    두개 작성 시 각각 X축, Y축
+    사이즈는 슬래시 입력 후 작성 */
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+
+    /* padding-top: 300px; */
+    /* 패딩을 주면 컨텐츠의 크기가 패딩만큼 늘어난다. */
+    box-sizing: border-box;
+    /* 컨텐츠의 width, height를 보더까지로 지정 */
+
+    border: 0.5px solid transparent;
+}
+
+.txt {
+    background: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    /* margin-top: 300px; */
+    /* html은 문서이고 글이 자연스럽게 읽혀야 하는 의무를 가지고 있다고 이해하면
+    마진병합을 이해하는데 도움이 될 것 같다. 세로에서만 마진 병합 현상이 일어난다. */
+    margin-top: 274px;
+    /* 동일하게 마진은 적용하되 부모에 투명한 border를 추가해준다. */
+}
+
+.txt h2 {
+    color: #fff;
+}
+
+.txt p {
+    color: orange;
+    margin-top: 10px;
+}
+
+/* 두 번째 예제 */
+#imgbox2{
+    background: url('../img/apple-bg.jpg') no-repeat center / cover;
+    /* 포지션 값 하나 작성 시 X,Y축 동일하게
+    두개 작성 시 각각 X축, Y축
+    사이즈는 슬래시 입력 후 작성 */
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+
+    position: relative;
+    /* 자식요소에 absolute를 적용하기 위해 부모 박스에 relative를 적용해서
+    자식요소가 정렬되는 기준이 되도록 한다. */
+}
+
+.txt2{
+    background: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+
+    position: absolute;
+    top: 274px;
+    left: 0;
+    /* 포지션 absolute를 적용하게 되면 블록요소가 가지는
+    width 100% 기본값이 없어진다. */
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.txt2 h2 {
+    color: #fff;
+}
+
+.txt2 p {
+    color: orange;
+    margin-top: 10px;
+}

@@ -11,6 +11,10 @@
     clear: both;
 }
 
+body {
+    padding: 30px;
+}
+
 #wrap {
     width: 960px;
     margin: 0 auto;
@@ -104,10 +108,56 @@ header nav ul li a {
 /* content */
 #content {}
 
-#content section {}
+#content section {
+    box-sizing: border-box;
+    float: left;
+    width: calc(80% - 10px);
+}
 
-#content aside {}
+#content section article {
+    border: 1px solid #222;
+    padding: 40px;
+    margin-bottom: 10px;
+    height: 160px;
+}
 
+#content aside {
+    box-sizing: border-box;
+    float: right;
+    width: 20%;
+    border: 1px solid #222;
+}
+
+.tab_item ul{
+    list-style-type: none;
+}
+
+.tab_item ul li{
+    padding: 10px;
+    border-bottom: 1px solid #222;
+}
+
+.tab_item ul li:last-child{
+    border: none;
+}
+
+.tab_img{
+    float: left;
+}
+
+.tab_img img{
+    display: block;
+}
+
+.tab_txt{
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* footer */
 footer {
+    padding: 20px 0;
     border: 1px solid #333;
+    text-align: center;
 }

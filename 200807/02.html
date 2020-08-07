@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃 실습 02</title>
     <link rel="stylesheet" href="css/02.css">
 </head>
+
 <body>
     <div id="wrap" class="clear">
         <header>
@@ -32,22 +34,161 @@
         </header>
         <!-- /header -->
 
-        <div id="content">
+        <div id="content" class="clear">
             <section>
-
+                <article class="txtbox">
+                    <h2>Main Article</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, facilis est. Odio dignissimos
+                        illo doloribus dolore sed iusto, cum quis odit, totam, expedita aliquam consequatur iure tempore
+                        necessitatibus a placeat!
+                    </p>
+                </article>
+                <article class="txtbox">
+                    <h2>Main Article</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, facilis est. Odio dignissimos
+                        illo doloribus dolore sed iusto, cum quis odit, totam, expedita aliquam consequatur iure tempore
+                        necessitatibus a placeat!
+                    </p>
+                </article>
+                <article class="txtbox">
+                    <h2>Main Article</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, facilis est. Odio dignissimos
+                        illo doloribus dolore sed iusto, cum quis odit, totam, expedita aliquam consequatur iure tempore
+                        necessitatibus a placeat!
+                    </p>
+                </article>
             </section>
+            <!-- /section -->
+
             <aside>
+                <!-- HTML과 CSS만으로 탭메뉴 구현 -->
+                <input type="radio" id="first" name="tab" checked>
+                <input type="radio" id="second" name="tab">
+                <section class="btn">
+                    <label for="first">갤러리</label>
+                    <label for="second">게시판</label>
+                    <!-- input의 id와 label의 for값을 같게 넣으면 연동된다. -->
+                </section>
+                <!-- /.btn -->
+
+                <div class="tab_item">
+                    <ul>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>HTML + CSS3</strong>
+                                    <p>2020-08-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>HTML + CSS3</strong>
+                                    <p>2020-08-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>HTML + CSS3</strong>
+                                    <p>2020-08-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>HTML + CSS3</strong>
+                                    <p>2020-08-07</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.tab_item -->
+
+                <div class="tab_item">
+                    <ul>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>jQuery</strong>
+                                    <p>2020-09-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>jQuery</strong>
+                                    <p>2020-09-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>jQuery</strong>
+                                    <p>2020-09-07</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear">
+                                <div class="tab_img">
+                                    <img src="http://placehold.it/45x45" alt="">
+                                </div>
+                                <div class="tab_txt">
+                                    <strong>jQuery</strong>
+                                    <p>2020-09-07</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.tab_item -->
 
             </aside>
+            <!-- /aside -->
+
         </div>
         <!-- /#content -->
 
         <footer>
-            <p>HTML5 + CSS3 Basic</p>
+            <p><strong>HTML5 + CSS3 Basic</stron>
+            </p>
+            <p><i>Website Layout Basic</i></p>
         </footer>
         <!-- /footer -->
 
     </div>
     <!-- /#wrap -->
 </body>
+
 </html>

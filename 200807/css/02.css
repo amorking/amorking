@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* header */
+header {
+    height: 160px;
+}
+
+header .m_copy {
+    width: 50%;
+    float: left;
+}
+
+header .m_copy h1 {
+    font-size: 40px;
+    margin: 30px 0 20px;
+    color: #222;
+}
+
+header .m_copy h3 {
+    margin: 0;
+    color: #555;
+}
+
+header nav {
+    width: 50%;
+    float: right;
+}
+
+header nav ul {
+    font-size: 0;
+    float: right;
+    list-style-type: none;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.top_menu {
+    width: 260px;
+    border: 1px solid #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.top_menu li {
+    border-right: 1px solid #222;
+    box-sizing: border-box;
+    width: calc(20% - 1px);
+    padding: 4px;
+    font-size: 12px;
+    /* 부모 ul에 font-size를 0으로 지정해서 inline-block의
+    애매한 간격을 없애준다. */
+    text-align: center;
+}
+
+.top_menu li:last-child {
+    border: none;
+}
+
+.main_menu {
+    width: 100%;
+    margin-top: 80px;
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+.main_menu li {
+    padding: 10px 0;
+    font-size: 14px;
+    width: calc(20% - 1px);
+    border-right: 1px solid #222;
+    text-align: center;
+}
+
+.main_menu li:last-child {
+    border: none;
+}
+
+
+/* content */
+#content {}
+
+#content section {}
+
+#content aside {}
+
+footer {
+    border: 1px solid #333;
+}

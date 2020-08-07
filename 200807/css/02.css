@@ -138,6 +138,15 @@ header nav ul li a {
     border: 1px solid #222;
 }
 
+#content aside input{
+    display: none;
+}
+
+#content aside section{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 #content aside input:nth-of-type(1) ~ div:nth-of-type(1) {
     /* ~은 다음에 오는 형제요소 선택자 */
     display: none;
@@ -180,10 +189,10 @@ header nav ul li a {
     color: #fff;
 }
 
-#content aside .tab_item {}
+#content aside .tab_item {
+}
 
 .tab_item ul {
-    margin-top: 10px;
     list-style-type: none;
 }
 

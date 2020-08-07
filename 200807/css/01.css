@@ -5,6 +5,18 @@
     padding: 0;
 }
 
+#btn-top{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    right: 0;
+    bottom: 8%;
+    background-color: blue;
+    color: #fff;
+}
+
 #wrap {
     width: 800px;
     margin: 0 auto;
@@ -96,9 +108,22 @@ header nav ul li:hover a {
 #content aside p {}
 
 footer{
+    position: relative;
     width: 800px;
     padding: 20px 0;
     border: 1px solid green;
+}
+
+footer #btn-top2{
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: deeppink;
+    color: #fff;
 }
 
 footer ul{

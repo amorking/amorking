@@ -1,25 +1,32 @@
 @charset "UTF-8";
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#btn-top{
-    position: absolute;
-    width: 80px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    right: 0;
-    bottom: 8%;
-    background-color: blue;
-    color: #fff;
-}
-
 #wrap {
     width: 800px;
     margin: 0 auto;
+    position: relative;
+}
+
+#btn-top1{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    text-align: center;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: blue;
+    text-decoration: none;
+    color: #fff;
 }
 
 header {
@@ -81,6 +88,7 @@ header nav ul li:hover a {
 
 #content {
     margin: 10px 0;
+    height: 1200px;
     background: yellow;
 }
 
@@ -114,15 +122,13 @@ footer{
     border: 1px solid green;
 }
 
-footer #btn-top2{
-    width: 80px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
+#btn-top2{
+    position: absolute;
     right: 0;
     bottom: 0;
-    position: absolute;
-    background-color: deeppink;
+    padding: 10px 20px;
+    background: deeppink;
+    text-decoration: none;
     color: #fff;
 }
 
@@ -143,4 +149,26 @@ footer ul li a{
 footer p{
     text-align: center;
     margin-top: 20px;
+}
+
+aside.quick{
+    width: 100px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    position: absolute;
+    top: 161px;
+    right: -120px;
+}
+
+aside.quick2{
+    width: 100px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    position: fixed;
+    top: 161px;
+    left: 50%;
+    margin-left: 420px;
+    /* fixed는 부모를 무시하고 전체에서 정렬된다.
+    left에서 50% 이동하고 컨텐츠 너비의 반과 마진만큼
+    떼어주면 따라다니는 퀵메뉴가 가능하다. */
 }

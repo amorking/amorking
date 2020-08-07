@@ -108,7 +108,7 @@ header nav ul li a {
 /* content */
 #content {}
 
-#content section {
+#content>section {
     box-sizing: border-box;
     float: left;
     width: calc(80% - 10px);
@@ -138,48 +138,44 @@ header nav ul li a {
     border: 1px solid #222;
 }
 
-#content aside input{
+#content aside input {
     display: none;
 }
 
-#content aside section{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#content aside input:nth-of-type(1) ~ div:nth-of-type(1) {
+#content aside input:nth-of-type(1)~div:nth-of-type(1) {
     /* ~은 다음에 오는 형제요소 선택자 */
     display: none;
 }
 
-#content aside input:nth-of-type(1):checked ~ div:nth-of-type(1){
+#content aside input:nth-of-type(1):checked~div:nth-of-type(1) {
     display: block;
 }
 
-#content aside input:nth-of-type(1):checked ~ .btn label:nth-of-type(1){
+#content aside input:nth-of-type(1):checked~.btn label:nth-of-type(1) {
     background: #222;
 }
 
-#content aside input:nth-of-type(2) ~ div:nth-of-type(2) {
+#content aside input:nth-of-type(2)~div:nth-of-type(2) {
     /* ~은 다음에 오는 형제요소 선택자 */
     display: none;
 }
 
-#content aside input:nth-of-type(2):checked ~ div:nth-of-type(2){
+#content aside input:nth-of-type(2):checked~div:nth-of-type(2) {
     display: block;
 }
 
-#content aside input:nth-of-type(2):checked ~ .btn label:nth-of-type(2){
+#content aside input:nth-of-type(2):checked~.btn label:nth-of-type(2) {
     background: #222;
 }
 
 #content aside .btn {
+    width: 100%;
     border-bottom: 1px solid #222;
     font-size: 0;
 }
 
 #content aside .btn label {
-    display: inline-block;
+    float: left;
     font-size: 12px;
     width: 50%;
     height: 30px;
@@ -189,8 +185,7 @@ header nav ul li a {
     color: #fff;
 }
 
-#content aside .tab_item {
-}
+#content aside .tab_item {}
 
 .tab_item ul {
     list-style-type: none;

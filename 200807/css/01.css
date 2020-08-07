@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    border: 1px solid #ccc;
+}
+
+header h1 {
+    text-align: center;
+    color: deeppink;
+    padding: 30px 0;
+}
+
+
+/* 메뉴라 하면 거의 한 세트 */
+header nav {}
+
+header nav ul {
+    list-style: none;
+    border: 1px solid green;
+    box-sizing: border-box;
+    font-size: 0;
+    /* 자식인 li가 inline-block이라 애매한 띄어쓰기 공간이 생기므로
+    부모에 font-size를 없애고 자식에 다시 font-size를 추가해준다. */
+}
+
+
+header nav ul li {
+    font-size: 18px;
+    display: inline-block;
+    border-right: 1px solid green;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav ul li:last-child {
+    border-right: none;
+}
+
+header nav ul li a {
+    color: green;
+    text-decoration: none;
+}
+
+header nav ul li:hover {
+    background: green;
+}
+
+header nav ul li:hover a {
+    color: #fff;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#content {
+    margin: 10px 0;
+    background: yellow;
+}
+
+#content section {
+    float: left;
+    width: calc(70% - 10px);
+    margin-right: 10px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+#content section h3 {}
+
+#content section p {}
+
+#content aside {
+    float: right;
+    width: 30%;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+#content aside h3 {}
+
+#content aside p {}
+
+footer{
+    width: 800px;
+    padding: 20px 0;
+    border: 1px solid green;
+}
+
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    background: green;
+    padding: 10px 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 20px;
+}

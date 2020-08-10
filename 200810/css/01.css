@@ -1,0 +1,81 @@
+header,
+aside,
+section,
+div,
+footer {
+    border: 2px solid red;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    height: 100px;
+}
+
+header ul {
+    margin: 36px 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+#content {
+    margin: 20px auto;
+}
+
+#content .left {
+    width: calc(30% - 58px);
+    height: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    float: left;
+    /* width: 30% + 20px + border 4px, margin: 10px */
+}
+
+#content .right {
+    width: 70%;
+    height: 300px;
+    padding: 10px;
+    float: left;
+    /* width: 70% + 20px + border 4px */
+}
+
+.box01,
+.box02 {
+    width: 90%;
+    height: 100px;
+    margin: 5px auto;
+    border-color: blue;
+}
+
+footer {
+    height: 100px;
+}
+
+.quick {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    border-color: green;
+    top: 124px;
+    right: -120px;
+}

@@ -41,11 +41,11 @@
             <aside class="left">
                 <dl class="left-menu">
                     <dt>보험상품 안내</dt>
-                    <dd><a href="#">연금/저축<span>▶</span></a></dd>
-                    <dd><a href="#">운전자/상해<span>▶</span></a></dd>
-                    <dd><a href="#">여행/레저<span>▶</span></a></dd>
-                    <dd><a href="#">건강/어린이<span>▶</span></a></dd>
-                    <dd><a href="#">화재/자동차<span>▶</span></a></dd>
+                    <dd class="on"><a href="#">연금/저축<span>▶</span></a></dd>
+                    <dd class=""><a href="#">운전자/상해<span>▶</span></a></dd>
+                    <dd class=""><a href="#">여행/레저<span>▶</span></a></dd>
+                    <dd class=""><a href="#">건강/어린이<span>▶</span></a></dd>
+                    <dd class=""><a href="#">화재/자동차<span>▶</span></a></dd>
                 </dl>
                 <div class="left-btm">
                     <h4>고객센터</h4>
@@ -138,7 +138,7 @@
 
                 </div>
                 <!-- /.right -->
-                
+
             </div>
             <!-- /.inner -->
 
@@ -148,6 +148,23 @@
     </div>
     <!-- /#wrap -->
 
+    <script>
+        var subMenu = document.querySelector('.left>.left-menu');
+
+        subMenu.addEventListener('mouseover',function(event){
+            event.target.classList.add('on');
+        });
+
+        subMenu.addEventListener('mouseout',function(event){
+            event.target.classList.remove('on');
+        });
+
+                /* element.classList.add( 'someclass' );
+        요소의 클래스 리스트에 추가
+
+        element.classList.remove( 'someclass' );
+        요소의 클래스 리스트에서 제거 */
+    </script>
 </body>
 
 </html>

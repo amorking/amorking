@@ -159,13 +159,22 @@ ul.menu li:hover::after{
     border-bottom: 1px solid #ccc;
 }
 
-.left>.left-menu dd:hover {
+/* javaScript로 클래스 추가 */
+.left>.left-menu dd.on{
+    background: #00a7aa;
+}
+
+.left>.left-menu dd.on a {
+    color: #fff;
+}
+
+/* .left>.left-menu dd:hover {
     background: #00a7aa;
 }
 
 .left>.left-menu dd:hover a {
     color: #fff;
-}
+} */
 
 .left>.left-menu dd a {
     color: #333;

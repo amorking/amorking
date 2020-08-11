@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 100%;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+
+header>.inner {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header>.inner h1 {
+    padding-top: 21.5px;
+    float: left;
+}
+
+header>.inner img {
+    display: block;
+}
+
+header>.inner p {
+    float: left;
+    font-size: .8rem;
+    color: #aaa;
+    padding-top: 60px;
+    margin-left: 20px;
+}
+
+header>.inner ul {
+    float: right;
+    font-size: 0;
+    padding-top: 62px;
+}
+
+header>.inner ul li {
+    font-size: .8rem;
+    display: inline-block;
+    border-right: 1px solid #555;
+    line-height: 12px;
+    padding: 0 8px;
+}
+
+header>.inner ul li:last-child {
+    border: none;
+}
+
+header>.inner ul li a {
+    color: #555;
+}
+
+
+/* nav */
+nav.gnb {
+    width: 100%;
+}
+
+nav ul.menu {
+    width: 980px;
+    margin: 30px auto 0;
+    font-size: 0;
+}
+
+ul.menu li {
+    display: inline-block;
+    font-size: 1.05rem;
+    font-weight: bold;
+    width: 164px;
+    border-bottom: 3px solid #00A8AB;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+ul.menu li:last-child {
+    margin-right: 0;
+}
+
+ul.menu li a {
+    color: #00A8AB;
+}
+
+ul.menu li:hover{
+    border: 0;
+}
+
+ul.menu li::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-bottom: 3px solid orange;
+    width: 0%;
+    transition: all .5s;
+}
+
+ul.menu li:hover::after{
+    width: 100%;
+}
+
+
+/* content */
+#content {
+    width: 980px;
+    margin: 60px auto 0;
+}
+
+#content .left {
+    float: left;
+    width: calc(22% - 30px);
+    margin-right: 30px;
+}
+
+.left>.left-menu dt {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #00a7aa;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.left>.left-menu dd {
+    padding: 20px;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.left>.left-menu dd:hover {
+    background: #00a7aa;
+}
+
+.left>.left-menu dd:hover a {
+    color: #fff;
+}
+
+.left>.left-menu dd a {
+    color: #333;
+}
+
+.left>.left-menu dd span {
+    float: right;
+    font-size: .6rem;
+    padding-top: 3px;
+}
+
+.left>.left-btm {
+    margin-top: 24px;
+}
+
+.left>.left-btm h4 {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 0.8;
+    padding-left: 2px;
+}
+
+.left>.left-btm h2 {
+    font-size: 2.06rem;
+    color: #00a7aa;
+}
+
+.left>.left-btm p {
+    width: 166px;
+    padding-left: 4px;
+    color: #555;
+    font-size: .75rem;
+}
+
+.left>.left-btm p:nth-child(3)::first-letter {
+    letter-spacing: .72rem;
+}
+
+.left>.left-btm p span {
+    color: #00a7aa;
+    font-weight: bold;
+}
+
+.left>.left-btm p span:last-child {
+    float: right;
+}
+
+
+#content .right {
+    float: right;
+    width: 78%;
+}
+
+.right>.sub-img {
+    margin-bottom: 20px;
+}
+
+.right-txt {
+    border-top: 2px solid #00a7aa;
+    padding: 20px 10px;
+}
+
+.right-txt-title p {
+    float: left;
+}
+
+.right-txt-title ul {
+    float: left;
+    margin-left: 16px;
+}
+
+.right-txt-title ul li {
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.right-txt-title ul li img {
+    display: block;
+}
+
+.right-txt>ul {
+    margin-top: 16px;
+    font-size: .8rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    border-top: 2px solid #00A8AB;
+    margin-top: 20px;
+    padding-top: 24px;
+    padding-bottom: 60px;
+}
+
+footer>.inner {
+    width: 980px;
+    margin: 0 auto;
+}
+
+footer .inner>.left {
+    float: left;
+}
+
+footer .left ul.footer-menu {
+    color: #666;
+}
+
+footer .left ul.footer-menu li {
+    display: inline-block;
+    font-size: .8rem;
+    line-height: .8rem;
+    border-right: 1px solid #666;
+    padding-right: 10px;
+    margin-top: 6px;
+}
+
+footer .left ul.footer-menu li:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+footer ul.copy {
+    margin-top: 24px;
+    color: #666;
+}
+
+footer ul.copy li {
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+footer .inner>.right {
+    float: right;
+    text-align: right;
+}
+
+footer .inner>.right p {
+    color: #00a7aa;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+footer .inner>.right select {
+    width: 148px;
+    height: 30px;
+    padding: 0 10px;
+    margin-bottom: 8px;
+}
+
+footer .inner>.right .sns-icon {}

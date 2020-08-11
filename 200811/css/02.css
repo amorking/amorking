@@ -19,6 +19,7 @@ td,
 th {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul,
@@ -85,6 +86,96 @@ header .top-menu li {
     padding-right: 5px;
 }
 
+
+header .top-menu li:last-child {
+    border-right: 0;
+    padding-right: 0;
+}
+
 header .top-menu li a {
     color: #888;
+}
+
+
+/* nav */
+#main-menubox {
+    background: #0b2972;
+    border-bottom: 1px solid #ffb400;
+    height: 30px;
+}
+
+.gnb {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.gnb li {
+    width: 20%;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.gnb li a {
+    color: #fff;
+}
+
+.gnb li:hover {
+    background: #ffb400;
+}
+
+
+/* slider */
+#slider {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.sbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2802px;
+    font-size: 0;
+}
+
+.sbox li {
+    width: 1400px;
+    float: left;
+}
+
+.sbox li img {
+    width: 100%;
+    display: block;
+}
+
+
+/* content */
+#content {
+    width: 960px;
+    margin: 30px auto 60px;
+}
+
+#content>section {
+    height: 180px;
+    float: left;
+}
+
+.notice {
+    width: 270px;
+}
+
+.product {
+    width: 360px;
+    margin: 0 25px;
+}
+
+.business {
+    width: 270px;
 }

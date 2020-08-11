@@ -1,1 +1,90 @@
 @charset "UTF-8";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+table,
+td,
+th {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header,
+div,
+footer,
+aside,
+section,
+nav,
+ul,
+li {
+    border: 1px solid red;
+}
+
+/* top */
+#wrap {}
+
+.inner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    width: 960px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+header .logo {
+    float: left;
+    margin-top: 25px;
+}
+
+header .top-menu {
+    float: right;
+    margin-top: 35px;
+}
+
+header .top-menu li {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px solid #ddd;
+    padding-right: 5px;
+}
+
+header .top-menu li a {
+    color: #888;
+}

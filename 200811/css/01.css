@@ -98,7 +98,7 @@ ul.menu li {
     display: inline-block;
     font-size: 1.05rem;
     font-weight: bold;
-    width: 164px;
+    width: calc(20.8% - 40px);
     border-bottom: 3px solid #00A8AB;
     margin-right: 40px;
     padding-bottom: 10px;
@@ -201,7 +201,7 @@ ul.menu li:hover::after{
 }
 
 .left>.left-btm p:nth-child(3)::first-letter {
-    letter-spacing: .72rem;
+    letter-spacing: .75rem;
 }
 
 .left>.left-btm p span {
@@ -221,6 +221,7 @@ ul.menu li:hover::after{
 
 .right>.sub-img {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .right-txt {

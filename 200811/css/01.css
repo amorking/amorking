@@ -1,7 +1,15 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: "맑은고딕", "돋움";
+    /* 폰트변경, 대체폰트 */
+    color: #333;
 }
 
 ul {
@@ -186,7 +194,7 @@ ul.menu li:hover::after{
 }
 
 .left>.left-btm p {
-    width: 166px;
+    width: 178px;
     padding-left: 4px;
     color: #555;
     font-size: .75rem;

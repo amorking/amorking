@@ -1,1 +1,299 @@
 @charset "UTF-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+header,
+footer,
+section,
+nav,
+ul,
+li,
+aside,
+p,
+ol,
+dl,
+dt,
+dd,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body {
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* wrap */
+#wrap {
+    overflow-x: hidden;
+}
+
+
+/* header */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {}
+
+header>.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.gnb>ul {
+    display: flex;
+    background: #30a3f3;
+}
+
+.gnb>ul li {
+    padding: 10px 24px;
+    position: relative;
+}
+
+.gnb>ul li a {
+    color: #fff;
+}
+
+.gnb>ul li:hover {
+    background: #0066ad;
+}
+
+.gnb>ul>li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 42px);
+}
+
+.sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.sub-menu>li {
+    background: #30a3f3;
+    padding: 10px 0;
+    border-bottom: 1px solid #0b2972;
+}
+
+.sub-menu>li:hover {
+    background: #eee;
+}
+
+.sub-menu>li:hover a {
+    color: #0b2972;
+}
+
+/* visual */
+#visual {
+    margin-bottom: 20px;
+}
+
+#visual .slider {
+    height: 300px;
+    width: 300%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: wrap row;
+}
+
+#visual .slider li {
+    width: 33.33%;
+}
+
+#visual .slider li img {
+    width: 100%;
+}
+
+/* contents */
+#contents {
+    margin-bottom: 10px;
+}
+
+#contents .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contents>.inner>div {
+    margin-right: 20px;
+    height: 200px;
+}
+
+#contents>.inner>div:last-child {
+    margin-right: 0;
+}
+
+.content-01 {
+    flex-grow: 1;
+}
+
+.content-01 .tab-item {
+    display: none;
+    padding: 10px 0;
+    font-size: .75rem;
+    line-height: 2;
+    border-top: 1px solid #0b2972;
+}
+
+.content-01 input {
+    display: none;
+}
+
+.content-01>section {
+    display: flex;
+}
+
+.content-01>section label {
+    display: block;
+    padding: 12px;
+    background: #fff;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.content-01>input:nth-of-type(1):checked~section>label:nth-of-type(1) {
+    background: #0b2972;
+    color: #fff;
+}
+
+.content-01>input:nth-of-type(1):checked~div:nth-of-type(1) {
+    display: block;
+}
+
+/* input요소 중 첫 번째가 checked 상태면 형제 div요소 중 첫 번째를 block */
+
+.content-01>input:nth-of-type(2):checked~section>label:nth-of-type(2) {
+    background: #0b2972;
+    color: #fff;
+}
+
+.content-01>input:nth-of-type(2):checked~div:nth-of-type(2) {
+    display: block;
+}
+
+/* input요소 중 두 번째가 checked 상태면 형제 div요소 중 두 번째를 block */
+
+.content-02 {
+}
+
+.content-02>h3{
+    background: #0b2972;
+    color: #fff;
+    width: 80px;
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.content-02>.img-box{
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid#0b2972;
+}
+
+.content-02>.img-box img{
+    width: 100%;
+}
+
+.content-03 {
+}
+
+.content-03>h3{
+    background: #0b2972;
+    color: #fff;
+    width: 80px;
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.content-03>.img-box{
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid#0b2972;
+}
+
+.content-03>.img-box img{
+    width: 100%;
+
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #333;
+}
+
+footer .inner {
+    display: flex;
+}
+
+.footer-img {
+    border-right: 1px solid #333;
+    padding: 20px 20px 20px 0;
+}
+
+.footer-img img {
+    flex-grow: 1;
+}
+
+.footer-txt {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-txt p {
+    padding: 6px 0;
+}
+
+.footer-menu {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-menu li {
+    padding: 8px 20px;
+}

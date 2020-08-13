@@ -1,11 +1,174 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1교시 실습</title>
+    <link rel="stylesheet" href="css/01.css">
 </head>
+
 <body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1><img src="img/logo.gif" alt="강원천문대 로고"></h1>
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">강원천문대</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">menu01</a></li>
+                                <li><a href="#">menu02</a></li>
+                                <li><a href="#">menu03</a></li>
+                                <li><a href="#">menu04</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이용안내</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">menu01</a></li>
+                                <li><a href="#">menu02</a></li>
+                                <li><a href="#">menu03</a></li>
+                                <li><a href="#">menu04</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">천문대예약</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">menu01</a></li>
+                                <li><a href="#">menu02</a></li>
+                                <li><a href="#">menu03</a></li>
+                                <li><a href="#">menu04</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">menu01</a></li>
+                                <li><a href="#">menu02</a></li>
+                                <li><a href="#">menu03</a></li>
+                                <li><a href="#">menu04</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.gnb -->
+
+            </div>
+            <!-- /.inner -->
+
+        </header>
+        <!-- /header -->
+
+        <div id="visual">
+            <ul class="slider">
+                <li><img src="img/slider1.jpg" alt="슬라이드 배너 밤하늘"></li>
+                <li><img src="img/slider2.jpg" alt="슬라이드 배너 밤하늘과 사람 실루엣"></li>
+                <li><img src="img/slider3.jpg" alt="슬라이드 배너 밤하늘과 늑대 실루엣"></li>
+            </ul>
+        </div>
+        <!-- /#visual -->
+
+        <div id="contents">
+            <div class="inner">
+                <div class="content-01">
+                    <input type="radio" id="first" name="tab" checked>
+                    <input type="radio" id="second" name="tab">
+                    <section class="btn">
+                        <label for="first">공지사항</label>
+                        <label for="second">갤러리</label>
+                        <!-- input의 id와 label의 for값을 같게 넣으면 연동된다. -->
+                    </section>
+                    <!-- /.btn -->
     
+                    <div class="tab-item">
+                        <ul>
+                            <li>
+                                <a href="#">국토정중앙천문대 2020년 야영장 운영개시 안내</a>
+                            </li>
+                            <li>
+                                <a href="#">국토정중앙천문대 3월 프로그램 안내 </a>
+                            </li>
+                            <li>
+                                <a href="#">국토정중앙천문대 11월 야영장 운영안내 및 겨울철 폐장안내</a>
+                            </li>
+                            <li>
+                                <a href="#">야간관측프로그램 예약 및 접수 안내 </a>
+                            </li>
+                            <li>
+                                <a href="#">극토정중앙천문대 야영장 시설사용료 인상안내</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.tab-item -->
+    
+                    <div class="tab-item">
+                        <ul>
+                            <li>
+                                <a href="#">으어아아아악 2020년 야영장 운영개시 안내</a>
+                            </li>
+                            <li>
+                                <a href="#">으어아아아악 3월 프로그램 안내 </a>
+                            </li>
+                            <li>
+                                <a href="#">으어아아아악 11월 야영장 운영안내 및 겨울철 폐장안내</a>
+                            </li>
+                            <li>
+                                <a href="#">으어아아아악 예약 및 접수 안내 </a>
+                            </li>
+                            <li>
+                                <a href="#">으어아아아악 야영장 시설사용료 인상안내</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.tab-item -->
+    
+                </div>
+                <!-- /.content-01 -->
+    
+                <div class="content-02">
+                    <h3>배너</h3>
+                    <div class="img-box">
+                        <img src="img/banner.jpg" alt="사람 실루엣 작은 배너">
+                    </div>
+                </div>
+                <!-- /.content-02 -->
+    
+                <div class="content-03">
+                    <h3>배너</h3>
+                    <div class="img-box">
+                        <img src="img/qlink.jpg" alt="사람 실루엣 흑백 배너">
+                    </div>
+                </div>
+                <!-- /.content-03 -->
+            </div>
+
+        </div>
+        <!-- /#content -->
+
+        <footer>
+            <div class="inner">
+                <div class="footer-img">
+                    <img src="img/btm_logo.gif" alt="강원천문대 하단 로고">
+                </div>
+                <!-- /.footer-img -->
+
+                <div class="footer-txt">
+                    <ul class="footer-menu">
+                        <li><a href="#">강원천문대소개</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">예약하기</a></li>
+                    </ul>
+                    <p>Copyright 강원천문대. All rights reserved.</p>
+                </div>
+            </div>
+            <!-- /.inner -->
+
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /#wrap -->
+
 </body>
+
 </html>

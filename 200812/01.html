@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>just쇼핑몰</title>
+    <link rel="stylesheet" href="css/01.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner clear">
+                <div class="logo">
+                    <img src="img/logo.png" alt="상단로고">
+                </div>
+                <ul class="gnb">
+                    <li><a href="#">탑</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아우터</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">팬츠</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세사리</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="slide">
+            <ul class="slideWrap">
+                <li><img src="img/land1.jpg" alt="메인비주얼1"></li>
+                <li><img src="img/land2.jpg" alt="메인비주얼2"></li>
+                <li><img src="img/land3.jpg" alt="메인비주얼3"></li>
+            </ul>
+        </div>
+        <div id="content" class="clear">
+            <section class="tabbox">
+                <div class="tab_title">
+                    <a href="#">공지사항</a>
+                    <a href="#" class="on">갤러리</a>
+                </div>
+                <div class="tab_con">
+                    <ul class="tab notice">
+                        <li><a href="#">깔끔한 비지니스 캐쥬얼 룩(팝업)<span>2019.03.18</span></a></li>
+                        <li><a href="#">봄시즌 머스트해브아이템<span>2019.03.17</span></a></li>
+                        <li><a href="#">데이트갤러리아백화점 수원점<span>2019.03.17</span></a></li>
+                        <li><a href="#">그린 컬러 봄 맞이해 보아요<span>2019.03.17</span></a></li>
+                    </ul>
+                    <ul class="tab gallery">
+                        <li><a href="#"><img src="img/thumb1.png" alt="사진1"></li>
+                        <li><a href="#"><img src="img/thumb2.png" alt="사진2"></li>
+                        <li><a href="#"><img src="img/thumb3.png" alt="사진3"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="banner">
+                <h3>배너</h3>
+                <div class="imgbox popup">
+                    <img src="img/banner.png" alt="중앙배너">
+                </div>
+            </section>
+            <section class="banner">
+                <h3>바로가기</h3>
+                <div class="imgbox">
+                    <img src="img/qlink.png" alt="우측배너">
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="inner clear">
+                <div class="btm_logo">
+                    <img src="img/logo_btm.png" alt="하단로고">
+                </div>
+                <div class="copy">
+                    <p>Copyright. Just Shoppingmall All rights reserved.</p>
+                </div>
+                <div class="sns">
+                    <img src="img/ico_fb.png" alt="페이스북">
+                    <img src="img/ico_in.png" alt="인스타그램">
+                    <img src="img/ico_tw.png" alt="트위터">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="popup">
+        <div class="modal">
+            <h3>POP title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illum asperiores cumque! Quae quidem est modi exercitationem id earum, veniam error quaerat veritatis a voluptates ipsam non possimus odit incidunt!</p>
+            <button class="close">X close</button>
+        </div>
+    </div>
+    <script>
+        // 배너 클릭하기 - 팝업 창 보여주기
+        $(".popup").click(function(){
+            $("#popup").show();
+        });
+        // 닫기 버튼 클릭하기 - 팝업 창 보여주기
+        $(".close").click(function(){
+            $("#popup").hide();
+        });
+    </script>
+</body>
+</html>

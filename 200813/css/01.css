@@ -52,6 +52,7 @@ a {
     clear: both;
 }
 
+
 /* wrap */
 #wrap {
     overflow-x: hidden;
@@ -122,6 +123,7 @@ header>.inner {
     color: #0b2972;
 }
 
+
 /* visual */
 #visual {
     margin-bottom: 20px;
@@ -140,12 +142,14 @@ header>.inner {
 }
 
 #visual .slider li {
-    width: 33.33%;
+    width: 33.333333%;
+    height: 100%;
 }
 
 #visual .slider li img {
     width: 100%;
 }
+
 
 /* contents */
 #contents {
@@ -245,7 +249,7 @@ header>.inner {
 .content-03>h3{
     background: #0b2972;
     color: #fff;
-    width: 80px;
+    width: 100px;
     padding: 12px;
     text-align: center;
     font-size: 1rem;
@@ -269,11 +273,14 @@ footer {
 
 footer .inner {
     display: flex;
+    align-items: center;
+    height: 100px;
 }
 
 .footer-img {
     border-right: 1px solid #333;
-    padding: 20px 20px 20px 0;
+    height: 100px;
+    padding: 30px 30px 30px 0;
 }
 
 .footer-img img {

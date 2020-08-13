@@ -228,8 +228,8 @@ header>.inner {
 .content-02>h3 {
     background: #0b2972;
     color: #fff;
-    width: 80px;
-    padding: 12px;
+    display: inline-block;
+    padding: 12px 20px;
     text-align: center;
     font-size: 1rem;
 }
@@ -249,8 +249,8 @@ header>.inner {
 .content-03>h3 {
     background: #0b2972;
     color: #fff;
-    width: 100px;
-    padding: 12px;
+    display: inline-block;
+    padding: 12px 20px;
     text-align: center;
     font-size: 1rem;
 }

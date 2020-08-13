@@ -73,17 +73,15 @@
         <div id="contents">
             <div class="inner">
                 <div class="content-01">
-                    <input type="radio" id="first" name="tab" checked>
-                    <input type="radio" id="second" name="tab">
-                    <section class="btn">
-                        <label for="first">공지사항</label>
-                        <label for="second">갤러리</label>
-                        <!-- input의 id와 label의 for값을 같게 넣으면 연동된다. -->
-                    </section>
-                    <!-- /.btn -->
+                    <!-- 스크립트로 탭메뉴 구현 -->
+                    <div class="tab-title">
+                        <a href="#" data-id="notice" class="on">공지사항</a>
+                        <a href="#" data-id="gallery">갤러리</a>
+                    </div>
+                    <!-- /.tab-title -->
 
-                    <div class="tab-item">
-                        <ul>
+                    <div class="tab-con">
+                        <ul class="tab on" id="notice">
                             <li>
                                 <a href="#">국토정중앙천문대 2020년 야영장 운영개시 안내</a>
                             </li>
@@ -100,29 +98,23 @@
                                 <a href="#">극토정중앙천문대 야영장 시설사용료 인상안내</a>
                             </li>
                         </ul>
-                    </div>
-                    <!-- /.tab-item -->
+                        <!-- /.tab.notice -->
 
-                    <div class="tab-item">
-                        <ul>
+                        <ul class="tab" id="gallery">
                             <li>
-                                <a href="#">으어아아아악 2020년 야영장 운영개시 안내</a>
+                                <img src="img/thumb1.jpg" alt="썸네일 밤하늘">
                             </li>
                             <li>
-                                <a href="#">으어아아아악 3월 프로그램 안내 </a>
+                                <img src="img/thumb2.jpg" alt="썸네일 밤하늘 사람 실루엣">
                             </li>
                             <li>
-                                <a href="#">으어아아아악 11월 야영장 운영안내 및 겨울철 폐장안내</a>
-                            </li>
-                            <li>
-                                <a href="#">으어아아아악 예약 및 접수 안내 </a>
-                            </li>
-                            <li>
-                                <a href="#">으어아아아악 야영장 시설사용료 인상안내</a>
+                                <img src="img/thumb3.jpg" alt="썸네일 밤하늘 늑대 실루엣">
                             </li>
                         </ul>
+                        <!-- /.tab.gallery -->
+
                     </div>
-                    <!-- /.tab-item -->
+                    <!-- /.tab-con -->
 
                 </div>
                 <!-- /.content-01 -->

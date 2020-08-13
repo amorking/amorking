@@ -176,52 +176,55 @@ header>.inner {
 
 .content-01 {}
 
-.content-01 .tab-item {
-    display: none;
-    padding: 10px 0;
-    font-size: .75rem;
-    line-height: 2;
-    border-top: 1px solid #0b2972;
+.content-01>.tab-title{
+    font-size: 0;
 }
 
-.content-01 input {
-    display: none;
-}
-
-.content-01>section {
-    display: flex;
-}
-
-.content-01>section label {
-    display: block;
-    padding: 12px;
-    background: #fff;
-    color: #333;
+.content-01>.tab-title a{
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #ddd;
+    color: #fff;
     font-size: 1rem;
     font-weight: bold;
 }
 
-.content-01>input:nth-of-type(1):checked~section>label:nth-of-type(1) {
+.content-01>.tab-title a.on{
     background: #0b2972;
-    color: #fff;
 }
 
-.content-01>input:nth-of-type(1):checked~div:nth-of-type(1) {
+.content-01 .tab-con {
+    padding: 10px 0;
+    border-top: 1px solid #0b2972;
+}
+
+.tab{
+    display: none;
+}
+
+.tab.on{
     display: block;
 }
 
-/* input요소 중 첫 번째가 checked 상태면 형제 div요소 중 첫 번째를 block */
-
-.content-01>input:nth-of-type(2):checked~section>label:nth-of-type(2) {
-    background: #0b2972;
-    color: #fff;
+.tab-con #notice{
+    font-size: 0;
 }
 
-.content-01>input:nth-of-type(2):checked~div:nth-of-type(2) {
-    display: block;
+.tab-con #notice li{
+    line-height: 2;
+    font-size: .75rem;
 }
 
-/* input요소 중 두 번째가 checked 상태면 형제 div요소 중 두 번째를 block */
+.tab-con .tab.on#gallery{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-con #gallery li{
+}
 
 .content-02 {}
 

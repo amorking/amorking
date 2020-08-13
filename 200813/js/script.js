@@ -23,11 +23,11 @@ $(function () {
 
 
     /*탭메뉴*/
-    $(".noticeTitle a").click(function () {
-        var target = $(this).attr("href");
-        console.log(target)
-        $(this).addClass("on").siblings().removeClass("on");
-        $(target).show().siblings().hide();
+    $(".tab-title a").click(function () {
+        $(".tab-title a").removeClass('on');
+        $(".tab-con .tab").removeClass('on');
+        $(this).addClass('on');
+        $("#" + $(this).data('id')).addClass('on');
     });
 
 

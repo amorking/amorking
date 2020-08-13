@@ -18,7 +18,7 @@ $(function () {
         if (cnt > 2) {
             cnt = 0;
         }
-        $(".slider  li").eq(cnt).fadeIn();
+        $(".slider li").eq(cnt).fadeIn();
     }, 3500);
 
 

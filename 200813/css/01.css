@@ -129,7 +129,7 @@ header>.inner {
     margin-bottom: 20px;
 }
 
-#visual .inner{
+#visual .inner {
     overflow: hidden;
 }
 
@@ -156,7 +156,7 @@ header>.inner {
     margin-bottom: 10px;
 }
 
-#contents .inner{
+#contents .inner {
     display: flex;
     justify-content: space-around;
 }
@@ -164,16 +164,17 @@ header>.inner {
 #contents>.inner>div {
     height: 200px;
     margin-right: 20px;
+    flex: 1;
+    /* flex: 1 = flex-grow: 1, flex-shrink: 1, flex-basis: 0;과 같다.
+    flex-basis 값 0을 주게되면 flex-item은 절대적인 요소가 되어
+    부모 flex-container에 의해 크기가 결정된다. */
 }
 
 #contents>.inner>div:last-child {
     margin-right: 0;
 }
 
-.content-01 {
-    flex-grow: 1;
-    flex-basis: 1px;
-}
+.content-01 {}
 
 .content-01 .tab-item {
     display: none;
@@ -222,12 +223,9 @@ header>.inner {
 
 /* input요소 중 두 번째가 checked 상태면 형제 div요소 중 두 번째를 block */
 
-.content-02 {
-    flex-grow: 1;
-    flex-basis: 1px;
-}
+.content-02 {}
 
-.content-02>h3{
+.content-02>h3 {
     background: #0b2972;
     color: #fff;
     width: 80px;
@@ -236,22 +234,19 @@ header>.inner {
     font-size: 1rem;
 }
 
-.content-02>.img-box{
+.content-02>.img-box {
     width: 100%;
     padding: 10px 20px;
     border-top: 1px solid#0b2972;
 }
 
-.content-02>.img-box img{
+.content-02>.img-box img {
     width: 100%;
 }
 
-.content-03 {
-    flex-grow: 1;
-    flex-basis: 1px;
-}
+.content-03 {}
 
-.content-03>h3{
+.content-03>h3 {
     background: #0b2972;
     color: #fff;
     width: 100px;
@@ -260,13 +255,13 @@ header>.inner {
     font-size: 1rem;
 }
 
-.content-03>.img-box{
+.content-03>.img-box {
     width: 100%;
     padding: 10px 20px;
     border-top: 1px solid#0b2972;
 }
 
-.content-03>.img-box img{
+.content-03>.img-box img {
     width: 100%;
 
 }

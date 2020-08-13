@@ -158,12 +158,12 @@ header>.inner {
 
 #contents .inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #contents>.inner>div {
-    margin-right: 20px;
     height: 200px;
+    margin-right: 20px;
 }
 
 #contents>.inner>div:last-child {
@@ -172,6 +172,7 @@ header>.inner {
 
 .content-01 {
     flex-grow: 1;
+    flex-basis: 1px;
 }
 
 .content-01 .tab-item {
@@ -222,6 +223,8 @@ header>.inner {
 /* input요소 중 두 번째가 checked 상태면 형제 div요소 중 두 번째를 block */
 
 .content-02 {
+    flex-grow: 1;
+    flex-basis: 1px;
 }
 
 .content-02>h3{
@@ -244,6 +247,8 @@ header>.inner {
 }
 
 .content-03 {
+    flex-grow: 1;
+    flex-basis: 1px;
 }
 
 .content-03>h3{

@@ -311,3 +311,47 @@ footer .inner {
 .footer-menu li {
     padding: 8px 20px;
 }
+
+
+/*팝업 창*/
+#popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#popup .modal {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    margin: 120px auto;
+    background: #fff;
+    padding: 40px;
+}
+
+#popup .modal h3 {
+    font-size: 24px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+#popup .modal p {
+    font-size: 14px;
+    color: #555;
+    line-height: 2;
+}
+
+#popup .modal .close {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #bbb;
+}

@@ -30,15 +30,16 @@ $(function () {
         $("#" + $(this).data('id')).addClass('on');
     });
 
+    /* 팝업창 */
 
-
-    /*팝업*/
-
-    $("#notice li").click(function () {
-        $("#popup").fadeIn();
+    // 팝업 처음에 숨기기
+    $("#popup").hide();
+    // 배너 클릭하기 - 팝업 창 보여주기
+    $(".popup").click(function () {
+        $("#popup").fadeIn(600);
     });
+    // 닫기 버튼 클릭하기 - 팝업 창 보여주기
     $(".close").click(function () {
-        $("#popup").fadeOut();
+        $("#popup").fadeOut(600);
     });
-
 });

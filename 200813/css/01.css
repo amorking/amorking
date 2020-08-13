@@ -127,6 +127,10 @@ header>.inner {
     margin-bottom: 20px;
 }
 
+#visual .inner{
+    overflow: hidden;
+}
+
 #visual .slider {
     height: 300px;
     width: 300%;

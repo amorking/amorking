@@ -1,1 +1,294 @@
 @charset "UTF-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+header,
+footer,
+section,
+nav,
+ul,
+li,
+aside,
+p,
+ol,
+dl,
+dt,
+dd,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body {
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+header {}
+
+header>.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header>.inner ul {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    background: #3cb149;
+}
+
+header>.inner ul li {
+    padding: 16px 60px;
+}
+
+header>.inner ul li a {
+    color: #fff;
+}
+
+header>.inner ul li:hover {
+    background: #1d8844;
+}
+
+
+/* nav */
+nav {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+nav.on{
+    height: 150px;
+    visibility: visible;
+    opacity: 1;
+}
+
+nav>.inner {
+    height: 150px;
+    background: #3cb149;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+}
+
+nav>.inner ul {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+nav>.inner ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex: 1;
+}
+
+nav>.inner ul li a {
+    color: #fff;
+}
+
+nav>.inner ul li:hover {
+    background: #1d8844;
+}
+
+
+/* #visual */
+#visual {
+    margin-bottom: 20px;
+}
+
+#visual>.inner {
+    overflow: hidden;
+}
+
+#visual>.inner .slider {
+    width: 300%;
+    display: flex;
+}
+
+#visual>.inner .slider li {
+    width: 33.333333%;
+}
+
+#visual>.inner .slider li img {
+    width: 100%;
+}
+
+
+/* #content */
+#contents {
+    margin-bottom: 20px;
+}
+
+#contents>.inner {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+#contents>.inner>.content {
+    flex-grow: 1;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#contents>.inner>.content:last-child {
+    margin-right: 0;
+}
+
+#contents>.inner .tab-menu {
+    display: flex;
+}
+
+.tab-menu li {}
+
+.tab-menu li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 8px 20px;
+    background: #ddd;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.tab-menu li a.on {
+    background: #fff;
+}
+
+.tab-cont {
+    display: none;
+    border: 1px solid #ddd;
+    transform: translate(0, -1px);
+}
+
+.tab-cont#tab-menu-01 li {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-cont#tab-menu-01 li:last-child {
+    border: 0;
+}
+
+.tab-cont#tab-menu-02 {
+    display: none;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.tab-cont.on{
+    display: block;
+}
+
+.tab-cont.on#tab-menu-02{
+    display: flex;
+}
+
+.content-02 h3 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 8px 20px;
+    font-weight: normal;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background: #fff;
+}
+
+.content-02>.gallery {
+    border: 1px solid #ddd;
+    transform: translate(0, -1px);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content-03 h3 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 8px 20px;
+    font-weight: normal;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background: #fff;
+}
+
+.content-03>.banner {
+    border: 1px solid #ddd;
+    transform: translate(0, -1px);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content-03>.banner img{
+    width: 100%;
+}
+
+
+/* footer */
+footer {
+    border-top: 1px solid #ddd;
+}
+
+footer>.inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+
+footer select{
+    width: 120px;
+    height: 32px;
+    padding: 0 10px;
+    vertical-align: middle;
+}

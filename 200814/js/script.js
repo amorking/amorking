@@ -12,7 +12,15 @@ var navInner = document.querySelector("#nav>.inner");
 var header = document.querySelector("#header");
 
 //nav에 transform 스타일 적용
-gnb.addEventListener("mouseover", function () {
+gnb.addEventListener("mouseenter", function () {
+    nav.classList.add("on");
+});
+
+gnb.addEventListener("mouseleave", function(){
+    nav.classList.remove("on");
+});
+
+navInner.addEventListener("mouseenter",function(){
     nav.classList.add("on");
 });
 

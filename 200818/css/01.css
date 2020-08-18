@@ -28,13 +28,157 @@
     src: url(https://s.pstatic.net/static/www/font/NanumSquareEB.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareEB.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareEB.ttf) format("truetype")
 }
 
+
+/* #wrap */
+#wrap {
+    position: relative;
+    overflow: hidden;
+    min-width: 1100px;
+    background: #f2f4f7;
+}
+
 .inner {
     width: 1130px;
     margin: 0 auto;
 }
 
-/* #header */
 
+/* #header */
+#header {
+    background: #fff;
+    border-bottom: 1px solid #d1d8e4;
+}
+
+#header>.inner {
+    position: relative;
+    height: 130px;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.area-logo {
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.area-logo h1 {}
+
+.area-logo h1 a {
+    display: block;
+}
+
+.area-logo h1 a .naver-logo {
+    display: block;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 198px;
+    height: 48px;
+    background: url(../img/sp_search.svg) no-repeat -4px -4px;
+}
+
+.area-link {
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+
+.area-link .al-fav {
+    height: 21px;
+    color: #888;
+    font-size: 11px;
+    line-height: 22px;
+    padding: 0;
+}
+
+.area-link .al-fav .al-bar {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #ebeef3;
+    margin: 0 3px;
+}
+
+.area-link a {
+    display: block;
+    float: left;
+    padding: 5px;
+}
+
+.area-link a .al-ico {
+    display: block;
+    background: url(../img/sp_main.png) no-repeat;
+    /* 아이콘 스프라이트를 공통으로 적용하고 각 요소에서 포지션을 지정 */
+}
+
+.area-link .al-jr .al-ico {
+    background-position: 0 -157px;
+    width: 58px;
+    height: 11px;
+}
+
+.area-link .al-jr:hover .al-ico {
+    background-position: -87px -120px;
+}
+
+.area-link .al-hb .al-ico {
+    background-position: -143px -94px;
+    width: 34px;
+    height: 11px;
+}
+
+.area-link .al-hb:hover .al-ico {
+    background-position: -155px -120px;
+}
+
+.area-search {
+    position: absolute;
+    left: 219px;
+    top: 50%;
+    margin-top: -20px;
+    width: 521px;
+}
+
+.area-search .green-window {
+    border: 2px solid #19ce60;
+    border-radius: 2px;
+    background: #fff;
+    display: inline-block;
+    width: 470px;
+    height: 45px;
+}
+
+.area-search .green-window .input-txt {
+    margin: 12px 0 0 9px;
+    width: 405px;
+    height: 23px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.area-search .green-window .sch-btn {
+    width: 49px;
+    height: 49px;
+    background: #03cf5d;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.area-search .green-window .sch-btn .ico-search{
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: url(../img/sp_search.svg) no-repeat 8px -50px;
+    margin-left: 2px;
+}
 
 
 /* #content */

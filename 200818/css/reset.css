@@ -1,65 +1,181 @@
 @charset "UTF-8";
 
 /* reset */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
-p, pre, a, abbr, acronym, cite, code, code, del, dfn, em, img, ins, q, s, samp,
-strike, sub, sup, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
-caption, thead, tbody, tfoot, tr, th, td, embed{
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+cite,
+code,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+q,
+s,
+samp,
+strike,
+sub,
+sup,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+embed {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-html{
+html {
     overflow-y: scroll;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6, input, button, textarea, select{
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+select {
     color: #666;
     line-height: 1.5;
     font-size: 12px;
-    font-family: NanumSquare,Dotum,verdana,Arial,AppleGothic,sans-serif;
+    font-family: NanumSquare, Dotum, verdana, Arial, AppleGothic, sans-serif;
 }
 
-img, fieldset, iframe{
+img,
+fieldset,
+iframe {
     border: 0 none;
 }
 
-ol, ul, li{
+ol,
+ul,
+li {
     list-style: none;
 }
 
-input, select, button, img, textarea{
+input,
+select,
+button,
+img,
+textarea {
     vertical-align: middle;
 }
 
-i, em, address{
+i,
+em,
+address {
     font-style: normal;
 }
 
-label, button{
+label,
+button {
     cursor: pointer;
 }
 
-button{
+button {
     margin: 0;
     padding: 0;
     border: 0;
     background-color: transparent;
 }
 
-table{
+table {
     border-spacing: 0;
     border-collapse: collapse;
     width: 100%;
     border: 0 none;
     table-layout: fixed;
     word-break: break-word;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+form {
+    text-align: left;
+}
+
+caption, th, td{
+    text-align: left;
+}
+
+a{
+    color: #666;
+    cursor: pointer;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    text-decoration: none;
+}
+
+a:focus{
+    outline: 1px solid #a0a0a0;
+}
+
+.blind{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .clear::after {

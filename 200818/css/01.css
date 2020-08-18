@@ -38,7 +38,7 @@
 }
 
 .inner {
-    width: 1130px;
+    width: 1080px;
     margin: 0 auto;
 }
 
@@ -171,7 +171,7 @@
     right: 0;
 }
 
-.area-search .green-window .sch-btn .ico-search{
+.area-search .green-window .sch-btn .ico-search {
     display: block;
     width: 40px;
     height: 40px;
@@ -181,8 +181,311 @@
 }
 
 
-/* #content */
+/* #navbar */
+#navbar {
+    position: relative;
+    border-top: 1px solid #f1f3f6;
+    background: #fff;
+    height: 46px;
+}
 
+.area-navigation {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.area-navigation .an-item {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.area-navigation .an-1 {
+    float: left;
+    padding: 13px 0 0 0;
+}
+
+.area-navigation .an-1 .an-item:first-child {
+    padding-left: 0;
+}
+
+.area-navigation .an-1 .an-item a .an-txt {
+    color: #00ab33;
+}
+
+.area-navigation .an-2 {
+    float: left;
+    padding: 12px 0 0 0;
+}
+
+.area-navigation .an-2 .an-item a .an-txt {
+    color: #333;
+}
+
+.area-navigation .an-bar {
+    float: left;
+    width: 1px;
+    height: 15px;
+    background: #ebeef3;
+    margin: 16px 10px 0 9px;
+}
+
+.area-navigation .an-btn-more {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 0 0 4px;
+}
+
+.area-navigation .an-roll {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 198px;
+    height: 20px;
+    margin-top: -5px;
+}
+
+.an-roll .ar-1 {}
+
+.an-roll .ar-1 .ar-item {}
+
+.an-roll .ar-1 .ar-item .ar-data {
+    display: block;
+    color: #000;
+}
+
+.an-roll .ar-1 .ar-item .ar-data .ar-r {
+    color: #00ab33;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.an-roll .ar-1 .ar-item .ar-data .ar-k {
+    width: 140px;
+    letter-spacing: -1px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.an-roll .ico-open {
+    width: 11px;
+    height: 6px;
+    display: block;
+    background: url(../img/sp_main.png) no-repeat -200px -78px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+
+/* #content */
+#content {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 8px 10px 0;
+}
+
+#content .left {
+    width: 740px;
+    height: 500px;
+    float: left;
+}
+
+.top-banner {
+    height: 120px;
+    border: 1px solid #dee3eb;
+    box-sizing: border-box;
+}
+
+.top-banner img {
+    width: 100%;
+}
+
+.news-cast {}
+
+.area-news-top {
+    background: #fff;
+    height: 40px;
+    border: 1px solid #dee3eb;
+    margin-top: 8px;
+}
+
+.area-news-top .cast-flash {
+    position: relative;
+    padding: 11px 0 0 16px;
+    height: 44px;
+}
+
+.cast-flash .cf-tit {
+    float: left;
+}
+
+.cast-flash .cf-tit .cf-ta {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: -1px;
+    display: block;
+    width: 70px;
+    margin-top: -1px;
+}
+
+.cast-flash .cf-tit .cf-ta .ico-cflink {
+    background: url(../img/sp_main.png) no-repeat -200px -112px;
+    width: 6px;
+    height: 10px;
+    display: block;
+    float: right;
+    margin-top: 4px;
+}
+
+.cast-flash .cast-act {
+    float: left;
+    margin-left: 7px;
+}
+
+.cast-flash .cast-link {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -18px;
+}
+
+.cast-flash .cast-link .cl-link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: -1px;
+    padding: 0 5px;
+}
+
+.cast-flash .cast-link .cl-link:first-child a {
+    color: #00ab33;
+}
+
+.area-news-stand {
+    background: #fff;
+    border: 1px solid #dee3eb;
+    height: 244px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.an-menu-list {
+    position: relative;
+    height: 44px;
+    border: 1px solid #dee3eb;
+}
+
+.an-tit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 14px 0 0 16px;
+}
+
+.an-tit a {
+    color: #000;
+    display: block;
+}
+
+.an-menu-list-section1 {
+    position: absolute;
+    top: 0;
+    left: 105px;
+    padding: 13px 0;
+}
+
+.an-menu-list-section1 .an-sort {}
+
+.an-menu-list-section1 .an-sort .an-bar {
+    width: 1px;
+    height: 15px;
+    background: #ebeef3;
+    float: left;
+    margin: 2px 15px 0;
+}
+
+.an-menu-list-section1 .an-sort a {
+    display: block;
+    float: left;
+}
+
+.an-menu-list-section2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+}
+
+.an-sort2 {
+    float: left;
+}
+
+.an-sort2 a {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 14px 16px;
+    float: left;
+}
+
+.as-btn01 {
+    background: url(../img/sp_newscast_v180511.png) no-repeat -228px -124px;
+}
+
+.as-btn02 {
+    background: url(../img/sp_newscast_v180511.png) no-repeat 0 -193px;
+}
+
+.as-btn03 {
+    background: url(../img/sp_newscast_v180511.png) no-repeat -28px -193px;
+}
+
+.an-paging {
+    height: 44px;
+    float: left;
+}
+
+.an-paging .ap-list {
+    border-left: 1px solid #dee3eb;
+    float: left;
+    height: 44px;
+    overflow: hidden;
+}
+
+.an-paging .ap-list a {
+    display: block;
+    width: 44px;
+    height: 44px;
+}
+
+.an-paging .ap-list a .ico-img {
+    width: 8px;
+    height: 16px;
+    display: block;
+    margin: 16px 18px;
+    background: url(../img/sp_newscast_v180511.png) no-repeat -254px -24px;
+}
+
+.an-paging .ap-list:last-child a .ico-img {
+    background: url(../img/sp_newscast_v180511.png) no-repeat -102px -193px;
+    /* 스프라이트를 이용해 로딩을 최소화 하는 방법 */
+}
+
+.an-panel-img {}
+
+#content .right {
+    width: 332px;
+    height: 500px;
+    position: relative;
+    float: right;
+}
 
 
 /* footer */

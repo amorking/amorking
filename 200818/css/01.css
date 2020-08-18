@@ -1,55 +1,31 @@
 @charset "UTF-8";
 
-/* reset */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-header,
-footer,
-section,
-nav,
-ul,
-li,
-aside,
-p,
-ol,
-dl,
-dt,
-dd,
-button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
+@font-face {
+    font-weight: 300;
+    font-family: NanumSquare;
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareL.eot);
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareL.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareL.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareL.ttf) format("truetype")
 }
 
-body {
-    color: #333;
+@font-face {
+    font-weight: 400;
+    font-family: NanumSquare;
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareR.eot);
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareR.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareR.ttf) format("truetype")
 }
 
-ul,
-li {
-    list-style: none;
+@font-face {
+    font-weight: 700;
+    font-family: NanumSquare;
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareB.eot);
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareB.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareB.ttf) format("truetype")
 }
 
-img {
-    vertical-align: top;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-.clear::after {
-    content: "";
-    display: block;
-    clear: both;
+@font-face {
+    font-weight: 900;
+    font-family: NanumSquare;
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareEB.eot);
+    src: url(https://s.pstatic.net/static/www/font/NanumSquareEB.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareEB.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareEB.ttf) format("truetype")
 }
 
 .inner {
@@ -96,7 +72,7 @@ footer {
     background-size: 120%;
 }
 
-.bn-sm:hover .bn-sm-txt>span:nth-of-type(2){
+.bn-sm:hover .bn-sm-txt>span:nth-of-type(2) {
     text-decoration: underline;
 }
 
@@ -141,7 +117,7 @@ footer {
     margin-top: 8px;
 }
 
-.notice{
+.notice {
     display: flex;
     justify-content: space-between;
     padding: 16px 0;

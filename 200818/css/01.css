@@ -254,11 +254,11 @@ footer {
 .bn-sm-txt span:nth-of-type(2) {
     font-size: .8125rem;
     font-weight: bold;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .bn-sm-txt p {
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .notice {

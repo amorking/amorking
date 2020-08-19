@@ -1,34 +1,5 @@
 @charset "UTF-8";
 
-/* 나눔스퀘어는 분명 굉장히 좋은 폰트이다 하지만 작은 글씨는 깨진다. */
-@font-face {
-    font-weight: 300;
-    font-family: NanumSquare;
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareL.eot);
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareL.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareL.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareL.ttf) format("truetype")
-}
-
-@font-face {
-    font-weight: 400;
-    font-family: NanumSquare;
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareR.eot);
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareR.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareR.ttf) format("truetype")
-}
-
-@font-face {
-    font-weight: 700;
-    font-family: NanumSquare;
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareB.eot);
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareB.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareB.ttf) format("truetype")
-}
-
-@font-face {
-    font-weight: 900;
-    font-family: NanumSquare;
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareEB.eot);
-    src: url(https://s.pstatic.net/static/www/font/NanumSquareEB.eot?#iefix) format("embedded-opentype"), url(https://s.pstatic.net/static/www/font/NanumSquareEB.woff) format("woff"), url(https://s.pstatic.net/static/www/font/NanumSquareEB.ttf) format("truetype")
-}
-
 
 /* #wrap */
 #wrap {
@@ -512,7 +483,6 @@
 
 #content .right {
     width: 332px;
-    height: 500px;
     position: relative;
     float: right;
 }
@@ -648,7 +618,7 @@
 .header-btn a {
     display: block;
     float: left;
-    padding: 10px 0;
+    padding: 9px 0 11px;
     text-align: center;
     width: 33px;
     height: 12px;
@@ -685,7 +655,7 @@
     padding-bottom: 5px;
 }
 
-.ac-content em{
+.ac-content em {
     color: #2565d0;
 }
 
@@ -699,15 +669,181 @@
 
 .ac-content .ac-pt {}
 
-.branding{
+.branding {
     border: 2px solid #dee3eb;
     box-sizing: border-box;
 }
 
-.branding img{
+.branding img {
     width: 100%;
 }
 
+.group_goods {
+    position: relative;
+    background: #fff;
+    border: 1px solid #dee3eb;
+    padding: 55px 7px 14px;
+    margin-top: 8px;
+}
+
+.group_goods .shop_control {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+
+.shop_control .num_box {
+    line-height: 29px;
+    float: left;
+    color: gray;
+}
+
+.num_box .current {
+    color: #202020;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.shop_control .btn_box {
+    float: left;
+    overflow: hidden;
+    margin-left: 7px;
+}
+
+.btn_box .btn {
+    float: left;
+    border: 1px solid #dee3eb;
+    background: #fff;
+    display: block;
+}
+
+.btn_box .btn_prev {}
+.btn_box .btn_next {}
+
+.btn_box .btn_prev::before,
+.btn_box .btn_next::before {
+    background: url(../img/sp_newscast_v180511.png) no-repeat;
+}
+
+.btn_box .btn_prev::before {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    margin: 7px 13px 7px 11px;
+    content: '';
+    vertical-align: top;
+    background-position: -254px -24px;
+}
+
+.btn_box .btn_next::before {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    margin: 7px 11px 7px 13px;
+    content: '';
+    vertical-align: top;
+    background-position: -102px -193px;
+}
+
+.list_goods_wrap {}
+
+.list_goods_wrap .list_goods {
+    margin-top: -18px;
+}
+
+.list_goods .goods_item {
+    float: left;
+    width: 102px;
+    margin: 18px 5px 0 0;
+}
+
+.list_goods .goods_item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.goods_item .goods_area {}
+
+.goods_area .thumb_box {
+    position: relative;
+    overflow: hidden;
+}
+
+.goods_area .thumb_box .thumb_bd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #000;
+    opacity: .08;
+}
+
+.goods_area .thumb_box img {
+    width: 100%;
+    transition: all .3s;
+}
+
+.goods_area:hover img {
+    transform: scale(1.1);
+}
+
+.goods_area .title_box{
+    margin-top: 9px;
+}
+
+.goods_area .title_box span{
+    text-align: center;
+    display: block;
+}
+
+.goods_area:hover span{
+    text-decoration: underline;
+}
+
+.group_goods .shop_page{
+    margin-top: 17px;
+    text-align: center;
+}
+
+.shop_page .num_box{
+    display: inline-block;
+    min-width: 80px;
+    line-height: 29px;
+    vertical-align: top;
+    color: gray;
+}
+
+.shop_page .btn{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #dee3eb;
+    background: #fff;
+}
+
+.shop_page .btn_prev::before,
+.shop_page .btn_next::before {
+    background: url(../img/sp_newscast_v180511.png) no-repeat;
+}
+
+.shop_page .btn_prev::before {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    margin: 7px 13px 7px 11px;
+    content: '';
+    vertical-align: top;
+    background-position: -254px -24px;
+}
+
+.shop_page .btn_next::before {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    margin: 7px 11px 7px 13px;
+    content: '';
+    vertical-align: top;
+    background-position: -102px -193px;
+}
 
 /* footer */
 footer {

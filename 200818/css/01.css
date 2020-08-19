@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 나눔스퀘어는 분명 굉장히 좋은 폰트이다 하지만 작은 글씨는 깨진다. */
 @font-face {
     font-weight: 300;
     font-family: NanumSquare;
@@ -555,6 +556,156 @@
 
 .rg-local .rg-link .rg-link-pw {
     color: #666;
+}
+
+.timesquare {
+    border: 1px solid #dee3eb;
+    background: #fff;
+    margin: 8px 0;
+}
+
+.section-timesquare {
+    position: relative;
+}
+
+.area-header {
+    position: relative;
+    height: 32px;
+    border-bottom: 1px solid #ebeef3;
+    padding-left: 15px;
+}
+
+.area-header .header-info {
+    display: inline-block;
+    padding: 8px 0 0;
+    width: 150px;
+}
+
+.header-info a {
+    display: block;
+    float: left;
+}
+
+.header-info a .hi-dnum {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17px;
+    color: #000;
+}
+
+.header-info a .hi-day {
+    margin-left: 3px;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: top;
+}
+
+.header-info .an-bar {
+    float: left;
+    width: 1px;
+    height: 15px;
+    background: #ebeef3;
+    margin: 2px 8px 0;
+}
+
+.header-info .hi-tit {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.header-info .hi-tit .ico-link {
+    display: block;
+    float: right;
+    width: 6px;
+    height: 10px;
+    background: url(../img/sp_main.png) no-repeat -200px -112px;
+    margin: 2px 0 0 10px;
+}
+
+.area-header .header-paging {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right: 78px;
+    color: #888;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.header-paging .hp-curr {
+    color: #666;
+}
+
+.area-header .header-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-btn a {
+    display: block;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 33px;
+    height: 12px;
+    border-left: 1px solid #dee3eb;
+    overflow: hidden;
+}
+
+.header-btn a .ico-link {
+    width: 8px;
+    height: 16px;
+    background: url(../img/sp_newscast_v180511.png) no-repeat;
+    display: block;
+    margin-left: 12px;
+}
+
+.header-btn a:first-of-type .ico-link {
+    background-position: -254px -24px;
+}
+
+.header-btn a:last-of-type .ico-link {
+    background-position: -102px -193px;
+}
+
+.area-ct {
+    padding: 22px 15px 14px;
+}
+
+.ac-content {}
+
+.ac-content li {
+    font-size: 12px;
+    line-height: 16px;
+    color: #222;
+    padding-bottom: 5px;
+}
+
+.ac-content em{
+    color: #2565d0;
+}
+
+.ac-content .ac-tt {}
+
+.ac-content .ac-st {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.ac-content .ac-pt {}
+
+.branding{
+    border: 2px solid #dee3eb;
+    box-sizing: border-box;
+}
+
+.branding img{
+    width: 100%;
 }
 
 

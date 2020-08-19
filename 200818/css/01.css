@@ -296,9 +296,9 @@
 }
 
 .top-banner {
-    height: 120px;
+    height: 119px;
     border: 1px solid #dee3eb;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .top-banner img {
@@ -484,19 +484,77 @@
     height: 200px;
 }
 
-.api-list {}
+.api-list {
+    position: relative;
+    overflow: hidden;
+    height: 199px;
+}
 
-.api-list .ap-item {}
+.api-list .ap-item {
+    width: 122px;
+    height: 24px;
+    float: left;
+    padding: 21px 0 22px;
+    border-right: 1px solid #f1f3f6;
+    border-bottom: 1px solid #f1f3f6;
+}
 
-.api-list .ap-item .api-link {}
+.api-list .ap-item .api-link {
+    display: block;
+    height: 100%;
+    text-align: center;
+}
 
-.api-list .ap-item .api-link .api-logo {}
+.api-list .ap-item .api-link .api-logo {
+    height: 24px;
+}
 
 #content .right {
     width: 332px;
     height: 500px;
     position: relative;
     float: right;
+}
+
+.section-login {
+    background: #fff;
+    border: 1px solid #dee3eb;
+    height: 119px;
+}
+
+.rg-local {
+    padding: 15px 25px;
+}
+
+.rg-local p {
+    color: #888;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.rg-local .rg-local-btn {
+    display: block;
+    width: 280px;
+    height: 37px;
+    margin-top: 12px;
+    background: url(../img/sp_login_v180727.png) no-repeat 0 -47px;
+}
+
+.rg-local .rg-link {
+    margin-top: 12px;
+}
+
+.rg-local .rg-link .rg-link-join {
+    color: #666;
+    float: right;
+}
+
+.rg-local .rg-link .rg-link-id {
+    color: #666;
+}
+
+.rg-local .rg-link .rg-link-pw {
+    color: #666;
 }
 
 

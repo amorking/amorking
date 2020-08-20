@@ -10,6 +10,12 @@
     position: relative;
 }
 
+.btn_top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
 
 /* header */
 header {
@@ -292,6 +298,8 @@ header .main_menu {}
 }
 
 #content>.inner .card h2 {
+    margin: 0 auto;
+    width: 360px;
     font-size: 40px;
     font-weight: normal;
     color: #1a1f71;
@@ -304,7 +312,6 @@ header .main_menu {}
     display: block;
     width: 0;
     height: 4px;
-    margin: 0 auto;
     background-color: transparent;
     transition: all .5s;
 }
@@ -342,11 +349,11 @@ header .main_menu {}
     transition: all .5s;
 }
 
-.card_item:hover .card_imgbox img{
+.card_item:hover .card_imgbox img {
     transform: scale(1.2);
 }
 
-.card_item:hover .card_link p{
+.card_item:hover .card_link p {
     text-decoration: underline #dedede;
 }
 
@@ -368,5 +375,46 @@ header .main_menu {}
 
 /* footer */
 footer {
-    height: 1000px;
+    background: #F7F7F7;
+}
+
+footer .sitemap {
+    display: flex;
+    flex-flow: wrap row;
+    padding: 60px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+footer .sitemap>dl {
+    flex: 1;
+    padding: 0 16px;
+}
+
+footer .sitemap>dl dt {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+footer .sitemap>dl dt a{
+    color: #1a1f71;
+}
+
+footer .sitemap>dl dd {
+    margin-bottom: 8px;
+}
+
+footer .sitemap>dl dd a{
+    color: #555;
+}
+
+footer .copy {
+    padding: 40px 0;
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .copy img {
+    width: 240px;
 }

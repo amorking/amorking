@@ -198,10 +198,67 @@
         </div>
         <!-- /#content -->
 
-        <footer></footer>
+        <footer>
+            <div class="inner">
+                <div class="sitemap">
+                    <dl>
+                        <dt><a href="#">Visa Inc.</a></dt>
+                        <dd><a href="#">Visa 소개</a></dd>
+                        <dd><a href="#">채용정보</a></dd>
+                        <dd><a href="#">뉴스룸</a></dd>
+                        <dd><a href="#">투자자 관계</a></dd>
+                        <dd><a href="#">Visa 스폰서십채용정보</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">리소스</a></dt>
+                        <dd><a href="#">카드 소개</a></dd>
+                        <dd><a href="#">혜택</a></dd>
+                        <dd><a href="#">카드 분실·도난</a></dd>
+                        <dd><a href="#">지원 서비스</a></dd>
+                        <dd><a href="#">Visa에 문의하기</a></dd>
+                        <dd><a href="#">Visa Rules</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">법무 + 개인정보취급</a></dt>
+                        <dd><a href="#">법무</a></dd>
+                        <dd><a href="#">개인정보취급방침</a></dd>
+                        <dd><a href="#">개인정보취급방침 - 참여 거부</a></dd>
+                        <dd><a href="#">지적 재산권</a></dd>
+                    </dl>
+                </div>
+                <!-- /.sitemap -->
+                <div class="copy">
+                    <div class="btm_logo">
+                        <img src="img/logo-footer-kr-430x70.png" alt="footer logo">
+                    </div>
+                    <p class="copyright">
+                        ©Copyright 1996-2020. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+            <!-- /.inner -->
+        </footer>
         <!-- /footer -->
+
+        <div class="btn_top">
+            <img src="img/top.jpg" alt="btn_top">
+        </div>
+        <!-- /.btn_top -->
     </div>
     <!-- /#wrap -->
+
+    <script>
+        let btnTop = document.querySelector(".btn_top");
+
+        function scrollTop(e) {
+            let offsetTop = document.querySelector("html").offsetTop;
+            scroll({
+                top: offsetTop,
+                behavior: "smooth"
+            });
+        };
+        btnTop.addEventListener("click", scrollTop);
+    </script>
 </body>
 
 </html>

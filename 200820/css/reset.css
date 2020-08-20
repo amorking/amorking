@@ -25,7 +25,12 @@ dd {
     border: 0;
 }
 
-img{
+html,
+body {
+    color: #333;
+}
+
+img {
     vertical-align: top;
 }
 

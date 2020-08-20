@@ -77,8 +77,66 @@ header .main_menu {}
 }
 
 
+/* #slider */
+#slider {
+    height: 500px;
+    background: url(../img/marquee-visahotdeals-1600x900.jpg) no-repeat center /cover;
+}
+
+.caption {
+    width: 320px;
+    height: 300px;
+    padding: 30px;
+    background: rgba(255, 255, 255, .7);
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    color: #1a1f71;
+
+}
+
+.caption h2 {
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+
+.caption p {
+    line-height: 1.6;
+}
+
+.caption .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #1a1f71;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    transition: all .5s;
+}
+
+.caption .btn:hover {
+    background: #f7b600;
+    color: #1a1f71;
+    font-weight: bold;
+}
+
+
 /* #content */
 #content {}
+
+#content .con_menu {
+    height: 60px;
+}
+
+#content>.inner {}
+
+#content>.inner section {}
+
+#content>.inner .hotdeal {}
+
+#content>.inner .store {}
+
+#content>.inner .card {}
 
 
 /* footer */

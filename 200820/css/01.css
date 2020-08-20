@@ -173,11 +173,11 @@ header .main_menu {}
 
 #content>.inner section {
     padding: 40px 0;
+    border-bottom: 1px solid #dedede;
 }
 
 #content>.inner .hotdeal {
     text-align: center;
-    border-bottom: 1px solid #dedede;
 }
 
 #content>.inner .hotdeal h2 {
@@ -209,7 +209,7 @@ header .main_menu {}
     text-align: center;
 }
 
-#content>.inner .store h2{
+#content>.inner .store h2 {
     font-size: 40px;
     font-weight: normal;
     color: #1a1f71;
@@ -256,7 +256,7 @@ header .main_menu {}
     width: 100%;
 }
 
-.st_item .imgtxt{
+.st_item .imgtxt {
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -277,17 +277,93 @@ header .main_menu {}
     top: 0;
 }
 
-.st_item .imgtxt h4{
+.st_item .imgtxt h4 {
     font-size: 24px;
     filter: drop-shadow(2px 2px 5px #7a5a00);
 }
 
-.st_item .imgtxt p{
+.st_item .imgtxt p {
     font-size: 16px;
 }
 
 
-#content>.inner .card {}
+#content>.inner .card {
+    text-align: center;
+}
+
+#content>.inner .card h2 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #1a1f71;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#content>.inner .card h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    margin: 0 auto;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+#content>.inner .card h2:hover::after {
+    width: 360px;
+    background-color: #f7b600;
+}
+
+.card .card_list {
+    display: flex;
+    flex-flow: wrap row;
+    padding-top: 20px;
+}
+
+.card_list .card_item {
+    width: 32%;
+    margin-right: 30px;
+    flex: 1;
+}
+
+.card_list .card_item:last-child {
+    margin-right: 0;
+}
+
+.card_list .card_item .card_link {}
+
+.card_link .card_imgbox {
+    overflow: hidden;
+    height: 200px;
+}
+
+.card_imgbox img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.card_item:hover .card_imgbox img{
+    transform: scale(1.2);
+}
+
+.card_item:hover .card_link p{
+    text-decoration: underline #dedede;
+}
+
+.card_link h3 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #1a1f71;
+    text-align: left;
+    margin: 16px 0 8px;
+}
+
+.card_link p {
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
 
 
 /* footer */

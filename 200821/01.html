@@ -48,9 +48,9 @@
 
         <div id="slider">
             <ul class="slide">
-                <li class="slide_item"><img src="img/slider01.jpg" alt="1"></li>
-                <li class="slide_item"><img src="img/slider02.jpg" alt="2"></li>
-                <li class="slide_item"><img src="img/slider03.jpg" alt="3"></li>
+                <li class="slide_item"><img src="img/slider01.jpg" alt="슬라이드 배너1"></li>
+                <li class="slide_item"><img src="img/slider02.jpg" alt="슬라이드 배너2"></li>
+                <li class="slide_item"><img src="img/slider03.jpg" alt="슬라이드 배너3"></li>
             </ul>
         </div>
         <!-- /#slider -->
@@ -96,6 +96,8 @@
                     </li>
                 </ul>
             </section>
+            <!-- /.schedule -->
+
             <section class="collection">
                 <h3 class="col_tit"><span>전시 포스터</span></h3>
                 <ul class="poster_list">
@@ -140,12 +142,46 @@
                         </div>
                     </li>
                 </ul>
+                <!-- /.poster_list -->
             </section>
             <!-- /.collection -->
-            <section class="banner">
-                
+
+            <section class="banner clear">
+                <div class="banner_area">
+                    <div class="banner_list_wrap">
+                        <ul class="banner_list">
+                            <li><img src="img/banner01.jpg" alt="배너1"></li>
+                            <li><img src="img/banner02.jpg" alt="배너2"></li>
+                            <li><img src="img/banner03.jpg" alt="배너3"></li>
+                        </ul>
+                    </div>
+                    <!-- /.banner_list_wrap -->
+                    <div class="banner_ctrl">
+                        <a href="#prevBanner" class="banner_prev" onclick="prevBanner()">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <span id="banner_count">1 / 9</span>
+                        <a href="#nextBanner" class="banner_next" onclick="nextBanner()">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <!-- /.banner_ctrl -->
+                </div>
+                <!-- /.banner_area -->
+
+                <div class="quick_area">
+                    <ul class="quick_list">
+                        <li><a href="#">미술은행<i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">레지던시<i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">아카이브와 도서<i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">어린이미술관<i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.quick_area -->
+
             </section>
             <!-- /.banner -->
+
             <section class="newsletter">
 
             </section>

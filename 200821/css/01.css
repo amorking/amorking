@@ -258,7 +258,7 @@ nav {
     display: inline-block;
     width: calc((100% - 6%)/4);
     margin-right: 2%;
-    padding: 30px 15px 10px;
+    padding: 30px 15px 20px;
     background: #fafafa;
     box-sizing: border-box;
     border: 1px solid transparent;
@@ -273,7 +273,7 @@ nav {
     margin-right: 0;
 }
 
-.poster_list li a{
+.poster_list li a {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -284,13 +284,14 @@ nav {
     transition: transform .5s;
 }
 
-.poster_list li:hover a img{
+.poster_list li:hover a img {
     transform: scale(1.1);
 }
 
 .poster_list li .poster_txt {
     font-size: 1rem;
     margin-top: 30px;
+    padding-left: 8px;
 }
 
 .poster_txt>.title {
@@ -308,4 +309,52 @@ nav {
     color: #777;
 }
 
-footer {}
+#content>.banner {
+    width: 1480px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+#content>.banner .banner_area {
+    float: left;
+    width: 49%;
+}
+
+.banner_area .banner_list_wrap {
+    height: 197px;
+    background: #f5f5f5;
+    overflow: hidden;
+    border: 1px solid #f5f5f5;
+}
+
+.banner_list_wrap .banner_list {
+    width: 300%;
+    font-size: 0;
+    transition: all .5s ease;
+}
+
+.banner_list_wrap .banner_list li {
+    width: 33.333333%;
+    display: inline-block;
+}
+
+.banner_list_wrap .banner_list li img {
+    width: 100%;
+}
+
+.banner_ctrl {
+    margin-top: 8px;
+    padding-left: 8px;
+}
+
+#content>.banner .quick_area {
+    float: right;
+    width: 49%;
+    height: 139px;
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+
+footer {
+    height: 100px;
+}

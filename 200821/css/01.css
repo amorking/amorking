@@ -134,7 +134,7 @@ nav {
     font-weight: 400;
 }
 
-.gnb .gnb_item a::after{
+.gnb .gnb_item a::after {
     content: "";
     display: block;
     width: 100%;
@@ -145,7 +145,7 @@ nav {
     transition: all .5s ease;
 }
 
-.gnb .gnb_item:hover a::after{
+.gnb .gnb_item:hover a::after {
     opacity: 1;
 }
 
@@ -160,8 +160,152 @@ nav {
     line-height: 45px;
 }
 
-#slider {}
+#slider {
+    width: 1480px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 100%;
+}
 
 #content {}
+
+#content>.schedule {
+    width: 1480px;
+    margin: 0 auto;
+}
+
+#content>.schedule ul {
+    display: flex;
+    padding: 20px 0;
+    margin-top: 60px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#content>.schedule ul li {
+    flex: 1;
+    padding: 0 25px;
+    border-right: 1px solid #e1e1e1;
+}
+
+#content>.schedule ul li:last-child {
+    border-right: 0;
+}
+
+#content>.schedule ul li dl {}
+
+#content>.schedule ul li dl dt {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#content>.schedule ul li dl dt a.gwacheon {
+    color: #11541F;
+}
+
+#content>.schedule ul li dl dt a.seoul {
+    color: #f1473a;
+}
+
+#content>.schedule ul li dl dt a.deoksugung {
+    color: #d12773;
+}
+
+#content>.schedule ul li dl dt a.cheongju {
+    color: #008fcb;
+}
+
+#content>.schedule ul li dl dd {
+    margin-top: 10px;
+}
+
+#content>.schedule ul li dl dd>span:first-child::after {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #e0ac4e;
+}
+
+#content>.collection {
+    width: 1480px;
+    margin: 0 auto;
+}
+
+#content>.collection>.col_tit {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#content>.collection>.col_tit span {
+    border-top: 1px solid #0a1923;
+    padding: 10px 1px 0;
+}
+
+#content>.collection>.poster_list {
+    font-size: 0;
+}
+
+.poster_list li {
+    display: inline-block;
+    width: calc((100% - 6%)/4);
+    margin-right: 2%;
+    padding: 30px 15px 10px;
+    background: #fafafa;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: border .5s;
+}
+
+.poster_list li:hover {
+    border: 1px solid #ddd;
+}
+
+.poster_list li:last-child {
+    margin-right: 0;
+}
+
+.poster_list li a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.poster_list li a img {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.poster_list li:hover a img{
+    transform: scale(1.1);
+}
+
+.poster_list li .poster_txt {
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.poster_txt>.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.poster_txt>.date {
+    line-height: 1.6;
+    color: #777;
+}
+
+.poster_txt>.writer {
+    line-height: 1.6;
+    color: #777;
+}
 
 footer {}

@@ -1,2 +1,167 @@
 @charset "UTF-8";
 
+#wrap {
+    min-width: 1480px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1480px;
+    height: 110px;
+    margin: 0 auto;
+    border-bottom: solid 1px #e1e1e1;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header .logo {
+    text-align: center;
+    height: 110px;
+}
+
+header .logo a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .top_menu {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    font-size: 0;
+}
+
+header .top_menu li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+header .top_menu li a {
+    color: #0a1923;
+    padding: 0 12px;
+    position: relative;
+}
+
+header .top_menu li:first-child a {
+    padding-left: 0;
+}
+
+header .top_menu li:last-child a {
+    padding-right: 0;
+}
+
+header .top_menu li:first-child a::before {
+    display: none;
+}
+
+header .top_menu li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 10px;
+    border-left: 1px solid #ccc;
+    margin-top: -2px;
+}
+
+header .top_menu li:hover a {
+    text-decoration: underline;
+}
+
+nav {
+    width: 1480px;
+    height: 46px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: solid 1px #e1e1e1;
+    overflow: hidden;
+}
+
+.nav_lang {
+    float: left;
+    line-height: 40px;
+}
+
+.nav_lang a {
+    font-size: 11px;
+}
+
+.nav_lang button {
+    background: none;
+    border: none;
+    font-size: 11px;
+    color: red;
+    margin-left: 16px;
+}
+
+.nav_lang .fas {
+    font-size: 12px;
+    transform: translateY(1px);
+    padding-left: 8px;
+}
+
+.nav_search {
+    cursor: pointer;
+}
+
+.nav_search span {
+    font-weight: 700;
+    color: #444;
+}
+
+.nav_search .fab {
+    font-size: 17px;
+    padding-left: 16px;
+    color: #444;
+}
+
+.gnb {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+}
+
+.gnb .gnb_item {
+    display: inline-block;
+    line-height: 45px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.gnb .gnb_item a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #222;
+    margin-top: -1px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.gnb .gnb_item:hover a::after{
+    opacity: 1;
+}
+
+.gnb .gnb_item a {
+    display: inline-block;
+    padding: 0 60px;
+    color: #222;
+}
+
+.nav_search {
+    float: right;
+    line-height: 45px;
+}
+
+#slider {}
+
+#content {}
+
+footer {}

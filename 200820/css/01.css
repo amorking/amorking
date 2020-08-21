@@ -66,21 +66,25 @@ header .main_menu {}
     color: #f7b600;
 }
 
-
 .gnb .mg_item .ico_search {
     background: none;
     border: none;
-    padding: 11px 0 10px 0;
+    padding: 10px 0 0 0;
 }
 
-.gnb .mg_item .ico_search span {
+.gnb .mg_item .ico_search{
+    color: #f7b600;
+    font-size: 24px;
+}
+
+/* .gnb .mg_item .ico_search span {
     border-left: 1px solid #fff;
     padding-left: 32px;
     display: block;
     width: 24px;
     height: 24px;
     background: url(../img/search.jpg) no-repeat right center;
-}
+} */
 
 
 /* #slider */
@@ -178,8 +182,12 @@ header .main_menu {}
 #content>.inner {}
 
 #content>.inner section {
-    padding: 40px 0;
+    padding: 60px 0;
     border-bottom: 1px solid #dedede;
+}
+
+#content>.inner section:last-child {
+    border-bottom: 0;
 }
 
 #content>.inner .hotdeal {
@@ -393,9 +401,6 @@ footer .sitemap>dl {
 footer .sitemap>dl dt {
     font-size: 24px;
     margin-bottom: 16px;
-}
-
-footer .sitemap>dl dt a{
     color: #1a1f71;
 }
 
@@ -405,6 +410,11 @@ footer .sitemap>dl dd {
 
 footer .sitemap>dl dd a{
     color: #555;
+}
+
+footer .sitemap>dl dd .fab{
+    font-size: 32px;
+    color: rgb(208, 214, 220);  
 }
 
 footer .copy {

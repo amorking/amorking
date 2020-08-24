@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 #wrap {
     min-width: 1480px;
     margin: 0 auto;
@@ -70,6 +74,71 @@ header .top_menu li a::before {
 header .top_menu li:hover a {
     text-decoration: underline;
 }
+
+.side_quick_link {
+    position: absolute;
+    top: 156px;
+}
+
+.side_quick_link ul {
+    padding-top: 35px;
+}
+
+.side_quick_link ul li {}
+
+.side_quick_link ul li a{
+	position: relative;
+	display: block;
+	width: 120px;
+	font-size: 0.813em;
+	padding: 10px 10px 10px 22px;
+	background-color: rgba(255,255,255,.6);
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.side_quick_link ul li a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
+}
+
+.side_quick_link ul li a.art_bank:before {
+    background-color: #c70774
+}
+
+.side_quick_link ul li a.residency:before {
+    background-color: #fe6d02
+}
+
+.side_quick_link ul li a.archive:before {
+    background-color: #00bff3
+}
+
+.side_quick_link ul li a.children:before {
+    background-color: #fdb813
+}
+
+.side_quick_link ul li a.stroy:before {
+    background-color: #14e413
+}
+
+.side_quick_link ul li a:hover,
+.side_quick_link ul li a:focus {
+    width: 160px;
+    color: #fff;
+    text-align: right;
+    text-decoration: underline;
+    background-color: #0a1923
+}
+
+.side_quick_link ul li a span {}
 
 nav {
     width: 1480px;
@@ -457,8 +526,102 @@ footer {
     border-top: 1px solid #e1e1e1;
     text-align: center;
     margin-top: 20px;
+    padding: 30px 0 0 0;
 }
 
-.footer_sns {}
+.copy_box h5 {}
+
+.copy_box .company {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.copy_box .company .ceo {
+    position: relative;
+    margin-right: 8px;
+    padding-right: 8px;
+}
+
+.copy_box .company .ceo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translate(0, -46%);
+    height: 12px;
+    border-right: 1px solid #c5a76b;
+}
+
+.copy_box .company .number {}
+
+.copy_box .copyright {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer_sns {
+    padding: 10px 0;
+}
+
+.footer_sns ul {
+    text-align: center;
+}
+
+.footer_sns ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
 
 .btm_menu_box02 {}
+
+.btm_menu_box02 ul {
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: .9rem;
+}
+
+.btm_menu_box02 ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.btm_menu_box02 ul li a span {
+    padding: 2px;
+    border-bottom: 1px solid #333;
+}
+
+.icon_sns {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.icon_sns a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.top {
+    position: fixed;
+    bottom: 120px;
+    right: 60px;
+    border: 1px solid #0a1923;
+    text-align: center;
+    background: #fff;
+}
+
+.top:hover {
+    background: #0a1923;
+}
+
+.top:hover a {
+    color: #fff;
+}
+
+.top a {
+    display: block;
+    padding: 14px 20px;
+}

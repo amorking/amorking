@@ -1,4 +1,8 @@
 //visual 슬라이더
+let vSlides = document.querySelector('.slide'),
+    vSlide = document.querySelectorAll('.slide_item'),
+    vSlideCount = vSlide.length
+;
 
 //collection 밑 banner 슬라이더
 let slides = document.querySelector('.banner_list'), //움직임을 적용할 요소
@@ -24,5 +28,13 @@ nxtBtn.addEventListener('click', function () {
         moveSlide(currentIdx + 1);
     } else {
         moveSlide(0);
+    }
+});
+
+preBtn.addEventListener('click', function () {
+    if (currentIdx < 1) {
+        moveSlide(slide.length - 1);
+    } else {
+        moveSlide(currentIdx - 1);
     }
 });

@@ -350,9 +350,35 @@ nav {
 #content>.banner .quick_area {
     float: right;
     width: 49%;
-    height: 139px;
+    height: 199px;
     background: #f5f5f5;
-    padding: 30px 0;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quick_list{}
+
+.quick_list li{
+    display: block;
+    border-bottom: 1px solid #000;
+    padding: 8px 0 6px 60px;
+}
+
+.quick_list li:hover a{
+    text-decoration: underline;
+}
+
+.quick_list li a{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: -18px;
+}
+
+.quick_list li a .fas{
+    padding-left: 8px;
 }
 
 footer {

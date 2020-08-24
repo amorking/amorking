@@ -380,6 +380,10 @@ nav {
     margin-right: -18px;
 }
 
+.quick_list li a:focus {
+    outline: 0 none;
+}
+
 .quick_list li a .fas {
     padding-left: 8px;
 }
@@ -431,3 +435,30 @@ nav {
 footer {
     height: 100px;
 }
+
+.btm_menu_box01 {}
+
+.btm_menu01 {
+    text-align: center;
+}
+
+.btm_menu01 li {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btm_menu01 li:hover a {
+    text-decoration: underline;
+}
+
+.copy_box {
+    border-top: 1px solid #e1e1e1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer_sns {}
+
+.btm_menu_box02 {}

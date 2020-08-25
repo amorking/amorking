@@ -82,15 +82,15 @@ header .top_menu li:hover a {
 
 .side_quick_link ul li {}
 
-.side_quick_link ul li a{
-	position: relative;
-	display: block;
-	width: 120px;
-	font-size: 0.813em;
-	padding: 10px 10px 10px 22px;
-	background-color: rgba(255,255,255,.6);
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
+.side_quick_link ul li a {
+    position: relative;
+    display: block;
+    width: 120px;
+    font-size: 0.813em;
+    padding: 10px 10px 10px 22px;
+    background-color: rgba(255, 255, 255, .6);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .side_quick_link ul li a:before {
@@ -240,7 +240,7 @@ nav {
     width: 100%;
 }
 
-.slide_item{
+.slide_item {
     position: absolute;
     top: 0;
     left: 0;
@@ -249,7 +249,7 @@ nav {
     z-index: 0;
 }
 
-.slide_item.showing{
+.slide_item.showing {
     opacity: 1;
     z-index: 1;
 }
@@ -392,14 +392,14 @@ nav {
     color: #777;
 }
 
-.owl-carousel .owl-dots{
+.owl-carousel .owl-dots {
     position: absolute;
     bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.owl-carousel .owl-dots .owl-dot{
+.owl-carousel .owl-dots .owl-dot {
     background: #ddd;
     margin: 0 5px;
     border-radius: 50%;
@@ -408,8 +408,42 @@ nav {
     height: 20px;
 }
 
-.owl-dots .owl-dot.active{
+.owl-dots .owl-dot.active {
     background: deeppink;
+}
+
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.owl-nav .owl-prev {    
+    position: absolute;
+    left: -80px;
+}
+
+.owl-nav .owl-prev span {
+    font-size: 1.6rem;
+    background: #fff;
+    border: 1px solid #333;
+    display: block;
+    padding: 12px 26px 16px;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: -80px;
+}
+
+.owl-nav .owl-next span {
+    font-size: 1.6rem;
+    background: #fff;
+    border: 1px solid #333;
+    display: block;
+    padding: 12px 26px 16px;
 }
 
 #content>.banner {

@@ -392,6 +392,26 @@ nav {
     color: #777;
 }
 
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-carousel .owl-dots .owl-dot{
+    background: #ddd;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.owl-dots .owl-dot.active{
+    background: deeppink;
+}
+
 #content>.banner {
     width: 1480px;
     margin: 0 auto;

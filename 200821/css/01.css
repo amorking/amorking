@@ -420,17 +420,26 @@ nav {
     transform: translate(-50%, -50%);
 }
 
-.owl-nav .owl-prev {    
+.owl-nav .owl-prev {
     position: absolute;
     left: -80px;
 }
 
-.owl-nav .owl-prev span {
+.owl-nav button{
+    outline: 0 none;
+}
+
+.owl-nav .owl-prev i {
     font-size: 1.6rem;
     background: #fff;
+    color: #333;
     border: 1px solid #333;
     display: block;
-    padding: 12px 26px 16px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding-right: 2px;
+    box-sizing: border-box;
 }
 
 .owl-nav .owl-next {
@@ -438,13 +447,20 @@ nav {
     right: -80px;
 }
 
-.owl-nav .owl-next span {
+.owl-nav .owl-next i {
     font-size: 1.6rem;
     background: #fff;
+    color: #333;
     border: 1px solid #333;
     display: block;
-    padding: 12px 26px 16px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 2px;
+    box-sizing: border-box;
 }
+
+
 
 #content>.banner {
     width: 1480px;

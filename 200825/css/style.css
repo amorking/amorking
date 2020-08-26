@@ -141,9 +141,7 @@ header .nav_list .nav_item:hover .nav_link::after {
 #slider .owl-nav {
     width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    top: 44%;
     font-size: 2rem;
 }
 
@@ -279,9 +277,9 @@ header .nav_list .nav_item:hover .nav_link::after {
 }
 
 .newitem_slide_wrap .slide_list .slide_item {
+    margin-right: var(--slide_item_mright);
     position: relative;
     border: 1px solid #ddd;
-    margin-right: var(--slide_item_mright);
     overflow: hidden;
     height: 244px;
 }
@@ -421,7 +419,6 @@ section.collection {
     width: 100%;
     position: absolute;
     top: 42%;
-    transform: translateY(-50%);
 }
 
 .twice .owl-nav button:focus {
@@ -449,19 +446,18 @@ section.collection {
 
 .twice .owl-nav .owl-prev {
     position: absolute;
-    left: -40px;
+    left: -80px;
 }
 
 .twice .owl-nav .owl-next {
     position: absolute;
-    right: -40px;
+    right: -80px;
 }
 
 .twice>.inner .tw_list .tw_item {
     display: inline-block;
-    width: 80%;
+    width: 100%;
     vertical-align: top;
-    margin: 0 10%;
 }
 
 .twice>.inner .tw_list .tw_item img {

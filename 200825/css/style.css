@@ -513,11 +513,122 @@ section.collection {
     color: #fff;
 }
 
-
 .twice .te_item .photo {}
 
 .twice .te_item .txt {}
 
+.event {
+    margin: 140px 0 100px;
+    height: 380px;
+    background: url(../img/ft_bg.jpg) no-repeat fixed center/cover;
+    text-align: center;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+
+.event>.inner>h2 {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: -1px;
+}
+
+.event>.inner>p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #27251f;
+}
+
 
 /* footer */
-footer {}
+footer {
+    padding: 60px 60px;
+    background: #f0f0f0;
+}
+
+footer>.sitemap {
+    margin-bottom: 60px;
+}
+
+footer>.sitemap .sm_list {
+    float: left;
+    width: 25%;
+    font-size: 12px;
+}
+
+footer>.sitemap .sm_list .sm_title {
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+footer>.sitemap .sm_list .sm_item {
+    line-height: 32px;
+}
+
+footer>.sitemap .sm_list .sm_item:hover a {
+    text-decoration: underline;
+}
+
+footer>.copy .infobox_01 {
+    float: left;
+}
+
+footer>.copy .infobox_01 p {
+    font-size: 12px;
+    color: #333;
+}
+
+footer>.copy .infobox_01 .txtbox{
+    margin-top: 60px;
+}
+
+footer>.copy .infobox_01 .copyright {
+    font-size: 12px;
+    color: #999;
+    margin-right: 16px;
+    float: left;
+}
+
+footer>.copy .infobox_01 .lang {
+    font-size: 0;
+    float: left;
+}
+
+footer>.copy .infobox_01 .lang li {
+    display: inline-block;
+    font-size: 12px;
+    border-bottom: 1px solid #999;
+    margin-right: 8px;
+}
+
+footer>.copy .infobox_01 .lang li .ico{
+    background: url(../img/korea.gif) no-repeat center center/cover;
+    display: inline-block;
+    width: 22px;
+    height: 12px;
+    vertical-align: top;
+    transform: translateY(2px);
+    margin-right: 8px;
+}
+
+footer>.copy .infobox_02 {
+    float: right;
+}
+
+footer>.copy .infobox_02 .snsbox {}
+
+footer>.copy .infobox_02 .snsbox .ico {
+    width: 16px;
+    height: 16px;
+    padding: 0 16px;
+}
+
+footer>.copy .infobox_02 .snsbox .ico:last-child {
+    padding-right: 0;
+}
+
+footer>.copy .infobox_02 .ec_ico{
+    margin-top: 60px;
+    width: 48px;
+    height: 48px;
+    float: right;
+}

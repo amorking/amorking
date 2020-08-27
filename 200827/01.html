@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keyframe 실습</title>
     <link rel="stylesheet" href="css/01.css">
 </head>
+
 <body>
     <div id="ani"></div>
-    <div id="bg"></div>
+    <!-- /#ani -->
+
+    <div id="bg">
+        <div class="bg-inner"></div>
+    </div>
+    <!-- /#bg -->
+
+    <div id="gif"></div>
+    <!-- /#gif -->
+
+    <div id="flicker">
+        <div class="logobox">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+    <!-- /#flicker -->
+
+    <div id="tilt">
+        <!-- 마우스 움직임에 따른 3D 효과 -->
+        <div class="inner">
+            <h1>
+                preserve-3d<br>
+                translateZ
+            </h1>
+        </div>
+    </div>
+    <!-- /#tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+
+    <script>
+        $(".inner").tilt({
+            glare:true,
+            maxGlare: .5,
+            scale:1.1
+        });
+    </script>
 </body>
+
 </html>

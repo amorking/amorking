@@ -20,15 +20,15 @@
     }
 }
 
-body{
+#bg {
     background: url(../img/bg.jpg) no-repeat fixed center / cover;
 }
 
-#bg {
+.bg-inner {
     width: 100%;
     height: 800px;
     background: url(../img/bg01.png);
-    animation: bgani 5s  linear infinite;
+    animation: bgani 5s linear infinite;
 }
 
 @keyframes bgani {
@@ -39,4 +39,113 @@ body{
     to {
         background-position: 0 2000px;
     }
+}
+
+#gif {
+    width: 74px;
+    height: 93px;
+    overflow: hidden;
+    margin: 50px auto;
+    background: url(../img/monster.png) no-repeat left center;
+    animation: gif .8s steps(10) infinite;
+}
+
+@keyframes gif {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -740px;
+    }
+}
+
+#flicker {
+    margin: 0;
+    width: 100%;
+    height: 800px;
+    background: #222;
+    overflow: hidden;
+}
+
+.logobox {
+    width: 110px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logobox div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.logobox .circle1 {
+    left: 0;
+    background: #5e239d;
+    animation-name: logo1;
+}
+
+.logobox .circle2 {
+    right: 0;
+    background: #f61067;
+    animation-name: logo2;
+}
+
+@keyframes logo1 {
+    0% {
+        left: 0;
+        z-index: 1;
+    }
+
+    50% {
+        left: 50%;
+    }
+}
+
+@keyframes logo2 {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 50%;
+    }
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#tilt {
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+}
+
+#tilt>.inner {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center/cover;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+#tilt>.inner>h1 {
+    font-size: 50px;
+    color: #fff;
+    filter: drop-shadow(0px 3px 5px #000) drop-shadow(0px 10px 15px rgba(0, 0, 0, .2));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 80px);
 }

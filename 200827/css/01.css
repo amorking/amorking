@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#ani {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    position: relative;
+    animation: test 1s infinite alternate ease-in-out;
+}
+
+@keyframes test {
+
+    /* keyframe생성 이름 */
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 500px
+    }
+}
+
+body{
+    background: url(../img/bg.jpg) no-repeat fixed center / cover;
+}
+
+#bg {
+    width: 100%;
+    height: 800px;
+    background: url(../img/bg01.png);
+    animation: bgani 5s  linear infinite;
+}
+
+@keyframes bgani {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 2000px;
+    }
+}

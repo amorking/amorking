@@ -5,8 +5,22 @@ html,
 body,
 ul,
 li,
-div {
+div,
+header,
+main,
+section,
+aside,
+footer {
     box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.inner{
+    min-width: 1194px;
+    margin: 0 auto;
 }
 
 /* #wrap */

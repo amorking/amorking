@@ -1,2 +1,13 @@
 @charset "UTF-8";
 
+/* reset */
+html,
+body,
+ul,
+li,
+div {
+    box-sizing: border-box;
+}
+
+/* #wrap */
+#wrap {}

@@ -14,14 +14,126 @@ footer {
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.inner{
+.inner {
     min-width: 1194px;
     margin: 0 auto;
 }
 
 /* #wrap */
 #wrap {}
+
+
+/* header */
+header {
+    background: #222;
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+header>#gnb_wrap {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    height: 100px;
+    padding: 0 40px;
+}
+
+#gnb_wrap>.logo {
+    display: flex;
+    height: 42px;
+    margin-right: 30px;
+}
+
+#gnb_wrap>.logo>img {
+    width: 160px;
+}
+
+#gnb_wrap>.logo>span {
+    padding-top: 2px;
+}
+
+#gnb_wrap>.logo>span::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 22px;
+    background: #fff;
+    margin: 8px 12px;
+    float: left;
+}
+
+#gnb_wrap>.gnb {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+#gnb_wrap>.gnb .gnb_item {
+    padding: 0 30px;
+}
+
+#gnb_wrap>.gnb .gnb_item a {}
+
+#gnb_wrap>.gnb .gnb_item a>span {}
+
+#gnb_wrap>.sign {
+    display: flex;
+    flex-flow: wrap row;
+    margin-left: auto;
+}
+
+#gnb_wrap>.sign li {}
+
+#gnb_wrap>.sign li a {}
+
+#gnb_wrap>.sign li a span {}
+
+#gnb_wrap>.sign li:last-child a span::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: #fff;
+    margin: 5px 12px;
+    float: left;
+}
+
+
+/* main */
+main {}
+
+
+/* section.rental */
+section.rental {}
+
+
+/* section.banner */
+section.banner {}
+
+
+/* section.contents */
+section.contents {}
+
+
+/* section.services */
+section.services {}
+
+
+/* section.notice */
+section.notice {}
+
+
+/* footer */
+footer {}
+
+footer>div.left {}
+
+footer .left>ul.ft_list {}

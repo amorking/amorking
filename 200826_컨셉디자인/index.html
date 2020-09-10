@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LG전자 케어솔루션</title>
     <link rel="shortcut icon" href="img/lg_favicon.ico">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
@@ -65,49 +67,64 @@
         <!-- /header -->
 
         <main>
-            <div class="main_slide_control">
-                <span class="slide_page current">01</span>
-                <div class="slide_progress"></div>
-                <span class="slide_page total">02</span>
-                <ul class="slide_nav">
-                    <li class="btn_prev"></li>
-                    <li class="btn_play"></li>
-                    <li class="btn_next"></li>
-                </ul>
+            <div class="main_control_box">
+                <div class="main_control">
+                    <span class="slide_page current">01</span>
+                    <div class="slide_progress"></div>
+                    <span class="slide_page total">02</span>
+                    <ul class="slide_nav">
+                        <li class="btn_prev"></li>
+                        <li class="btn_play"></li>
+                        <li class="btn_next"></li>
+                    </ul>
+                </div>
+                <!-- /.main_control -->
             </div>
-            <!-- /.main_slide_control -->
+            <!-- /.main_control_box -->
             <div class="main_slide_wrap">
-                <ul class="slide">
-                    <li class="slide_item">
-                        <p class="subtitle">공기청정깅의 새로운 움직임</p>
-                        <h2 class="tit">LG 퓨리케어 공기청정기</h2>
-                        <div class="btn_slide">
-                            <span class="txt_btn">자세히보기</span>
+                <ul class="slide owl-carousel">
+                    <li id="sd_01" class="slide_item">
+                        <div class="box_txt">
+                            <p class="subtit">공기청정깅의 새로운 움직임</p>
+                            <h2 class="tit">LG 퓨리케어 공기청정기</h2>
+                            <div class="btn_more">
+                                <span class="txt_btn">자세히보기</span>
+                            </div>
                         </div>
+                        <!-- /.box_txt -->
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item">
-                        <p class="subtitle">공기청정깅의 새로운 움직임</p>
-                        <h2 class="tit">LG 퓨리케어 공기청정기</h2>
-                        <div class="btn_slide">
-                            <span class="txt_btn">자세히보기</span>
+                    <li id="sd_02" class="slide_item">
+                        <div class="box_txt">
+                            <p class="subtit">차원이 다른 전문가의 가전관리</p>
+                            <h2 class="tit">LG전자 케어솔루션</h2>
+                            <div class="btn_more">
+                                <span class="txt_btn">자세히보기</span>
+                            </div>
                         </div>
+                        <!-- /.box_txt -->
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item">
-                        <p class="subtitle">공기청정깅의 새로운 움직임</p>
-                        <h2 class="tit">LG 퓨리케어 공기청정기</h2>
-                        <div class="btn_slide">
-                            <span class="txt_btn">자세히보기</span>
+                    <li id="sd_03" class="slide_item">
+                        <div class="box_txt">
+                            <p class="subtit">차원이 다른 전문가의 가전관리</p>
+                            <h2 class="tit">LG전자 케어십</h2>
+                            <div class="btn_more">
+                                <span class="txt_btn">자세히보기</span>
+                            </div>
                         </div>
+                        <!-- /.box_txt -->
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item">
-                        <p class="subtitle">공기청정깅의 새로운 움직임</p>
-                        <h2 class="tit">LG 퓨리케어 공기청정기</h2>
-                        <div class="btn_slide">
-                            <span class="txt_btn">자세히보기</span>
+                    <li id="sd_04" class="slide_item">
+                        <div class="box_txt">
+                            <p class="subtit">매년 주요 직수관 교체로 깨끗함의 차원이 다른 직수</p>
+                            <h2 class="tit">LG 퓨리케어 정수기</h2>
+                            <div class="btn_more">
+                                <span class="txt_btn">자세히보기</span>
+                            </div>
                         </div>
+                        <!-- /.box_txt -->
                     </li>
                     <!-- /.slide_item -->
                 </ul>
@@ -154,16 +171,16 @@
                         <!-- /.product_price -->
                         <div class="affiliated_card">
                             <span class="ac_tit">제휴카드 할인혜택</span>
-                            <select name="af_card" id="ac_card">
+                            <select id="ac_card" name="ac_card">
                                 <option value="01">[광주] 베스트케어</option>
                                 <option value="02">[광주] 베스트케어</option>
                                 <option value="03">[광주] 베스트케어</option>
                             </select>
-                            <ul class="af_discount">
-                                <li class="af_max_disc">
+                            <ul class="ac_discount">
+                                <li class="ac_max_disc">
                                     <span>최대 </span><span class="max_disc">23,000원</span><span> 할인</span>
                                 </li>
-                                <li class="af_mon_charge">
+                                <li class="ac_mon_charge">
                                     <span>월요금 </span><span class="mon_charge">9,900원</span>
                                 </li>
                             </ul>
@@ -411,6 +428,17 @@
         <!-- /footer -->
     </div>
     <!-- /#wrap -->
+    <script src="js/jQuery_v3.5.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('.main_slide_wrap .owl-carousel').owlCarousel({
+            items: 1,
+            dots: false,
+            animateOut: 'fadeOut',
+            autoplay: true,
+            loop: true
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 

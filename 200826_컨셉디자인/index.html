@@ -624,23 +624,37 @@
         const pause = $('main .btn_play');
         const next = $('main .btn_next');
         const mainSlide = $('main .slide.owl-carousel');
+        const current = document.querySelector('main .current');
+        const total = document.querySelector('main .total');
+        const totalSlide = document.querySelectorAll('main .slide .slide_item');
+
+        total.innerHTML = `0${totalSlide.length/2}`;
 
         prev.click(function () {
+            progress.removeClass('active');
             mainSlide.trigger('prev.owl.carousel');
+            mainSlide.trigger('stop.owl.autoplay');
+            mainSlide.trigger('play.owl.autoplay');
+            progress.addClass('active');
         });
 
         pause.click(function () {
             pause.toggleClass('pause');
             if (pause.hasClass('pause')) {
+                progress.removeClass('active');
                 mainSlide.trigger('stop.owl.autoplay');
             } else {
+                progress.addClass('active');
                 mainSlide.trigger('play.owl.autoplay');
             };
         });
 
         next.click(function () {
-            stop.mainSlide.autoplay;
+            progress.removeClass('active');
             mainSlide.trigger('next.owl.carousel');
+            mainSlide.trigger('stop.owl.autoplay');
+            mainSlide.trigger('play.owl.autoplay');
+            progress.addClass('active');
         });
 
         // .rental carousel

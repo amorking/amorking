@@ -133,27 +133,81 @@ main {
 main>.main_control_box {
     z-index: 10;
     position: absolute;
-    top: 140px;
+    top: 160px;
     left: calc(12% + 32px);
 }
 
 main .main_control {
-    color: red;
+    display: flex;
+    align-items: center;
 }
 
 main .main_control .slide_page {}
 
-main .main_control .slide_progress {}
+main .main_control .slide_page.current {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #A40033;
+}
 
-main .slide_nav {}
+main .main_control .slide_page.total {
+    font-size: 1.5rem;
+    margin-right: 4px;
+}
 
-main .slide_nav .btn_prev {}
+@keyframes progress{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
 
-main .slide_nav .btn_play {}
+main .main_control .slide_progress {
+    position: relative;
+    width: 230px;
+    height: 2px;
+    background: #000;
+    margin: 0 4px;
+}
 
-main .slide_nav .btn_play.pause {}
+main .main_control .slide_progress .progress_bar{
+    position: absolute;
+    height: 2px;
+    background: #A40033;
+}
 
-main .slide_nav .btn_next {}
+main .main_control .slide_progress .progress_bar.active{
+    animation: 3s ease-in infinite progress;
+}
+
+main .slide_nav {
+    display: flex;
+    margin-top: 2px;
+}
+main .slide_nav li .ico{
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+main .slide_nav .btn_prev {
+    background: url(../img/keyboard_arrow_left_24px_outlined.png)no-repeat center center;
+}
+
+main .slide_nav .btn_play {
+    background: url(../img/pause_24px_outlined.png)no-repeat center center;
+}
+
+main .slide_nav .btn_play.pause {
+    background: url(../img/play_arrow_24px_outlined.png)no-repeat center center;
+}
+
+main .slide_nav .btn_next {
+    background: url(../img/keyboard_arrow_right_24px_outlined.png)no-repeat center center;
+}
 
 main>.main_slide_wrap {}
 
@@ -434,9 +488,11 @@ section.rental {
 }
 
 .rental #ac_card {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
     display: block;
     width: 100%;
-    padding: .75rem 1rem;
+    padding: .8rem 1rem;
     margin-top: 8px;
 }
 
@@ -528,13 +584,15 @@ section.banner {
     padding: 60px 0 0 100px;
 }
 
-.bn_slide #bn_slide_01{
+.bn_slide #bn_slide_01 {
     background: url(../img/main_info01.jpg)no-repeat center center /cover;
 }
-.bn_slide #bn_slide_02{
+
+.bn_slide #bn_slide_02 {
     background: url(../img/main_info02.jpg)no-repeat center center /cover;
 }
-.bn_slide #bn_slide_03{
+
+.bn_slide #bn_slide_03 {
     background: url(../img/main_info02.jpg)no-repeat center center /cover;
 }
 
@@ -565,7 +623,7 @@ section.banner {
     background: #F41977;
 }
 
-.bn_slide .slide_item .btn_more span{
+.bn_slide .slide_item .btn_more span {
     color: #fff;
     line-height: 46px;
     font-size: 1.5rem;
@@ -665,7 +723,7 @@ section.contents {
     background: url(../img/main_review_bg04.jpg)no-repeat center center /cover;
 }
 
-.contents .rv_wrap .rv_info{
+.contents .rv_wrap .rv_info {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -674,11 +732,11 @@ section.contents {
     transition: opacity .3s;
 }
 
-.contents .rv:hover .rv_info{
+.contents .rv:hover .rv_info {
     opacity: 1;
 }
 
-.contents .rv_wrap .rv_info span{
+.contents .rv_wrap .rv_info span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -717,10 +775,11 @@ section.contents {
     background-color: rgba(0, 0, 0, 0.42);
 }
 
-.contents .videos .vd_01{
+.contents .videos .vd_01 {
     background: url(../img/video_01.jpg)no-repeat center center/cover;
 }
-.contents .videos .vd_02{
+
+.contents .videos .vd_02 {
     background: url(../img/video_02.jpg)no-repeat center center/cover;
 }
 

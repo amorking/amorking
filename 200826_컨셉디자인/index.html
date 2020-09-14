@@ -70,12 +70,14 @@
             <div class="main_control_box">
                 <div class="main_control">
                     <span class="slide_page current">01</span>
-                    <div class="slide_progress"></div>
+                    <div class="slide_progress">
+                        <div class="progress_bar active"></div>
+                    </div>
                     <span class="slide_page total">02</span>
                     <ul class="slide_nav">
-                        <li class="btn_prev"></li>
-                        <li class="btn_play"></li>
-                        <li class="btn_next"></li>
+                        <li class="btn_prev"><span class="ico"></span></li>
+                        <li class="btn_play"><span class="ico"></span></li>
+                        <li class="btn_next"><span class="ico"></span></li>
                     </ul>
                 </div>
                 <!-- /.main_control -->
@@ -137,7 +139,7 @@
         <section class="rental">
             <div class="rt_slide_wrap">
                 <ul class="slide owl-carousel">
-                    <li class="slide_item_first">
+                    <li class="slide_item_first" style="width: 378px;">
                         <h2 class="si_tit">
                             이달의 인기<br>
                             케어솔루션 제품
@@ -158,7 +160,7 @@
                         </p>
                     </li>
                     <!-- /.slide_item_first -->
-                    <li class="slide_item">
+                    <li class="slide_item" style="width: 378px;">
                         <img class="product_img" src="img/EPRD_316984_thum.jpg" alt="LG 퓨리케어 정수기">
                         <div class="product_name">
                             <h4 class="pn_name">
@@ -202,7 +204,7 @@
                         <!-- /.btn_more -->
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item">
+                    <li class="slide_item" style="width: 378px;">
                         <img class="product_img" src="img/beh3gtr.akor_2m.jpg" alt="LG DIOS 하이브리드
                         전기레인지 인덕션">
                         <div class="product_name">
@@ -247,7 +249,7 @@
                         <!-- /.btn_more -->
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item">
+                    <li class="slide_item" style="width: 378px;">
                         <img class="product_img" src="img/BM400RIR.CKOR_2m.jpg" alt="LG DIOS 하이브리드
                         전기레인지 인덕션">
                         <div class="product_name">
@@ -292,7 +294,7 @@
                         <!-- /.btn_more -->
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item">
+                    <li class="slide_item" style="width: 378px;">
                         <img class="product_img" src="img/BM400RIR.CKOR_2m.jpg" alt="LG DIOS 하이브리드
                         전기레인지 인덕션">
                         <div class="product_name">
@@ -337,7 +339,7 @@
                         <!-- /.btn_more -->
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item">
+                    <li class="slide_item" style="width: 378px;">
                         <img class="product_img" src="img/BM400RIR.CKOR_2m.jpg" alt="LG DIOS 하이브리드
                         전기레인지 인덕션">
                         <div class="product_name">
@@ -382,6 +384,9 @@
                         <!-- /.btn_more -->
                     </li>
                     <!-- /.slide_item -->
+                    <li class="blank" style="width: 378px"></li>
+                    <li class="blank" style="width: 378px"></li>
+                    <li class="blank" style="width: 378px"></li>
                 </ul>
                 <!-- /.slide -->
             </div>
@@ -393,7 +398,7 @@
         <section class="banner">
             <div class="bn_slide_wrap">
                 <ul class="bn_slide owl-carousel">
-                    <li class="slide_item" id="bn_slide_01">
+                    <li class="slide_item" id="bn_slide_01" style="width: 1194px;">
                         <h3 class="tit">LG전자 케어솔루션이란?</h3>
                         <p class="desc">
                             가전 전문가들이 마음을 담아 고객의 삶에 안전과 편리, 위생을 더하는
@@ -404,7 +409,7 @@
                         </div>
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item" id="bn_slide_02">
+                    <li class="slide_item" id="bn_slide_02" style="width: 1194px;">
                         <h3 class="tit">케어솔루션 매니저</h3>
                         <p class="desc">
                             이제, 전문가에게 관리 받으세요.
@@ -416,7 +421,7 @@
                         </div>
                     </li>
                     <!-- /.slide_item -->
-                    <li class="slide_item" id="bn_slide_03">
+                    <li class="slide_item" id="bn_slide_03" style="width: 1194px;">
                         <h3 class="tit">LG전자 케어솔루션이란?</h3>
                         <p class="desc">
                             가전 전문가들이 마음을 담아 고객의 삶에 안전과 편리, 위생을 더하는
@@ -609,16 +614,42 @@
             dots: false,
             animateOut: 'fadeOut',
             autoplay: true,
+            autoplayTimeout: 3000,
             loop: true
+        });
+
+        // .main carousel control
+        const progress = $('main .progress_bar');
+        const prev = $('main .btn_prev');
+        const pause = $('main .btn_play');
+        const next = $('main .btn_next');
+        const mainSlide = $('main .slide.owl-carousel');
+
+        prev.click(function () {
+            mainSlide.trigger('prev.owl.carousel');
+        });
+
+        pause.click(function () {
+            pause.toggleClass('pause');
+            if (pause.hasClass('pause')) {
+                mainSlide.trigger('stop.owl.autoplay');
+            } else {
+                mainSlide.trigger('play.owl.autoplay');
+            };
+        });
+
+        next.click(function () {
+            stop.mainSlide.autoplay;
+            mainSlide.trigger('next.owl.carousel');
         });
 
         // .rental carousel
         $('.rental .owl-carousel').owlCarousel({
-            items: 5,
-            margin: 30,
-            dots: false,
             center: true,
+            items: 5,
             loop: false,
+            margin: 30,
+            autoWidth: true,
             nav: true,
             startPosition: 1
         });
@@ -629,7 +660,9 @@
             center: true,
             margin: 30,
             dots: true,
-            autoplay: false,
+            autoWidth: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
             loop: true
         });
     </script>

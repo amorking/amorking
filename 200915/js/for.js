@@ -1,3 +1,8 @@
-for (let i = 6; i >= 1; i--) {
-    document.write(`<h${i}>h${i} 재미있는 자바스크립트</h${i}>`)
+let firstDan = prompt('몇 단부터')
+let lastDan = prompt('몇 단까지')
+
+for (let i = firstDan; i <= lastDan; i++) {
+    for (let j = 1; j < 10; j++) {
+        console.log(`${i} X ${j} = ${i*j}`)
+    }
 }

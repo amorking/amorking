@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="js/jQuery_v3.5.1.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
 </head>
 
 <body>
@@ -605,80 +607,80 @@
         <!-- /footer -->
     </div>
     <!-- /#wrap -->
-    <script src="js/jQuery_v3.5.1.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script>
-        // .main carousel
-        $('.main_slide_wrap .owl-carousel').owlCarousel({
-            items: 1,
-            dots: false,
-            animateOut: 'fadeOut',
-            autoplay: true,
-            autoplayTimeout: 3000,
-            loop: true
-        });
+        window.onload = function () {
+            // .main carousel
+            $('.main_slide_wrap .owl-carousel').owlCarousel({
+                items: 1,
+                dots: false,
+                animateOut: 'fadeOut',
+                autoplay: true,
+                autoplayTimeout: 3000,
+                loop: true
+            });
 
-        // .main carousel control
-        const progress = $('main .progress_bar');
-        const prev = $('main .btn_prev');
-        const pause = $('main .btn_play');
-        const next = $('main .btn_next');
-        const mainSlide = $('main .slide.owl-carousel');
-        const current = document.querySelector('main .current');
-        const total = document.querySelector('main .total');
-        const totalSlide = document.querySelectorAll('main .slide .slide_item');
+            // .main carousel control
+            const progress = $('main .progress_bar');
+            const prev = $('main .btn_prev');
+            const pause = $('main .btn_play');
+            const next = $('main .btn_next');
+            const mainSlide = $('main .slide.owl-carousel');
+            const current = document.querySelector('main .current');
+            const total = document.querySelector('main .total');
+            const totalSlide = document.querySelectorAll('main .slide .slide_item');
 
-        total.innerHTML = `0${totalSlide.length/2}`;
+            total.innerHTML = `0${totalSlide.length/2}`;
 
-        prev.click(function () {
-            progress.removeClass('active');
-            mainSlide.trigger('prev.owl.carousel');
-            mainSlide.trigger('stop.owl.autoplay');
-            mainSlide.trigger('play.owl.autoplay');
-            progress.addClass('active');
-        });
-
-        pause.click(function () {
-            pause.toggleClass('pause');
-            if (pause.hasClass('pause')) {
+            prev.click(function () {
                 progress.removeClass('active');
+                mainSlide.trigger('prev.owl.carousel');
                 mainSlide.trigger('stop.owl.autoplay');
-            } else {
-                progress.addClass('active');
                 mainSlide.trigger('play.owl.autoplay');
-            };
-        });
+                progress.addClass('active');
+            });
 
-        next.click(function () {
-            progress.removeClass('active');
-            mainSlide.trigger('next.owl.carousel');
-            mainSlide.trigger('stop.owl.autoplay');
-            mainSlide.trigger('play.owl.autoplay');
-            progress.addClass('active');
-        });
+            pause.click(function () {
+                pause.toggleClass('pause');
+                if (pause.hasClass('pause')) {
+                    progress.removeClass('active');
+                    mainSlide.trigger('stop.owl.autoplay');
+                } else {
+                    progress.addClass('active');
+                    mainSlide.trigger('play.owl.autoplay');
+                };
+            });
 
-        // .rental carousel
-        $('.rental .owl-carousel').owlCarousel({
-            center: true,
-            items: 5,
-            loop: false,
-            margin: 30,
-            autoWidth: true,
-            nav: true,
-            startPosition: 1
-        });
+            next.click(function () {
+                progress.removeClass('active');
+                mainSlide.trigger('next.owl.carousel');
+                mainSlide.trigger('stop.owl.autoplay');
+                mainSlide.trigger('play.owl.autoplay');
+                progress.addClass('active');
+            });
 
-        // .banner carousel
-        $('.bn_slide_wrap .owl-carousel').owlCarousel({
-            items: 2,
-            center: true,
-            margin: 30,
-            dots: true,
-            autoWidth: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            loop: true
-        });
+            // .rental carousel
+            $('.rental .owl-carousel').owlCarousel({
+                center: true,
+                items: 5,
+                loop: false,
+                margin: 30,
+                autoWidth: true,
+                nav: true,
+                startPosition: 1
+            });
+
+            // .banner carousel
+            $('.bn_slide_wrap .owl-carousel').owlCarousel({
+                items: 2,
+                center: true,
+                margin: 30,
+                dots: true,
+                autoWidth: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                loop: true
+            });
+        }
     </script>
     <script src="js/main.js"></script>
 </body>

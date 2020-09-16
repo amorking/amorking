@@ -35,7 +35,6 @@ function leftTriangle() {
     }
 }
 
-
 //우측직사각형
 function rightTriangle() {
     let height = prompt('세로값')
@@ -45,7 +44,7 @@ function rightTriangle() {
     let result = []
 
     for (let i = 1; i <= height; i++) {
-        blankCount = ' '.repeat(height - i)
+        let blankCount = ' '.repeat(height - i)
 
         let namuji = i % 2
         //j를 2로 나누었을 때 나머지
@@ -61,34 +60,6 @@ function rightTriangle() {
         }
         console.log(`${blankCount}${result.join('')}`)
         //join 공백으로 result 배열의 원소들 사이에 ,표시 제거
-    }
-}
-
-//이등변 사각형
-function triangle() {
-    let height = prompt('세로값')
-    let i = 1 //반복 변수
-    let j = 1
-    let line = "" //스트링
-    let result = []
-
-    for (let i = 1; i <= height; i++) {
-        blankCount = ' '.repeat(height - i)
-        let rest = i % 2
-        if (rest) {
-            let namuji = i % 2
-            //j를 2로 나누었을 때 나머지
-            switch (namuji) { //namuji의 값
-                case 0: //namuji 값이 0 즉 짝수일 때 실행
-                    result.push("%")
-                    break
-                    //switch 종료
-                case 1: //namuji 값 1 즉 홀수일 때 실행
-                    result.push("*")
-                    break
-                    //switch 종료
-            }
-            console.log(`${blankCount}${result.join('')}`)
-        }
+        //result 배열의 원소들은 계속 쌓인다.
     }
 }

@@ -633,8 +633,16 @@
             let totalSlide = document.querySelectorAll('main .owl-stage .owl-item');
             //메인 슬라이드 아이템의 총 개수
             total.innerHTML = `0${totalSlide.length/2}`;
-            //현재 슬라이드
-            
+            //현재 슬라이드를 current에 입력하는 함수
+            function currentIndex() {
+                let currentSlide = document.querySelector('main .owl-stage .owl-item.active .slide_item');
+                let currentSlideIndex = currentSlide.dataset.index;
+                current.innerHTML= currentSlideIndex;
+            }
+            //3초마다 current에 현재 페이지를 넣기 위해 currentIndex 함수를 실행
+            setInterval(()=>{
+                currentIndex();
+            },3000);
             //이전 슬라이드
             prev.click(function () {
                 progress.removeClass('active');
@@ -642,6 +650,8 @@
                 mainSlide.trigger('stop.owl.autoplay');
                 mainSlide.trigger('play.owl.autoplay');
                 progress.addClass('active');
+                //현재 페이지를 current에 입력
+                currentIndex();
             });
             //시작&정지
             pause.click(function () {
@@ -661,6 +671,8 @@
                 mainSlide.trigger('stop.owl.autoplay');
                 mainSlide.trigger('play.owl.autoplay');
                 progress.addClass('active');
+                //현재 페이지를 current에 입력
+                currentIndex();
             });
 
             // .rental carousel

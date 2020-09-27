@@ -180,7 +180,7 @@ main .main_control .slide_progress .progress_bar{
 }
 
 main .main_control .slide_progress .progress_bar.active{
-    animation: 3s ease-in infinite progress;
+    animation: 3000ms ease-in infinite progress;
 }
 
 main .slide_nav {

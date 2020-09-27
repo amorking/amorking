@@ -13,12 +13,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="js/jQuery_v3.5.1.js" defer></script>
     <script src="js/owl.carousel.min.js" defer></script>
-    <script src="js/includeHTML.js" defer></script>
 </head>
 
 <body>
     <div id="wrap">
-        <header include-html="header.html"></header>
+        <header include-html="header.html">
+            <nav id="gnb_wrap">
+                <h1 class="logo" onclick="location.href='index.html'">
+                    <img src="img/logo_lg_el.png" alt="LG전자 로고">
+                    <span>케어솔루션</span>
+                </h1>
+                <ul class="gnb">
+                    <li class="gnb_item">
+                        <a href="sub.html">
+                            <span>케어솔루션 제품</span>
+                        </a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">
+                            <span>고객혜택</span>
+                        </a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">
+                            <span>서비스</span>
+                        </a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">
+                            <span>컨텐츠</span>
+                        </a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#"><span>고객센터</span></a>
+                        <a href="#"><span>나의 케어솔루션</span></a>
+                    </li>
+                </ul>
+                <!-- /.gnb -->
+                <ul class="sign">
+                    <li>
+                        <a href="#">
+                            <span>회원가입</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.sign -->
+            </nav>
+            <!-- /nav#gnb_wrap -->
+        </header>
         <!-- /header -->
 
         <main>
@@ -26,7 +73,7 @@
                 <div class="main_control">
                     <span class="slide_page current">01</span>
                     <div class="slide_progress">
-                        <div class="progress_bar active"></div>
+                        <div class="progress_bar"></div>
                     </div>
                     <span class="slide_page total">02</span>
                     <ul class="slide_nav">
@@ -40,7 +87,7 @@
             <!-- /.main_control_box -->
             <div class="main_slide_wrap">
                 <ul class="slide owl-carousel">
-                    <li id="sd_01" class="slide_item">
+                    <li id="sd_01" class="slide_item" data-index="01">
                         <div class="box_txt">
                             <p class="subtit">공기청정기의 새로운 움직임</p>
                             <h2 class="tit">LG 퓨리케어 공기청정기</h2>
@@ -51,7 +98,7 @@
                         <!-- /.box_txt -->
                     </li>
                     <!-- /.slide_item -->
-                    <li id="sd_02" class="slide_item">
+                    <li id="sd_02" class="slide_item" data-index="02">
                         <div class="box_txt">
                             <p class="subtit">차원이 다른 전문가의 가전관리</p>
                             <h2 class="tit">LG전자 케어솔루션</h2>
@@ -62,7 +109,7 @@
                         <!-- /.box_txt -->
                     </li>
                     <!-- /.slide_item -->
-                    <li id="sd_03" class="slide_item">
+                    <li id="sd_03" class="slide_item" data-index="03">
                         <div class="box_txt">
                             <p class="subtit">차원이 다른 전문가의 가전관리</p>
                             <h2 class="tit">LG전자 케어십</h2>
@@ -73,7 +120,7 @@
                         <!-- /.box_txt -->
                     </li>
                     <!-- /.slide_item -->
-                    <li id="sd_04" class="slide_item">
+                    <li id="sd_04" class="slide_item" data-index="04">
                         <div class="box_txt">
                             <p class="subtit">매년 주요 직수관 교체로 깨끗함의 차원이 다른 직수</p>
                             <h2 class="tit">LG 퓨리케어 정수기</h2>
@@ -507,15 +554,61 @@
         </section>
         <!-- /.notice -->
 
-        <footer include-html="footer.html"></footer>
+        <footer include-html="footer.html">
+            <div class="inner">
+                <div class="left">
+                    <ul class="ft_list">
+                        <li class="ft_item"><a href="#">개인정보처리방침</a></li>
+                        <li class="ft_item"><a href="#">이용약관</a></li>
+                        <li class="ft_item"><a href="#">이메일무단수집 거부</a></li>
+                    </ul>
+                    <!-- /.ft_list -->
+                    <div class="info">
+                        <p class="line_01">
+                            <span>대표이사: 권봉석, 배두용</span>
+                            <span>사업자등록번호: 107-86-14075</span>
+                            <span>통신판매업신고번호: 제1997-00084호</span>
+                            <span>대표번호: 02-3777-1114</span>
+                        </p>
+                        <p class="line_02">
+                            <span>주소: 서울시 영등포구 여의대로 128 LG트윈타워</span>
+                            <span>제품 및 서비스 문의 : 1544-7777</span>
+                        </p>
+                    </div>
+                    <!-- /.info -->
+                </div>
+                <!-- /.left -->
+                <div class="right">
+                    <div class="family">
+                        <span class="txt">FAMILY SITE</span>
+                        <span class="ico"></span>
+                    </div>
+                    <!-- /.family -->
+                    <div class="certified">
+                        <img class="cf_img" src="img/ico_footer_pims.png" alt="">
+                        <div class="cf_txt">
+                            <p>
+                                [인증범위] 대외 B2C, B2B 서비스 운영<br>
+                                [유효기간] 2020.01.29 ~ 2023.01.28
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.certified -->
+                </div>
+                <!-- /.right -->
+            </div>
+            <!-- /.inner -->
+            <div class="inner copy">
+                <p class="copyright">Copyright ⓒ 2018 LG Electronics. All Rights Reserved.</p>
+                <p class="copy_notice">본 사이트의 모든 콘텐츠는 저작권법의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.</p>
+            </div>
+            <!-- /.inner.copy -->
+        </footer>
         <!-- /footer -->
     </div>
     <!-- /#wrap -->
     <script>
         window.onload = function () {
-            //includeHTML
-            includeHTML();
-
             // .main carousel
             $('.main_slide_wrap .owl-carousel').owlCarousel({
                 items: 1,
@@ -528,16 +621,21 @@
 
             // .main carousel control
             const progress = $('main .progress_bar');
+            //윈도우가 준비되면, 즉 캐루셀이 준비되면 progress에 애니메이션을 위한 active 클래스 적용
+            progress.addClass('active');
+            let i = 1
             const prev = $('main .btn_prev');
             const pause = $('main .btn_play');
             const next = $('main .btn_next');
             const mainSlide = $('main .slide.owl-carousel');
             const current = document.querySelector('main .current');
             const total = document.querySelector('main .total');
-            const totalSlide = document.querySelectorAll('main .slide .slide_item');
-
+            let totalSlide = document.querySelectorAll('main .owl-stage .owl-item');
+            //메인 슬라이드 아이템의 총 개수
             total.innerHTML = `0${totalSlide.length/2}`;
-
+            //현재 슬라이드
+            
+            //이전 슬라이드
             prev.click(function () {
                 progress.removeClass('active');
                 mainSlide.trigger('prev.owl.carousel');
@@ -545,7 +643,7 @@
                 mainSlide.trigger('play.owl.autoplay');
                 progress.addClass('active');
             });
-
+            //시작&정지
             pause.click(function () {
                 pause.toggleClass('pause');
                 if (pause.hasClass('pause')) {
@@ -556,7 +654,7 @@
                     mainSlide.trigger('play.owl.autoplay');
                 };
             });
-
+            //다음 슬라이드
             next.click(function () {
                 progress.removeClass('active');
                 mainSlide.trigger('next.owl.carousel');

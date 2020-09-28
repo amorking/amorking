@@ -637,24 +637,39 @@
             function currentIndex() {
                 let currentSlide = document.querySelector('main .owl-stage .owl-item.active .slide_item');
                 let currentSlideIndex = currentSlide.dataset.index;
-                current.innerHTML= currentSlideIndex;
+                current.innerHTML = currentSlideIndex;
             }
             //3초마다 current에 현재 페이지를 넣기 위해 currentIndex 함수를 실행
-            setInterval(()=>{
-                currentIndex();
-            },3000);
+            function setTimeBn() {
+                if (!pause.hasClass('pause')) {
+                    setInterval(() => {
+                        currentIndex();
+                    }, 3000);
+                };
+            };
+            setTimeBn();
             //이전 슬라이드
             prev.click(function () {
+                if (pause.hasClass('pause')) {
+                    pause.removeClass('pause')
+                }
                 progress.removeClass('active');
                 mainSlide.trigger('prev.owl.carousel');
                 mainSlide.trigger('stop.owl.autoplay');
                 mainSlide.trigger('play.owl.autoplay');
+                //캐루셀이 재시작 되니까 setTimeBn도 다시 실행
+                setTimeBn();
                 progress.addClass('active');
                 //현재 페이지를 current에 입력
                 currentIndex();
             });
             //시작&정지
             pause.click(function () {
+                if (pause.hasClass('pause')) {
+                    progress.removeClass('active');
+                } else {
+                    progress.addClass('active');
+                };
                 pause.toggleClass('pause');
                 if (pause.hasClass('pause')) {
                     progress.removeClass('active');
@@ -662,14 +677,20 @@
                 } else {
                     progress.addClass('active');
                     mainSlide.trigger('play.owl.autoplay');
+                    setTimeBn();
                 };
             });
             //다음 슬라이드
             next.click(function () {
+                if (pause.hasClass('pause')) {
+                    pause.removeClass('pause')
+                }
                 progress.removeClass('active');
                 mainSlide.trigger('next.owl.carousel');
                 mainSlide.trigger('stop.owl.autoplay');
                 mainSlide.trigger('play.owl.autoplay');
+                //캐루셀이 재시작 되니까 setTimeBn도 다시 실행
+                setTimeBn();
                 progress.addClass('active');
                 //현재 페이지를 current에 입력
                 currentIndex();

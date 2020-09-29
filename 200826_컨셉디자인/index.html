@@ -651,17 +651,22 @@
             //이전 슬라이드
             prev.click(function () {
                 if (pause.hasClass('pause')) {
-                    pause.removeClass('pause')
+                    progress.removeClass('active');
+                    mainSlide.trigger('prev.owl.carousel');
+                    mainSlide.trigger('stop.owl.autoplay');
+                    //현재 페이지를 current에 입력
+                    currentIndex();
+                } else {
+                    progress.removeClass('active');
+                    mainSlide.trigger('prev.owl.carousel');
+                    mainSlide.trigger('stop.owl.autoplay');
+                    mainSlide.trigger('play.owl.autoplay');
+                    progress.addClass('active');
+                    //캐루셀이 재시작 되니까 setTimeBn도 다시 실행
+                    setTimeBn();
+                    //현재 페이지를 current에 입력
+                    currentIndex();
                 }
-                progress.removeClass('active');
-                mainSlide.trigger('prev.owl.carousel');
-                mainSlide.trigger('stop.owl.autoplay');
-                mainSlide.trigger('play.owl.autoplay');
-                //캐루셀이 재시작 되니까 setTimeBn도 다시 실행
-                setTimeBn();
-                progress.addClass('active');
-                //현재 페이지를 current에 입력
-                currentIndex();
             });
             //시작&정지
             pause.click(function () {
@@ -683,17 +688,22 @@
             //다음 슬라이드
             next.click(function () {
                 if (pause.hasClass('pause')) {
-                    pause.removeClass('pause')
+                    progress.removeClass('active');
+                    mainSlide.trigger('next.owl.carousel');
+                    mainSlide.trigger('stop.owl.autoplay');
+                    //현재 페이지를 current에 입력
+                    currentIndex();
+                } else {
+                    progress.removeClass('active');
+                    mainSlide.trigger('next.owl.carousel');
+                    mainSlide.trigger('stop.owl.autoplay');
+                    mainSlide.trigger('play.owl.autoplay');
+                    progress.addClass('active');
+                    //캐루셀이 재시작 되니까 setTimeBn도 다시 실행
+                    setTimeBn();
+                    //현재 페이지를 current에 입력
+                    currentIndex();
                 }
-                progress.removeClass('active');
-                mainSlide.trigger('next.owl.carousel');
-                mainSlide.trigger('stop.owl.autoplay');
-                mainSlide.trigger('play.owl.autoplay');
-                //캐루셀이 재시작 되니까 setTimeBn도 다시 실행
-                setTimeBn();
-                progress.addClass('active');
-                //현재 페이지를 current에 입력
-                currentIndex();
             });
 
             // .rental carousel

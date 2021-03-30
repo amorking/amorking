@@ -17,4 +17,4 @@ Here are some ideas to get you started:
 
 
 
-# Special repository! Oh, Yeah!
+# It's a special repository! grrrrrah!
